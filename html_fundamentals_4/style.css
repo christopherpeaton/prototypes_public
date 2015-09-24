@@ -1,0 +1,31 @@
+#aboutmeparagraph{
+    font-size:12px;
+}
+#aboutMe{
+    color:blue;
+}
+#bodycenter{
+    text-align:center;
+}
+img{
+    float:left;
+    height:250px;
+}
+.fontheader{
+    font-family:Montserrat, sans-serif;
+}
+#experience-list{
+    list-style-type:square;
+}
+.skillscolor{
+    color:red;
+}
+.nav li{
+    list-style-type:none;
+    display:inline;
+    margin: 5px;
+    font-size:20px;
+}
+.backgroundcolor{
+    background-color: yellow;
+}
