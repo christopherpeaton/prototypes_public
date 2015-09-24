@@ -1,0 +1,39 @@
+body{
+    text-align: center;
+}
+#aboutParagraph{
+    font-size:20px;
+}
+#aboutHeader{
+    color: deepskyblue;
+}
+#experienceHeader{
+    font-family: 'Montserrat', sans-serif;
+    background-color:grey;
+}
+
+#experienceList{
+    list-style: circle ;
+}
+
+#profPic{
+    width:250px;
+    height:250px;
+    float:left;
+}
+
+#skillHeader{
+    font-family: 'Montserrat', sans-serif;
+}
+.skillDescription{
+    color:springgreen;
+}
+
+.nav{
+    list-style: none;
+}
+.nav li{
+    display: inline;
+    margin: 0px 6px;
+
+}
