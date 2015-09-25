@@ -1,0 +1,61 @@
+
+.nav {
+    list-style-type: none;
+    float: left;
+
+}
+.nav-li {
+    margin: 20px;
+    font-size: 30px;
+    display: inline;
+}
+
+#left-column{
+    text-align: center;
+    float: left;
+    margin: auto;
+    width: 99%;
+}
+li {list-style-position: inside;}
+
+/* Following is for index.html */
+
+#description{
+    font-size:12px;
+}
+#about_me{
+    color:dodgerblue
+}
+
+img {
+    height:300px;
+    float: left;
+}
+
+/* Following is for experience.html*/
+
+#experience-header {
+    font-family: 'Montserrat', sans-serif;
+}
+#experience-body {
+    background-color: lightslategray
+}
+#experience-list {
+    list-style-type: circle;
+}
+.list-details {
+    list-style-type: upper-roman;
+}
+
+/* Following is for skills.html */
+
+#skills-header {
+    font-family: 'Montserrat', sans-serif;
+}
+#skills-body{
+    background-color: rosybrown
+}
+.list-items {
+    color: white
+}
+
