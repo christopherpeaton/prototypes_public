@@ -1,0 +1,37 @@
+#about_mep{
+    font-size:12px;
+
+}
+#about_meh{
+    color:lightseagreen;
+}
+
+#home{
+    width:500px;
+    margin:auto;
+    text-align:center;
+}
+
+img{
+    height:100%;
+    float:left;
+}
+
+#exp1,#SK{
+    font-family: 'Montserrat', sans-serif;
+}
+#exp{
+    background-color: gold;
+}
+#skills-list ul li{
+    color:green;
+}
+.nav{
+list-style-type: none;
+
+}
+.nav li{
+    display:inline;
+    margin: 20px;
+    font-size: 20px;
+}
