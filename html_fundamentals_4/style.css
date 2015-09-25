@@ -1,0 +1,68 @@
+/*nav styling*/
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav a:link, a:visited {
+    display: block;
+    width: 100px;
+    font-weight: bold;
+    color: floralwhite;
+    background-color: mediumslateblue;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/*about me page styling*/
+
+#index {
+    text-align: center;
+}
+
+#about-me-header {
+    color: pink;
+}
+#about-me-paragraph {
+    font-size: 12px;
+}
+
+#about-me-pic {
+    width: 350px;
+    height: 450px;
+    float: left;
+
+}
+
+/*experience page styling*/
+
+#experience-header {
+    font-family: 'Montserrat', 'Montserrat', sans-serif;
+}
+
+#experience-list {
+    background-color: cornflowerblue;
+    list-style: none outside none;
+}
+
+#experience-list ul {
+    list-style: square outside none;
+}
+
+/*skills page styling*/
+
+
+#skills-header {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#skills-list li ul {
+    color: purple;
+}
