@@ -1,0 +1,42 @@
+.nav {
+    list-style: none;
+}
+.nav li {
+    display: inline;
+    margin: 0 10%;
+    font-size: 20px;
+}
+
+/*Home*/
+.aboutMe {
+    font-size: 12px;
+}
+.about {
+    color: #0000ff;
+}
+#aboutBody {
+    text-align: center;
+}
+#aboutPic {
+    height: 100px;
+    float: right;
+}
+
+/*Experience*/
+.experienceHeader {
+    font-family: 'Montserrat', sans-serif;
+}
+.experienceP {
+    background-color: #e6e6fa;
+}
+#experience-list {
+    list-style-type: upper-roman;
+}
+
+/*Skills*/
+.skillsHeader {
+    font-family: 'Montserrat', sans-serif;
+}
+.skill {
+    color: #228b22;
+}
