@@ -45,11 +45,8 @@ h1 {
     width: 10%;
     height: 10%;
     border-radius: 50%;
-    float: right;
-    margin-right: 20%;
-    margin-left: 0;
-
-
+    position: absolute;
+    right: 10%;
 }
 
 #skills-list {
