@@ -1,0 +1,38 @@
+body{
+
+}
+
+.nav{
+    list-style: none;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.nav li{
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.nav li a{
+    text-decoration: none;
+}
+
+#header{
+    height:15vh;
+    background-color:yellow;
+}
+
+#footer {
+    height: 15vh;
+    background-color: yellow;
+    position: relative;
+}
+#footer ul{
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    margin-top: -19px;
+    margin-left: -148.5px;
+
+}
