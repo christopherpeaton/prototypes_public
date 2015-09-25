@@ -1,0 +1,8 @@
+/* Class to set font color */
+.fontsalmon{
+    color: salmon;
+}
+/* Formatting for page heading */
+#header{
+    font-family: 'Montserrat', sans-serif;
+}
