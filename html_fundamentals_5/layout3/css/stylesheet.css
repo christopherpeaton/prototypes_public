@@ -1,0 +1,44 @@
+header{
+    height:15vh;
+    background-color:yellow;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#left_nav{
+    width: 15vw;
+    background-color:yellow;
+    float: left;
+    height:85vh
+}
+
+#main_content{
+    float: right;
+    width: 83vw;
+}
+
+form{
+    
+    text-align: left;
+    border: 1px solid black;
+    width: 30vw;
+}
+
+input{
+    position: relative;
+    left: 12px;
+    margin-top: 15px;
+}
+
+#name{
+    position: relative;
+    left:18px;
+}
+
+#area{
+    margin-top: 15px;
+}
+
+#message-label{
+
+}
