@@ -1,0 +1,49 @@
+header{
+    min-height: 15vh;
+    min-width: 100%;
+    background-color: black;
+    text-align: center;
+    border: 1px solid white;
+}
+
+#left_nav {
+    float: left;
+    min-width: 15vw;
+    min-height: 100vh;
+    background-color: black
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+ul > li {
+    list-style-type: none;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+ul > li:hover {
+    text-decoration: underline;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    margin-top: 10px;
+    border-radius: 15%;
+}

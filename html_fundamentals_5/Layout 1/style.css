@@ -1,0 +1,45 @@
+header, footer {
+    min-height: 15vh;
+    background-color: black;
+    text-align: center;
+}
+
+#main_content {
+    min-height: 70vh;
+}
+
+#footer > ul {
+    padding-top: 30px;
+    color: white;
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header > ul {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#header > ul > li {
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+#header > ul > li:hover {
+    text-decoration: underline;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
