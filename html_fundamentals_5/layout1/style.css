@@ -1,0 +1,7 @@
+#nav{
+    list-style-type:none;
+    display:inline-block;
+}
+#header, #footer{
+    background-color:yellow;
+}
