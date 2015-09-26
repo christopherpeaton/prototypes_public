@@ -2,7 +2,7 @@
     text-align: center;
 }
 
-#index .nav {
+#index {
     text-align: center
 }
 
@@ -26,4 +26,17 @@ img {
     background-color: steelblue;
 }
 
-#skills
+#skills h1 {
+    font-family: Montserrat;
+}
+
+.skills_tools {
+    color: pink;
+}
+
+.nav li {
+    list-style-type: none;
+    display: inline;
+    margin: 50px;
+    font-size: 20px;
+}
