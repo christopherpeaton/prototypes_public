@@ -1,0 +1,33 @@
+#title, #container, #left_nav, #main_content {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#title {
+    height: 15vh;
+    background-color: yellow;
+    position: static;
+}
+
+
+
+
+#left_nav {
+    width: 15vw;
+    height: 100%;
+    position: absolute;
+    float: left;
+    display: block;
+    background-color: yellow;
+}
+
+
+#main_content {
+    margin-left: 15vw;
+    height: 100%;
+    float:left;
+    display: block;
+    position: absolute;
+
+}
+

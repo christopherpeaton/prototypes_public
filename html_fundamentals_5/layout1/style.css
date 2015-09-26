@@ -1,0 +1,25 @@
+#header, #body, #footer {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#header, #footer {
+    background-color: yellow;
+    height: 15vh;
+}
+
+#body {
+    height: 70vh;
+}
+/*menu formatting*/
+
+#nav li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+/*footer formatting*/
+
+#contact li {
+    list-style-type: none;
+}
