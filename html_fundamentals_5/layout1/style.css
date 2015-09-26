@@ -1,0 +1,42 @@
+html, body, #main_content {
+    margin: 0;
+}
+#header, #footer {
+    height: 15vh;
+    background-color: #9370db;
+    display: table;
+    width: 100%;
+    color: #ffffff;
+    position: relative;
+}
+#home_pic {
+    height: 75px;
+    width: 75px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#home_pic:hover, a:hover {
+    border: 1px solid #ffffff;
+}
+#nav, #contact {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+#main_content {
+    margin: 0 5%;
+    height: 70vh;
+}
+#nav li, a:visited {
+    list-style: none;
+    display: inline-block;
+    margin-right: 5%;
+    color: #ffffff;
+}
+a:link {
+    text-decoration: none;
+}
+#contact li {
+    list-style:none;
+}
