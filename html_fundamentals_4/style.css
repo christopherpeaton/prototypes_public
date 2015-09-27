@@ -1,0 +1,63 @@
+* {
+
+    text-align: center;
+}
+#about-me-header{
+    color: lightblue;
+}
+#about-me {
+    font-size: 12px;
+}
+img {
+    float: left;
+}
+#experience-header {
+    font-family: 'Montserrat', sans-serif;
+}
+#experience-list{
+    background-color: lightblue;
+}
+
+#experience-list li {
+    list-style-type: none;
+}
+#skillz-header {
+    font-family: 'Montserrat', sans-serif;
+}
+#skills-list{
+    list-style-type: none;
+}
+#skills-list ul li {
+    list-style-type: none;
+    color: #669999;
+}
+
+.nav {
+    list-style-type: none;
+    font-size: 25px;
+}
+
+.nav li {
+    display: inline;
+    margin-right: 15px;
+    font-size: 30px;
+}
+.nav li a:hover {
+    background-color: darksalmon;
+    color: white;
+}
+.nav li a {
+    text-decoration:none;
+}
+.bold-up {
+    font-weight: 900;
+}
+.transform {
+    color: darkgray;
+    transition: color .3s, transform .3s;
+}
+
+.transform:hover {
+    color: black;
+    transform: scale(1.5);
+}
