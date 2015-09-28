@@ -1,23 +1,34 @@
 #header {
     background-color: black;
-    color: floralwhite
+    color: floralwhite;
+    height: 15vh;
 }
 
 #footer {
     background-color: dimgrey;
     color: floralwhite;
     list-style-type: none;
+    height: 15vh;
+    text-align: center;
 }
+
 #nav {
     list-style-type: none;
     display: inline-block;
 }
+
 #main_content {
-    font-size: 1.5em;
+    font-size: 18px;
+    height: 70vh;
 }
+
 #nav {
 
 }
+
 a:link {
     text-decoration: none;
+}
+a:visited {
+    color: red;
 }
