@@ -1,0 +1,27 @@
+html, body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+#title {
+    height: 15vh;
+    border: 1px solid deeppink;
+}
+
+#left_nav {
+    float: left;
+    width: 15vw;
+    height: 85vh;
+    border: 1px solid darkblue;
+
+}
+
+#main_content {
+    float: left;
+    width: 83vw;
+    height: 85vh;
+    border: 1px solid purple;
+}
+h4 {
+    margin: 0;
+}
