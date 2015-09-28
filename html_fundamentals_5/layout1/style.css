@@ -1,0 +1,19 @@
+
+#header{
+    height: 15vh;
+}
+#main_content{
+    height: 70vh;
+    background-color: deepskyblue;
+}
+#footer{
+    height: 15vh;
+}
+
+li {
+    list-style: none;
+}
+
+#header li{
+    display: inline-block;
+}

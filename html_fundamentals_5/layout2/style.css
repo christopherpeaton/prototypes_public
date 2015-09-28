@@ -1,0 +1,15 @@
+#header{
+    height: 15vh;
+    text-align: center;
+}
+
+li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+#main_content{
+    height: auto;
+    margin-right: 20%;
+    margin-left: 20%;
+}
