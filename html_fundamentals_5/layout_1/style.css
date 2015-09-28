@@ -1,0 +1,17 @@
+#header {
+    background-color: black;
+    color: floralwhite
+}
+
+#footer {
+    background-color: dimgrey;
+    color: floralwhite;
+    list-style-type: none;
+}
+#nav {
+    list-style-type: none;
+    display: inline-block;
+}
+#main_content {
+    font-size: 1.5em;
+}
