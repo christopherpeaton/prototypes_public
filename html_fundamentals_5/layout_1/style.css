@@ -32,7 +32,8 @@ li {
 
 a:link {
     text-decoration: none;
+    color: floralwhite;
 }
 a:visited {
-    color: red;
+    color: floralwhite;
 }
