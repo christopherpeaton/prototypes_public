@@ -15,25 +15,23 @@
 #nav {
     list-style-type: none;
 }
-li {
-    display: inline-block;
-    margin: 25px;
-    font-size: 5vh;
-}
 
 #main_content {
     font-size: 18px;
     height: 70vh;
 }
 
-#nav {
-
+li {
+    display: inline-block;
+    margin: 25px;
+    font-size: 5vh;
 }
 
 a:link {
     text-decoration: none;
     color: floralwhite;
 }
+
 a:visited {
     color: floralwhite;
 }

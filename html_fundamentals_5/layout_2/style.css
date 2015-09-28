@@ -5,6 +5,11 @@
 #main_content {
     height: auto;
 }
+
+#nav {
+    list-style-type: none;
+}
+
 p {
     font-size: 20px;
 }
@@ -15,6 +20,3 @@ li {
     font-size: 5vh;
 }
 
-#nav {
-    list-style-type: none;
-}
