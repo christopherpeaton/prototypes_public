@@ -1,0 +1,17 @@
+#h1 {
+    height: 15vh;
+    background-color: aqua;
+}
+ul#header1 li{
+    list-style-type:none;
+    display:inline;
+    margin: 20px 35px;
+}
+#f1 {
+    height: 15vh;
+    background-color: aqua;
+}
+ul#footer1 li{
+    list-style-type: none;
+    text-align: center;
+}
