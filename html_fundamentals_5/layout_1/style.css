@@ -14,7 +14,11 @@
 
 #nav {
     list-style-type: none;
+}
+li {
     display: inline-block;
+    margin: 25px;
+    font-size: 5vh;
 }
 
 #main_content {

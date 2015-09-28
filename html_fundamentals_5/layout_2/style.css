@@ -1,0 +1,20 @@
+#header {
+    height:15vh;
+    background-color: palevioletred;
+}
+#main_content {
+    height: auto;
+}
+p {
+    font-size: 20px;
+}
+
+li {
+    display: inline-block;
+    margin: 25px;
+    font-size: 5vh;
+}
+
+#nav {
+    list-style-type: none;
+}
