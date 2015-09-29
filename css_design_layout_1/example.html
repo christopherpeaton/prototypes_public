@@ -3,42 +3,81 @@
     <head>
         <style>
             .feature_set_1_1 {
-                display: inline-block; /* check to make sure this is right */
-                Background-color: grey;
+                height: 10vh;
+                width: auto;
             }
-            /* check to make sure this really affects only the three divs inside of feature_set_1_1*/
-            .feature_set_1_1 div {
+            .feature_set_1_1 > div {
                 display: inline-block;
-                width: 25%; /* check to make sure this actually makes each div 25% of feature_set_1_1, total of 75%*/
+                height: 10vh;
+                width: 25%;
             }
-            #div1 {
-                margin-right: 5%;
+            .feature_set_1_2 > div {
+
+                border: 10px;
+                width: 25vw;
+                height: 25vh;
             }
-            #div3 {
+            .feature_set_1_3 {
+                height:100px;
+            }
+            .feature_set_1_3 > div {
+                width: 100px;
+            }
+            .div2 {
                 margin-left: 5%;
+            }
+
+            .div3 {
+                padding: 10px 0;
+            }
+            .div4 {
+                padding: 10px 10px 0 0;
+            }
+            .div5 {
+                padding: 10px 15px 20px 25px;
+            }
+            .div6 {
+                height: 25%;
+            }
+            .div7 {
+                height: 25vh;
+            }
+            .div8 {
+                height: 2cm;
             }
         </style>
     </head>
     <body>
         <div class="feature_set_1_1">
-            <div id="div1">
+            <div>
 
             </div>
-            <div id="div2">
+            <div class="div2">
 
             </div>
-            <div id="div3">
+            <div class="div2">
 
             </div>
         </div>
         <div class="feature_set_1_2">
-            <div>
+            <div class="div3">
 
             </div>
-            <div>
+            <div class="div4">
 
             </div>
-            <div>
+            <div class="div5">
+
+            </div>
+        </div>
+        <div class="feature_set_1_3">
+            <div class="div6">
+
+            </div>
+            <div class="div7">
+
+            </div>
+            <div class ="div8">
 
             </div>
         </div>
