@@ -1,0 +1,48 @@
+.div{
+    border:1px solid black;
+    width: 75%;
+    height: 100px;
+}
+
+#div1{
+    margin-bottom: 5%;
+}
+
+#div2{
+    margin-bottom: 5%;
+}
+
+.div-set-2 {
+    border: 1px solid black;
+    height: 100px;
+    width: 25vw;
+}
+
+#set1{
+    padding: 5% 0%;
+}
+
+#set2{
+    padding: 5% 0%;
+}
+
+#set3{
+    padding: 1% 5% 4% 3%;
+}
+
+.set3{
+    border:1px solid black;
+    width:100px;
+}
+
+#third1{
+    height:25%;
+}
+
+#third2{
+    height:25vh;
+}
+
+#third3{
+    height:5em;
+}
