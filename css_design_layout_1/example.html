@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+    #d1 {
+        margin: 2.5%;
+        width: 20%;
+        padding: 2.5%;
+        background-color: aqua;
+        display: inline-block;
+    }
+    #d2 {
+        margin: 2.5%;
+        width: 20%;
+        padding: 2.5%;
+        background-color: green;
+        display: inline-block;
+    }
+    #d3 {
+        margin: 2.5%;
+        width: 20%;
+        background-color: peru;
+        padding: 2.5%;
+        display: inline-block;
+    }
+    #d4 {
+        width: 25vw;
+        background-color: azure;
+        padding: 25px 0;
+    }
+    #d5 {
+        width: 25vw;
+        background-color: aquamarine;
+        padding: 25px 25px 0 0;
+    }
+    #d6 {
+        width: 25vw;
+        background-color: bisque;
+        padding: 10px 5px 20px 15px;
+    }
+ #d4 #d5 #d6{
+     border: 1px solid;
+ }
+    .feature_set_1_2{
+
+        margin: 100px;
+        float: left;
+
+    }
+    #d4, #d5, #d6 {
+        border: 1px solid;
+    }
+    .feature_set_1_3{
+        float: left;
+    }
+    #d7 {
+        width: 100px;
+        height: 25%;
+        background-color: purple;
+    }
+    #d8 {
+        width: 100px;
+        height: 25vh;
+        background-color: red;
+    }
+    #d9 {
+        width: 100px;
+        height: inherit;
+        background-color: darkblue;
+    }
+</style>
+</head>
+
+<body>
+    <div class="feature_set_1_1">
+<!--3 divs siting side by side 75% of the body
+    5% space btw 1st/2nd, 5% btw 2nd/3rd but don't alter 2nd-->
+        <div id="d1">1</div>
+        <div id="d2">2</div>
+        <div id="d3">3</div>
+
+    </div>
+    <div class="feature_set_1_2">
+<!--25vw width, border all 3 divs w/ 1 css statement, add padding top/bottom to 1st div w/ 1 css, padding top/right w/ 1 css statement, dev tolls inspector for 3rd (diff padding)-->
+        <div id="d4">4</div>
+        <div id="d5">5</div>
+        <div id="d6">6</div>
+    </div>
+    <div class="feature_set_1_3">
+    <!--100px width, 1st div 25% height, 2nd 25 vh height, 3rd height not pixel, % or vh-->
+        <div id="d7">7</div>
+        <div id="d8">8</div>
+        <div id="d9">9</div>
+    </div>
+
+</body>
+</html>
