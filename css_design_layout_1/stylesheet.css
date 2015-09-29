@@ -1,0 +1,43 @@
+div.feature_set_1_1{
+    width:75%;
+    background-color:yellow;
+}
+div.feature_set_1_1 div{
+    width:25%;
+    display: inline-block;
+}
+#div1_1{
+    margin-right: 5%;
+}
+#div1_3{
+    margin-left: 5%;
+}
+div.feature_set_1_2 div{
+    width:25vw;
+    border: solid darkred;
+    background-color:green;
+}
+#div2_1{
+    padding-top: 10px;
+    padding-bottom:10px;
+}
+#div2_2{
+    padding-top:20px;
+    padding-right:20px;
+}
+#div2_3{
+    padding: 60px 40px 50px 70px;
+}
+div.feature_set_1_3 div{
+    width:100px;
+    background-color:blue;
+}
+#div3_1{
+    height:25%;
+}
+#div3_2{
+    height:25vh;
+}
+#div3_3{
+    height:4em;
+}
