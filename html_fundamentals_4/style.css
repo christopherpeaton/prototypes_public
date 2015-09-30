@@ -1,0 +1,37 @@
+#a1{
+    font-size: 12px;
+    text-align: center;
+}
+.about {
+    color: blue;
+    text-align: center;
+}
+img {
+    height: 150px;
+    float: right;
+}
+.nav {
+    list-style-type: none;
+    background-color: yellow;
+}
+ul.nav li {
+    display: inline;
+    margin: 50px 40px;
+}
+.experience {
+    font-family: 'Montserrat', sans-serif;
+}
+#experience-list {
+    list-style-type: square;
+    background-color: green;
+}
+.e1 {
+    list-style-type: square;
+}
+#skills {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.s1{
+    color:red;
+}
