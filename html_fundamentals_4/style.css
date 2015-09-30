@@ -1,0 +1,50 @@
+p.aboutme {
+    font-size: 12px;
+    margin: auto;
+}
+
+h2.aboutme {
+    color: aliceblue;
+}
+
+#homepage {
+    margin: 0 auto;
+    text-align: center;
+}
+
+img {
+    float: right;
+    width: 10%;
+    height:10%;
+}
+
+.experience {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#experience-list {
+    background-color: deepskyblue;
+    list-style-type: hiragana;
+}
+
+#experience-list ul {
+    list-style-type: lower-alpha;
+}
+
+#skills {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#skills-list ul {
+    color: chocolate;
+}
+
+.nav {
+    list-style-type: none;
+}
+
+.nav li {
+    display: inline-block;
+    margin: 1em;
+    font-size: 110%;
+}
