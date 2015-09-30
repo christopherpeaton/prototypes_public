@@ -1,4 +1,4 @@
-# Prototype - HTML Head, internal/external styles & links
+# HTML Head - internal/external styles & links
 
 Expand your HTML knowledge with better understanding of the head element and adding basic internal and external CSS styling. As you work through this
 prototype we will be building out aspects of the portfolio project v1 (Explanation Coming Soon). This prototype is based
@@ -58,9 +58,7 @@ This is intentionally similar to the previous prototype to reinforce comprehensi
 >	1. Experience
 >		1. Heading - Experience
 >		1. Paragraph - Write a paragraph that describes any of your past job experience
->   1. Contact
->       1. Heading - Contact
->       1. Paragraph - 
+
 ### Feature Set 2 - Head Elements
 This is intentionally similar to the previous prototype to reinforce comprehension of fundamental material
 > 1. Within the head tags

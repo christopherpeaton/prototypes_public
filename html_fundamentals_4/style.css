@@ -1,0 +1,46 @@
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    float: left;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.home-page {
+    margin: auto;
+    width: 50%;
+}
+
+img {
+    height: 200px;
+    float: left;
+}
+
+.aboutme-h {
+    color: aquamarine;
+}
+
+.aboutme-p {
+    font-size: 12px;
+}
+
+.experience-h {
+    font-family: Montserrat;
+}
+
+#experience-list {
+    background-color: darksalmon;
+    list-style: square;
+}
+
+.skills-h {
+    font-family: Montserrat;
+}
+
+#skills-list ul li {
+    color: lightseagreen;
+}
