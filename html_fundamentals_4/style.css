@@ -1,0 +1,38 @@
+/*classes*/
+p.std_font{
+    font-size:12px;
+}
+body.align_center{
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60em;
+}
+ul.nav{
+    list-style-type:none;
+}
+ul.nav li{
+    display:inline;
+    margin:10px;
+    font-size:1.5em;
+}
+.google_font{
+    font-family: 'Montserrat', sans-serif;
+}
+.experience_div {
+    background-color: beige;
+}
+/*ids*/
+#about_header{
+    color:darkslategrey;
+}
+#profile_pic{
+    float: left;
+}
+#experience-list{
+    list-style-type:square;
+}
+/*elements*/
+ul li ul li{
+    color:chartreuse;
+}
