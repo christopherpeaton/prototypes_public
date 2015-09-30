@@ -4,10 +4,12 @@
     <title>CSS Design Layout 2</title>
     <!-- Internal Stylesheet -->
     <style>
+        /* Header formatting */
         header{
             width: 100%;
             height: 15vh;
             background-color: aquamarine;
+            position: absolute;
         }
         img{
             position: relative;
@@ -17,7 +19,7 @@
         }
         h1{
             display: inline-block;
-            width: 10%;
+            width: 25%;
             position: relative;
             left: 5%;
             bottom: 2vh;
@@ -27,12 +29,58 @@
             font-family: Verdana, Calibri, sans-serif;
             text-shadow: 1vh 1vh navy;
         }
+        /* Nav formatting */
+        nav {
+            border: 2px seagreen solid;
+            padding: 1em;
+            width: 50%;
+            position: absolute;
+            right: 1%;
+            bottom: 1%;
+            display: inline-block;
+        }
+        nav ul{
+            list-style-type: none;
+            text-transform: capitalize;
+            text-align: center;
+            font-size: 2vw;
+            padding: 0;
+        }
+        nav ul li{
+            display: inline-block;
+            margin: 0% 2%;
+
+        }
     </style>
 </head>
 <body>
     <header>
         <img src="images/att_logo.png">
         <h1>AT&ampT</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="home.html">
+                        home
+                    </a>
+                </li>
+                <li>
+                    <a href="about_us.html">
+                        about us
+                    </a>
+                </li>
+                <li>
+                    <a href="our_menu.html">
+                        our menu
+                    </a>
+                </li>
+                <li>
+                    <a href="contact_us.html">
+                        contact us
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
 </body>
