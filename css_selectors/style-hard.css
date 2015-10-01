@@ -1,8 +1,10 @@
 header {
     position: relative;
+    height: 20vh;
 }
 
 header ul {
+    position: relative;
     list-style-type: none;
 }
 
@@ -35,14 +37,21 @@ header > ul > li:nth-child(3) {
 }
 
 section {
-    width: 32vw;
+    width: 100vw;
     position: relative;
+    float: left;
+    display: inline-block;
+}
+
+article {
+    width: 33vw;
+    float: left;
 }
 
 article img {
     float: left;
     height: 25%;
-    width: 48%;
+    width: 49%;
 
 }
 
@@ -52,5 +61,51 @@ article p:nth-child(2) {
 
 aside {
     float: left;
-    width: 50vw;
+    width: 67vw;
+    display: inline-block;
+    position: relative;
+}
+
+aside p {
+    position: relative;
+    top: 0;
+    left: 5vw;
+}
+
+.aside_class {
+    position: relative;
+    left: 18vw;
+}
+
+span {
+    color: blue;
+}
+
+aside p:nth-child(2) {
+    color: red;
+    font-weight: bold;
+}
+
+aside p:nth-child(3) {
+    font-size: 90%;
+}
+
+aside p:nth-child(4) {
+    color: green;
+    font-size: 90%;
+}
+
+aside p:nth-child(2)::first-letter {
+    font-size: 200%;
+    color: white;
+    background-color: gray;
+}
+
+aside p:nth-child(4)::first-letter {
+    color: black;
+}
+
+
+footer {
+    clear: both;
 }
