@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 10px 5px;
+}
+
+ul {
+    display: inline-block;
+}
+
+header, footer {
+    width: 100%;
+}
+
+img {
+    float: left;
+    height: 40%;
+    width: 40%;
+}
+article {
+    width: 50%;
+    float: left;
+}
+
+aside {
+    width: 50%;
+    float: right;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    height: 20vh;
+    text-align: center;
+    clear: both;
+}
