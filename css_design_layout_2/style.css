@@ -18,3 +18,19 @@ header h1 {
     top: 14%;
     text-shadow: 0.1em 0.1em #DAA520;
 }
+
+header ul {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    list-style-type: none;
+    bottom: 0;
+    margin: 0;
+}
+
+header li {
+    display: inline-block;
+    color: slategray;
+    margin: 0 7% 0 0;
+    padding-right: 6%;
+}
