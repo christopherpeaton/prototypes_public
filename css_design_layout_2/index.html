@@ -1,87 +1,137 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>CSS Design Layout 2</title>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Design Layout 2</title>
 
-    <style>
+        <style>
 
-        body {
-            margin: 0;
-            padding: 0;
-        }
+            body {
+                margin: 0;
+                padding: 0;
+            }
 
-        header {
-            width:100%;
-            height: 20vh;
-            background-color: #1972AC;
-            text-align: center;
-            position: relative;
-        }
+            header {
+                width:100%;
+                height: 20vh;
+                background-color: #1972AC;
+                text-align: center;
+            }
 
-        .logo {
-            width: 15vh;
-            height: 15vh;
-            padding-top: 1vh;
-            margin-left: 10vmin;
-            float: left;
-        }
+            .logo {
+                width: 15vh;
+                height: 15vh;
+                padding-top: 1vh;
+                margin-left: 10vmin;
+                float: left;
+            }
 
-        h1 {
-            padding: 0;
-            margin: 0;
-            font-size: 10vmin;
-            position: relative;
-            right: 15vmin;
-            color: white;
-            text-shadow: 4px 4px 8px #0A2E45;
-        }
+            h1 {
+                padding: 0;
+                margin: 0;
+                font-size: 10vmin;
+                position: relative;
+                right: 15vmin;
+                color: white;
+                text-shadow: 4px 4px 8px #0A2E45;
+            }
 
-        .nav {
-            list-style-type: none;
-            text-align: center;
-            font-size: 3vmin;
-            width: 50%;
-            display: table;
-            padding: 0;
-            float: right;
-        }
+            .nav {
+                list-style-type: none;
+                text-align: center;
+                font-size: 3vmin;
+                width: 50%;
+                display: table;
+                padding: 0;
+                float: right;
+                margin-bottom: 0;
+            }
 
-        .nav a {
-            text-decoration: none;
-            color: white;
-        }
+            .nav a {
+                text-decoration: none;
+                color: white;
+            }
 
-        .nav a:hover {
-            text-decoration: underline;
-        }
+            .nav a:hover {
+                text-decoration: underline;
+            }
 
-        .nav li {
-            border: 2px solid transparent;
-            display: table-cell;
-            text-shadow: 4px 4px 8px #0A2E45;
-        }
+            .nav li {
+                border: 2px solid transparent;
+                display: table-cell;
+                text-shadow: 4px 4px 8px #0A2E45;
+            }
 
-    </style>
+            #fs-2 {
+                width: 100%;
+                height: 30vh;
+                text-align: justify;
+            }
 
-</head>
-<body>
-<header>
+            #fs-2 div {
+                border: 1px solid red;
+                box-sizing: border-box;
+            }
 
-    <img class="logo" src="images/logo.png">
+            #fs-2 div:first-child {
+                height: 30vh;
+                width: 25%;
+                float: left;
+            }
 
-    <h1 class="h_h1">Lonely Box LLC.</h1>
+            #fs-2 div:last-child {
+                height: 30vh;
+                width: 75%;
+                float: left;
+            }
 
-    <ul class="nav">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about_us.html">About Us</a></li>
-        <li><a href="our_menu.html">Our Menu</a></li>
-        <li><a href="contact_us.html">Contact Us</a></li>
-    </ul>
+        </style>
 
-</header>
+    </head>
+    <body>
+        <header>
+
+            <img class="logo" src="images/logo.png">
+
+            <h1 class="h_h1">Lonely Box LLC.</h1>
+
+            <ul class="nav">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="our_menu.html">Our Menu</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+
+        </header>
+
+        <section id="fs-2">
+
+            <div>
+                <p>
+                    Lorem Ipsum issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+
+            <div>
+                <p>
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+                    default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
+                    infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
+                    (injected humour and the like).
+                </p>
+            </div>
+
+        </section>
 
 
 
-</body>
+    </body>
 </html>
