@@ -1,14 +1,37 @@
 body {
     margin: 0;
     padding: 10px 5px;
+    width: 1000px;
 }
 
-ul {
-    display: inline-block;
+header {
+    height: 10vh;
 }
 
 header, footer {
-    width: 100%;
+     width: 100%;
+ }
+ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 50px;
+}
+
+ul li {
+    display: block;
+    position: relative;
+    float: left;
+    margin: 10px 20px;
+    font-size: 20px;
+}
+
+li ul {
+    display: none;
+}
+
+ul li:hover {
+    color: white;
+    background-color: lightgray;
 }
 
 img {
