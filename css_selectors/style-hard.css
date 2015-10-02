@@ -37,7 +37,7 @@ header > ul > li:nth-child(3) {
     padding: 2vh 1vw;
     z-index: 1;
     position: absolute;
-    top: 23px;
+    top: 18px;
     left: 45px;
 }
 
@@ -49,6 +49,13 @@ header > ul > li:nth-child(3) {
     display: inline-block;
     background-color: gray;
     color: white;
+}
+.collapsible ul li:hover {
+    background-color: gray;
+}
+
+.collapsible:hover ul {
+    background-color: blue;
 }
 
 section {
