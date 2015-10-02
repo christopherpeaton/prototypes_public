@@ -1,0 +1,96 @@
+body{
+    width:75vw;
+    height: 50vh;
+}
+/*Header Menu*/
+header{
+    background-color:cadetblue;
+}
+header ul ul{
+    display:none;
+}
+header ul li:hover > ul{
+    display:block;
+}
+header ul{
+    padding: 0 20px;
+    list-style: none;
+    position:relative;
+    display:inline-table;
+}
+header ul:after{
+    content: "";
+    clear:both;
+    display:block;
+}
+header ul li{
+    float:left;
+    display: block;
+    padding: 25px 40px;
+    color:white;
+    text-decoration:none;
+}
+header ul li:hover{
+    color:grey;
+    background:lightgrey;
+}
+header ul li:hover{
+    background:darkslategrey;
+    color:white;
+}
+header ul ul{
+    background:black;
+    padding:0;
+    position:absolute;
+    top:100%;
+}
+header ul ul li{
+    float:none;
+    position:relative;
+}
+/*---------------------------------------------------------------*/
+/*Section*/
+section{
+    display:inline-block;
+}
+article{
+    width:35%;
+}
+article img{
+    height:175px;
+    float:left;
+}
+aside{
+    float:right;
+    width:65%;
+    position:relative;
+    top: -384px;
+    left: 73px;
+}
+article p:nth-child(2){
+    color:green;
+}
+h3.aside_class span{
+    color:blue;
+}
+aside p:nth-child(2){
+    color:red;
+}
+aside p:nth-child(4){
+    color:green;
+}
+aside p:nth-child(2):first-letter{
+    font-weight:bold;
+    font-size: 3em;
+
+}
+/*--------------------------------------------------------*/
+/*Footer*/
+footer{
+    background-color:black;
+}
+footer div{
+    color:white;
+    text-align: center;
+    padding:75px 0px 75px 0px;
+}
