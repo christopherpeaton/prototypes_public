@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        body{
+            background-color: #b13939;
+            color: white;
+            width: 960px;
+            line-height: 1.4em;
+            margin: 0 auto;
+        }
+
+        form{
+            position: relative;
+        }
+
+        form>ol {
+            margin-left: -2%;
+        }
+        h1{
+            text-align: center;
+        }
+
+        form>input:not([type='submit']){
+            width: 49%;
+            height: 4em;
+            margin: 1% 0;
+        }
+
+        form>input:nth-child(5) {
+            width: 25%;
+        }
+
+        form>input[type='submit']{
+            position: absolute;
+            right: 2%;
+            top: 103%;
+            height: 10%;
+            width: 14%;
+            background-color: #881717;
+            border: none;
+            color: white;
+        }
+
+        form>input {
+            box-shadow: black 0 2px;
+        }
+
+    </style>
+ </head>
+<body>
+    <form>
+        <h1>Instructions for Application - Academic Year 2014</h1>
+        <ol>
+            <li>The deadline for 2014-2015 scholarship application: March 30,2014. Applications received after March
+            30 will be considered on a funds available basis</li>
+            <li>Only completed applications will be considered. Do Not Leave Items Blank.</li>
+            <li>Attach a current copy of your high school and/or college transcripts.</li>
+            <li>Two signed letters of recommnedation (from non-relatives) must be attached to this application</li>
+        </ol>
+
+        <p>Consideration for any scholarship award is based on a point system including GPA, participation in
+        extra-curricular activites, school organization and community service. This will be a four semester
+        scholarship, and you must maintain criteria set in the guidelines.</p>
+        <input type="text" name="full-name" placeholder="Last Name, First Name, MI">
+        <input type="password" name="social-security #" placeholder="Social Security #"><br>
+
+        <input type="text" name="address" placeholder="City, State, Zip, County">
+        <input type="tel" name="phone-number" placeholder="Permanent Home Phone"><br>
+
+        <input type="text" name="major" placeholder="Intended Major at University">
+        <input type="text" name="location" placeholder="At which location will you be attending?"><br>
+
+        <input type="submit" value="NEXT>>" name="submit">
+    </form>
+
+</body>
+</html>
