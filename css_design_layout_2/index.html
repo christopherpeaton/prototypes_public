@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        header {
+            width: 100%;
+            height: 15%;
+            background-color: #a2304e;
+        }
+        img {
+            position: absolute;
+            display: inline;
+            width: 100px;
+            height: 100px;
+            padding: 13px 0 0 15px;
+        }
+        h1 {
+            color: white;
+            position: relative;
+            padding: 40px 10px 10px 125px;
+            text-shadow: 2px 2px black;
+        }
+        #nav {
+            text-transform: uppercase;
+        }
+        ul#nav li {
+            display: inline;
+            padding: 2%;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        .nav_bar {
+            position: relative;
+            text-shadow: 2px 2px black;
+            right: 0;
+            bottom: 0;
+            width: 75%;
+            padding-left: 45%
+        }
+        #fs-2 {
+            width: 100%;
+            height: 30%;
+        }
+        #float1 {
+            height: 100%;
+            border: 1px dotted;
+
+            width: 25%;
+            float: left;
+        }
+        #float2 {
+            height: 100%;
+            border: 1px solid;
+            width: 74%;
+            float: left;
+        }
+        #fs-3{
+            width: 100%;
+            height: 30%;
+            display: flex;
+            flex-direction: row;
+
+
+        }
+        #column1 {
+            height: 100%;
+            width: 25%;
+            border: 1px solid;
+            display: flex;
+            flex-direction: column;
+        }
+        #column2 {
+            height: 100%;
+            width: 75%;
+            border: 1px dotted;
+            display: flex;
+            flex-direction: column;
+        }
+        footer {
+            height: 20%;
+            width: 100%;
+            background-color: #a2304e;
+        }
+        .container {
+            width: 70vw;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+        <img src="images/logo.png">
+        <h1>Siggraph</h1>
+        <div class="nav_bar">
+            <ul id="nav">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="our_menu.html">Our Menu</a></li>
+                <li><a href="contact_us.html">Contact us</a></li>
+            </ul>
+        </div>
+        </header>
+
+        <section id="fs-2">
+            <div id="float1">
+                <p>This is float box 1.</p>
+            </div>
+            <div id="float2">
+                <p>This is float box 2.</p>
+            </div>
+        </section>
+        <section id="fs-3">
+            <div id="column1">
+                <p>This is the 1st column</p>
+            </div>
+            <div id="column2">
+                <p>This is the 2nd column</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>
+                This is the footer
+            </p>
+
+        </footer>
+    </div>
+</body>
+</html>
