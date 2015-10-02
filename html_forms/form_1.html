@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #text_input1 {
+            background-color: #df5277;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px red solid;
+            box-shadow: 10px 10px 5px #888888;
+        }
+    </style>
+</head>
+
+<body>
+
+<form action="http://learningfuze.com/echo.php">
+    First Name:<br>
+    <input id="text_input1" type="text" name="firstname"><br>
+    Last Name:<br>
+    <input type="text" name="lastname"><br>
+    <br>
+    It's a text area! <br>
+    <textarea name="text_area" rows="4" cols="50">Hurrah!
+    </textarea>
+    <br>
+    <br>
+    <label>
+        <input type="radio" name="favefood" value="Japanese Curry" checked>Japanese Curry<br>
+    </label>
+    <label>
+        <input type="radio" name="favefood" value="Ramen">Ramen<br>
+    </label>
+    <label>
+        <input type="radio" name="favefood" value="Tofu Soup">Tofu Soup<br>
+    </label>
+    <br>
+    Favorite Games:<br>
+    <input type="checkbox" name="game1" value="Monster Hunter 4U">Monster Hunter 4U<br>
+    <input type="checkbox" name="game2" value="Dwarf Fortress">Dwarf Fortress<br>
+    <input type="checkbox" name="game3" value="Silent Hill 2">Silent Hill 2<br>
+    <input type="checkbox" name="game4" value="Mass Effect 2" disabled>Mass Effect 2<br>
+    <br>
+    <select name="movies" multiple>
+        <option name="movie1" value="The Mummy">The Mummy</option>
+        <option name="movie2" value="The Royal Tenenbaums">The Royal Tenenbaums</option>
+        <option name="movie3" value="Jurassic Park">Jurassic Park</option>
+        <option name="movie4" value="Sympathy for Lady Vengeance">Sympathy for Lady Vengeance</option>
+    </select>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
