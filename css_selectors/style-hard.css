@@ -55,7 +55,7 @@ header > ul > li:nth-child(3) {
 }
 
 .collapsible:hover ul {
-    background-color: blue;
+    background-color: black;
 }
 
 section {
@@ -126,9 +126,20 @@ aside p:nth-child(2)::first-letter {
     background-color: gray;
 }
 
+aside p:nth-child(3)::first-letter {
+    border: 1px solid gray;
+    background-color: white;
+    border-top-right-radius:2em;
+    border-bottom-left-radius:2em;
+}
+
 aside p:nth-child(4)::first-letter {
     color: black;
-    background-color: gray;
+    border: 1px solid gray;
+    background-color: white;
+    border-top-right-radius:2em;
+    border-bottom-left-radius:2em;
+    line-height: 3px;
 }
 
 footer {
