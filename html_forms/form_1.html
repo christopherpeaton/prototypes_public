@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+        form{
+            border:5px solid black;
+        }
+       #ff{
+            background-color:lightblue;
+        }
+        .games{
+            font-family:arial;
+            font-weight:bold;
+        }
+        .movies{
+            border:5px deepskyblue dashed;
+        }
+        input[type=submit]{
+            box-shadow: 0px 0px 3px 3px royalblue;
+        }
+    </style>
+</head>
+<body>
+    <form action="http://learningfuze.com/echo.php" method="get">
+        <div id="ff">
+            <input type="radio" name="favorite food" value="French Fries">French Fries<br>
+        </div>
+            <input type="radio" name="favorite food" value="Pasta">Pasta<br>
+            <input type="radio" name="favorite food" value="Chocolate" checked>Chocolate<br>
+        <br>
+        <br>
+        <div class="games">
+        <input type="checkbox" name="games" value="Mario Kart">Mario Kart<br>
+            </div>
+        <input type="checkbox" name="games" value="Diddy Kong Racing">Diddy Kong Racing<br>
+        <div class="games">
+        <input type="checkbox" name="games" value="Risk">Risk<br>
+        </div>
+        <input type="checkbox" name="games" value="Checkers" disabled>Checkers<br>
+        <br>
+        <br>
+    <div class="movies">
+        <select name="movies">
+            <option value="Up">Up</option>
+            <option value="The Lion King">The Lion King</option>
+            <option value="Toy Story">Toy Story</option>
+            <option value="Monsters University">Monsters University</option><br>
+        </select>
+        </div>
+        <br>
+        <br>
+        <div id="submit">
+        <input type="submit" name="submit" value="Submit"><br>
+    </form>
+</body>
+</html>
