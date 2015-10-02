@@ -33,11 +33,6 @@ form input{
     color: darkgrey;
     margin-bottom: 2em;
     margin-right: .5em;
-}
-form input:nth-child(odd) {
-    float: left;
-}
-form input:nth-child(even) {
     float: left;
 }
 form input[type=submit] {
