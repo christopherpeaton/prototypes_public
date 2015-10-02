@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Design Layout 2</title>
+
+    <style>
+        header {
+            width: 100%;
+            height: 15vh;
+            background-color: peachpuff;
+            position: relative;
+        }
+
+        header img {
+            left: 10%;
+            top: 10%;
+            position: relative;
+            height: 16vh;
+        }
+
+        header h1 {
+            display: inline-block;
+            width: 25%;
+            position: relative;
+            left: 10%;
+            bottom: 5vh;
+            margin: 5%;
+            color: darkblue;
+            text-shadow: 1vh 1vh cornflowerblue;
+        }
+
+        nav {
+            display: inline-block;
+            position: relative;
+            border: 1px solid green;
+            bottom: 7vh;
+            text-align: center;
+        }
+
+        nav ul{
+            border: 1px solid blue;
+
+            text-align: center;
+            padding: 5vh;
+        }
+
+        nav ul li {
+            display: inline-block;
+            padding: 0 0 0 5vh;
+        }
+
+        #fs-2{
+            width: 100%;
+            height: 30vh;
+        }
+
+        #fs-2-1{
+            height: 100%;
+            width: 25%;
+            float: left;
+            border: 3px solid yellow;
+        }
+
+        #fs-2-2{
+            height: 100%;
+            width: 74%;
+            float: left;
+            border: 3px solid yellow;
+        }
+
+        #fs-3{
+            width: 100%;
+            height: 30vh;
+        }
+
+        #fs-3-1{
+            height: 100%;
+            width: 25%;
+            float: left;
+            border: 3px solid yellow;
+            display: inline-block;
+        }
+
+        #fs-3-2{
+            height: 100%;
+            width: 74%;
+            float: left;
+            border: 3px solid yellow;
+            display: inline-block;
+        }
+
+        footer {
+            height: 20vh;
+            width: 100%;
+            background-color: peachpuff;
+            border: 3px solid blue;
+            margin: 1% 0 0 0;
+        }
+
+        div {
+
+        }
+
+    </style>
+
+    <!-- i don't understand what we are supposed to do with feature set 5 - gutters -->
+    <!-- Also, when I look at my webpage, all the bottom portion is "clickable" for the url to "Contact Us",
+    is there any way to change that? So readers won't randomly click and go to contactus.html. -->
+
+</head>
+
+<body>
+    <div class="container">
+    <header>
+        <img src="images/newjazzlogo.png">
+        <h1>Utah Jazz</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</li>
+                <li><a href="aboutus.html">About Us</li>
+                <li><a href="ourmenu.html">Our Menu</li>
+                <li><a href="contactus.html">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="fs-2">
+        <div id="fs-2-1">Energy Drinks</div>
+        <div id="fs-2-2">Red Bull gives you wings</div>
+    </section>
+
+    <section>
+        <div id="fs-3">
+            <div id="fs-3-1">Monster Energy Drinks</div>
+            <div id="fs-3-2">Monster doesn't give you wings</div>
+        </div>
+    </section>
+
+    <footer>
+        Energy Drinks Central
+    </footer>
+</div>
+</body>
+</html>
