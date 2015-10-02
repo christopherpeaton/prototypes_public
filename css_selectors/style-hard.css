@@ -3,9 +3,10 @@ header {
     height: 20vh;
 }
 
-header ul {
+header>ul {
     position: relative;
     list-style-type: none;
+    top: 7vh;
 }
 
 header > ul > li {
@@ -30,6 +31,20 @@ header > ul > li:nth-child(3) {
     clear:both;
 }
 
+.collapsible ul {
+    background-color: black;
+    color: white;
+    padding: 2vh 1vw;
+    z-index: 1;
+    position: absolute;
+    top: 23px;
+    left: 45px;
+}
+
+.collapsible li {
+    padding: 5px 0;
+}
+
 .collapsible:hover {
     display: inline-block;
     background-color: gray;
@@ -41,6 +56,9 @@ section {
     position: relative;
     float: left;
     display: inline-block;
+    height: 60vh;
+    top: -7vh;
+    z-index: 0;
 }
 
 article {
@@ -103,9 +121,13 @@ aside p:nth-child(2)::first-letter {
 
 aside p:nth-child(4)::first-letter {
     color: black;
+    background-color: gray;
 }
-
 
 footer {
     clear: both;
+    background-color: black;
+    height: 23vh;
+    position: relative;
+    top: -7vh;
 }
