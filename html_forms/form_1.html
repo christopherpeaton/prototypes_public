@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        form{
+            font-family: times;
+        }
+        form input:first-child{
+            background-color: blue;
+            font-family: arial;
+        }
+
+    </style>
+</head>
+<body>
+
+<form action="http://learningfuze.com/echo.php" method="get">
+    <input type="text" name="name" placeholder="name"><br>
+    <input type="e-mail" name="e-mail" placeholder="e-mail"><br>
+    <textarea rows="5" name="comments"></textarea>
+    <input type="submit" name="submit" value="submit">
+</form>
+<hr>
+<form action="http://learningfuze.com/echo.php" method="get">
+    <label for="pizza">pizza</label>
+    <input id="pizza" type="radio" name="favorite food" checked='checked' value="pizza">
+    <label for="ice-cream">ice cream</label>
+    <input id="ice-cream" type="radio" name="favorite food" value="ice cream">
+    <label for="meatball">Meatball</label>
+    <input id="meatball" type="radio" name="favorite food" value="meatball">
+    <input type="submit"  name="submit" value="submit">
+</form>
+
+<hr>
+
+<form action="http://learningfuze.com/echo.php" method="get">
+    <label for="zelda" >Zelda</label>
+    <input id="zelda" type="checkbox" name="game">
+    <label for="donkey-kong">donkeykong</label>
+    <input id="donkey-kong" type="checkbox" name="game">
+    <label for="league-of-legends">league of legends</label>
+    <input id="league-of-legends" type="checkbox" name="game">
+    <label for="supersmash">supersmash</label>
+    <input id="supersmash" type="checkbox" disabled name="game">
+    <input type="submit" name="submit" value="submit">
+</form>
+<hr>
+<form action="http://learningfuze.com/echo.php" method="get">
+    <select>
+        <option value="home alone" name="movie">Home Alone</option>
+        <option value="Aviator" name="movie">Aviator</option>
+        <option value="Avatar" name="movie">Avatar</option>
+        <option valiue="Matrix" name="movie"Matrix</option>
+    </select>
+    <input type="submit" name="submit" value="submit">
+</form>
+
+
+</body>
+</html>
