@@ -1,48 +1,98 @@
 <!DOCTYPE html>
         <html>
             <head>
+                <meta charset="UTF-8">
+                <title>CSS Layout 2</title>
                 <style>
-
-
-                    header {
-                        width: 100%;
-                        height: 15%;
-                        background-color: darkgreen;
+                    header{
+                        width:100%;
+                        height:20%;
+                        background-color: dodgerblue;
                     }
-                   .container{
-                       width:70vw;
-                       margin:auto;
-                   }
+                    #image{
+                        width:15%;
+                        display:inline-block;
+                        text-align: center;
+                    }
+                    #name{
+                        width:60%;
+                        display:inline-block;
+                        text-align: center;
+                    }
                     header img{
-                        height:10%;
-                        width:10%;
+                        width:50%;
+                        display: inline-block;
+                    }
+                    nav {
                         display:inline-block;
                         position:relative;
-                        left:20px;
 
                     }
-                    header h1{
-                        display:inline-block;
+                    nav ul{
                         position:relative;
-                        left:30%;
-                    text-shadow: 2px 2px green;}
-
-                    nav{
-                        display:inline;
-                        float:right;
-                        position:relative;
-                        top:30px;
-
-
-
+                        top:20px;
+                        list-style-type: none;
+                        margin:0;
+                        padding: 0;
 
                     }
                     nav li{
-                        display: inline-block;
-                        margin-right: 10px;
-                        list-style-type: none;
-                        border: 3px solid red;
-                        text-transform:capitalize;
+                        display:inline;
+                        margin:5px;
+                    }
+                    #fs-2{
+                        width:100vw;
+                        height:30vh;
+                    }
+                    #fs-2 div{
+                        height:100%;
+                        border:1px solid black;
+                        float:left;
+                    }
+                    #d1{
+                        width:25%;
+
+                    }
+                    #d2{
+                        width:72%;
+                    }
+                    #fs-3{
+                        width:100%;
+                        height:30vh;
+                    }
+                    #fs-3 div{
+                        height:100%;
+                        border:1px solid black;
+                        display:inline-block;
+
+                    }
+                    #d3{
+                        width:25%;
+
+                    }
+                    #d4{
+                        width:70%;
+                    }
+                    footer{
+                        height:20vh;
+                        background-color: #c39005;
+
+                    }
+                    section{
+                        height:60vh;
+                    }
+                    footer div{
+                        width:25%;
+                        display:inline-block;
+                        position: relative;
+                        top: 50%;
+                        transform: translateY(-50%);
+
+                    }
+                    .container{
+                        width:70vw;
+                        margin:auto;
+
                     }
 
 
@@ -52,19 +102,40 @@
             <body>
                 <div class="container">
                     <header>
-                        <img src="images/nintendo.png" alt="nintendo">
-                        <h1 class="company">Mintendo</h1>
+                        <div id="image">
+                            <img src="images/nintendo.png" alt="nintendo">
+                        </div>
+                        <div id="name">
+                            <h1> MINTENDO</h1>
+                        </div>
+
                         <nav>
                             <ul>
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#about_us">about Us</a></li>
-                                <li><a href="#our_products">Our Products</a></li>
-                                <li><a href="#contact_us">Contact Us</a></li>
+                                <li>Home</li>
+                                <li>About Us</li>
+                                <li>Our Menu</li>
+                                <li>Contact Us</li>
                             </ul>
                         </nav>
                     </header>
+                        <section id="fs-2">
+                            <div id="d1">My name is Tanner Bierbaum</div>
+                            <div id="d2">We offer a variety of gaming systems and repair services</div>
+                        </section>
+                        <section id="fs-3">
+                            <div id="d3">
+                            We can teach you how to play many video games at the highest levels, and prepare you to defeat your friends
+                            </div>
+                            <div id="d4">
+                            Additionally, we have some of the highest trained professionals to navigate any of your gaming issues.
+                            </div>
+                        </section>
+                        <footer>
+                            <div> Contact Us</div>
+                            <div>Want to join us</div>
+                            <div>Let us teach you how to game!</div>
+                        </footer>
                 </div>
 
-
             </body>
-        </html>
+</html>
