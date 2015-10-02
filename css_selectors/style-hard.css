@@ -1,45 +1,76 @@
-header {
 
-}
 
-header ul {
-    height: auto;
-    padding: 8px;
-    list-style-type: none;
+/*nav styling*/
+
+
+ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
 }
 
 header ul li {
     display: inline-block;
+    position: relative;
+    #float: left;
 }
-
-header ul li:hover {
-    background-color: grey;
-    color: white;
-    display: inline;
-}
-
-header ul ul {
+li ul {
     display: none;
 }
 
-
-header ul li:hover > ul {
-    display: inline-block;
-    background-color: black;
+ul li {
+    display: block;
+    background: #fff;
+    color: #000;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    white-space: nowrap;
 }
 
-header ul li:hover > ul li {
+ul ul {
+    background: #000;
+    color: #fff;
+}
+ul ul li {
+    background: #000;
+    color: #fff;
+    display: block;
+    text-align: center;
+}
+ul li:hover {
+    background: #6e6e6e;
+    color: #fff;
+}
+
+li:hover ul {
     display: block;
 }
+li:hover li {
+    float: none;
+}
 
-header ul:after {
-    content: "";
-    clear: both;
+li:hover {
+    background: #000;
+}
+
+li:hover li:hover {
+    background: #6e6e6e;
+}
+ul li ul li {
+    border-top: 0px;}
+
+/*body styling*/
+
+section h3 {
+    text-align: left;
     display: block;
 }
 
 article img {
     float: left;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
 }
 
 article {
@@ -60,9 +91,65 @@ aside {
     color: blue;
 }
 
+.aside_class {
+    text-align: center;
+}
+
 aside p:first-of-type::first-letter {
     color: white;
-    background-color: grey;
+    background-color: lightgray;
+    font-size: 200%;
+    border: 1px solid white;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    padding: 3px 2px;
 
 }
 
+
+aside p:first-of-type {
+    color: red;
+    font-weight: bold;
+}
+
+aside p:nth-last-of-type(2)::first-letter {
+    border: 1px solid grey;
+    font-size:150%;
+    border-top-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+    padding: 1px;
+}
+
+aside p:last-of-type::first-letter{
+    border: 1px solid grey;
+    font-size: 110%;
+    color: black;
+    border-top-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+    padding: 1px;
+}
+
+aside p:last-of-type {
+    color:green;
+}
+
+article p:first-of-type {
+    color: green;
+}
+/*footer styling*/
+
+footer {
+    width: 100%;
+    height: 20vh;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+footer div {
+    padding-top: 10vh;
+}
+
+footer div:first-letter {
+    text-transform: capitalize;
+}
