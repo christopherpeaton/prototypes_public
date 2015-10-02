@@ -64,7 +64,21 @@ section p:nth-of-type(2){
     padding: 4px 0;
     font-size: 22px;
 }
-
+/* FooterSsection */
+footer{
+    text-align: center;
+    background-color: lightblue;
+    padding: 10px;
+}
+footer h1{
+    color: darkblue;
+}
+footer p{
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: underline;
+}
 
 
 
