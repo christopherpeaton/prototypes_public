@@ -1,0 +1,92 @@
+body {
+    height=600px;
+    width=1200px;
+}
+
+header {
+    text-align: center;
+    border: 3px solid blue;
+    background-color: lightblue;
+}
+
+header li{
+    list-style: none;
+    display: inline;
+    padding: 8px;
+}
+
+header li:nth-child(n){
+    color:lightgreen;
+}
+
+header li:nth-child(2n+1){
+    color:green;
+}
+
+section {
+    text-align: center;
+}
+
+section div {
+    height=80px;
+    width=80px;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 0 5px 40px 5px;
+}
+
+section div:nth-of-type(1){
+    color:red;
+    position:relative;
+    right: 250px;
+    display:inline-block;
+    bottom:50px;
+}
+
+section div:nth-of-type(2){
+    color:blue;
+    position: relative;
+    display:inline-block;
+}
+
+section div:nth-of-type(3){
+    color:yellow;
+    position: relative;
+    left: 250px;
+    display:inline-block;
+    bottom:50px;
+}
+
+section p{
+    color: lavender;
+}
+
+section p:nth-child(even) {
+    background-color: darkgray;
+    padding: 4px;
+}
+
+section p:nth-child(odd){
+    color: white;
+    background-color: blue;
+    font-size: 22px;
+    padding: 6px 0;
+    display:inline-block;
+}
+
+footer {
+    text-align: center;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+footer h1 {
+    color: blue;
+}
+
+footer p{
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: underline;
+}
