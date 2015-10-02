@@ -1,9 +1,9 @@
-
 header ul {
     list-style-type: none;
 }
 header > ul > li {
-    display: inline-block;
+    display: inline;
+    margin-right: 2vw;
 }
 .collapsible {
     float: left;
@@ -13,31 +13,27 @@ header > ul > li {
 .collapsible:hover {
      background-color: grey;
  }
+.collapsible ul {
+    padding-left: 0;
+}
 .collapsible ul li {
+    list-style-position: inside;
     display: none;
     text-align: center;
     background-color: black;
     color: white;
-    padding: 10px;
+    padding: 10px 0;
     width: 5vw;
     position: relative;
-    right: 2.2vw;
-    top: .3vh;
-
+    z-index: 1;
 }
 .collapsible:hover ul li{
     display: block;
-    z-index: 1;
 }
 .collapsible ul li:hover {
     background-color: grey;
 }
-header > ul > li {
-    display: inline;
-    margin-right: 2vw;
-}
 section {
-    z-index: -1;
     height: 72vh;
 }
 section h3 {
