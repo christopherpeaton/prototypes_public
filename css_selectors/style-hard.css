@@ -1,0 +1,101 @@
+h3{
+    color:black;
+    font-variant: bold;
+
+}
+img{
+    float:left;
+    display:inline;
+    margin:0px;
+    height:150px;
+    width:150px;
+}
+ul{
+    text-decoration: none;
+    display:inline;
+    list-style:none;
+    padding:0px;
+    margin:0px;
+}
+header ul:after{
+    clear:both;
+    display:block;
+}
+.collapsible li:hover{
+    background-color:gray;
+}
+ul li{
+    display:inline-block;
+    position:relative;
+    padding:10px;
+}
+li:hover ul{
+    display:block;
+    position:absolute;
+    background-color:black;
+}
+li ul{
+    display:none;
+}
+li:hover li{
+    float:none;
+    background-color:black;
+    color:white;
+}
+.collapsible li ul{
+    display:none;
+    height:auto;
+    margin:0px;
+    padding:0px;
+}
+article p:nth-child(2){
+    color:green;
+}
+footer div{
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:100px;
+    clear:both;
+}
+span{
+    color:blue;
+}
+p:nth-child(2){
+    color:red;
+}
+p:nth-child(4){
+    color:green;
+}
+aside p::first-letter{
+    background-color:gray;
+    color:white;
+    font-size:30px;
+    border: 2px white solid;
+    border-radius: 15em 0;
+
+}
+aside p:nth-child(3):first-letter{
+    color:black;
+    background-color:white;
+    border: 2px darkgray solid;
+    border-radius: 0 15em;
+}
+aside p:nth-child(4):first-letter{
+    color:black;
+    background-color:white;
+    border: 2px darkgray solid;
+    border-radius: 0 15em;
+}
+article{
+    float:left;
+    width:350px;
+}
+aside{
+    float:left;
+    display:block;
+    margin-left:100px;
+}
+aside h3{
+    text-align:right;
+}

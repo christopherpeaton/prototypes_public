@@ -1,13 +1,20 @@
-# Prototype - HTML Text Formatting/Styling
+# Prototype - CSS Design & Layout 1, Box Model, margin, padding, border, and dimensions
 
-Expand your HTML knowledge with basic formatting elements and adding basic inline CSS styling. As you work through this
-prototype we will be building out aspects of the portfolio project v1 (Explanation Coming Soon). This prototype is based
-on the information that you obtained through the following resources (<b>If you haven't gone through these then please do so now</b>).
+Expanding on your understanding of CSS layouts and how they pertain to web page design. This prototype 
+is based on the information that you obtained through the following resources (<b>If you haven't gone through these 
+then please do so now</b>).
 
 - Readings
- - HTML Heading - <a href="http://www.w3s..._headings.asp" target="_blank">Link</a>
- - HTML Paragraphs - <a href="http://www.w3s...aragraphs.asp" target="_blank">Link</a>
-- HTML Formatting & HTML Styling (<a href="https://drive.google.com/open?id=0B6mn1BHjNxTgUDBsRlVRUnFCQjg">Presentation</a>, <a href="https://plus.google.com/events/ci7qcssg1ob5289bt32okg6qmkk" target="_blank">Video</a>)
+    - CSS Box Model - <a href="http://www.w3schools.com/css/css_boxmodel.asp" target="_blank">Link</a>
+    - CSS Margins- <a href="http://www.w3schools.com/css/css_margin.asp" target="_blank">Link</a>
+    - CSS Padding - <a href="http://www.w3schools.com/css/css_padding.asp" target="_blank">Link</a>
+    - CSS Dimensions - <a href="http://www.w3schools.com/css/css_dimension.asp" target="_blank">Link</a>
+- Presentations
+    - 6. CSS Design & Layout 1
+        - <a href="https://drive.google.com/open?id=0B7eOl4joefDueXdic3dWekhXdWc" target="_blank">Slides Link</a>
+        - <a href="https:https://www.youtube.com/watch?v=9xixJDx7pWo" target="_blank">Video Link (covers both)</a>
+- Projects
+    - This project will help build towards the MBoutique projects
 
 ## Code Setup Details
 
@@ -32,47 +39,66 @@ on the information that you obtained through the following resources (<b>If you 
 > `git pull https://github.com/Learning-Fuze/prototypes.git` & press enter
 > - The command above downloads the newly posted prototypes and saves them to your local machine
 
-> `git checkout -b html_fundamentals_2`
+> `git checkout -b css_design_layout_1`
 > - Creating this feature groupings allow users to modify code without causing issues with the current functioning code.
 > - Any modifications to these files after <b>branching</b> can be undone
-> - "html_fundamentals_2" is the branch name.
+> - "css_design_layout_1" is the branch name.
 
 ## Coding Instructions
 
-#### Feature Set 1 - Creating Structure & Content
+### Feature Set 1
 
-> 1. Start using the file "index.html" provided in the same folder as this readme
-> 1. Create a basic HTML Skeleton, including
->	- doctype
->	- html
->	- head
->	- body
-> 1. Make a Heading & paragraph for each of the following sections
->	1. About Me
-> 		1. Heading - About Me
->		1. Paragraph - Description about yourself
->	1. Skills
-> 		1. Heading - Skills
->		1. Paragraph - List out 3 skills that you want to learn and what they mean to you (description)
->	1. Experience
->		1. Heading - Experience
->		1. Paragraph - Write a paragraph that describes any of your past job experience
+> - Make a file called example.html
+    - add an internal CSS stylesheet
+    - in it, do the following
+    - make a div, give it a class of 'feature_set_1_1'
+        - make a set of 3 divs inside the above div, sitting side by side, that together take up 75% of the width of the body
+        - add appropriate ids or classes to perform the following operations:
+            - put 5% of space between the 1st and 2nd div via any method you wish
+            - put 5% of space between the 2nd and 3rd div without further altering the 2nd div
+    - make another div, give it a class of 'feature_set_1_2'
+        - make a set of 3 divs inside the feature_set_1_2, each with 25vw width
+        - add borders to all 3 divs with 1 css statement, without affected any other div in this example
+        - add padding top and bottom to the first div with 1 CSS statement
+        - add padding top and right to the second div with 1 CSS statement
+        - using the dev tools inspector, add padding to the 3rd div in any combination, as long as each side has different padding.
+            - copy the padding to your internal style sheet
+    - make another div, give it a class of 'feature_set_1_3'
+        - give it 3 divs, give each 100pixels of width
+        - give the first 25% height
+        - give the second 25 vh height
+        - give the third another form of height beside pixel, %, or viewport height.
+        
 
-### Feature Set 2 - Adding Styling
+### Feature Set 2 (Layout 2) 
 
-> 1. Add inline styling to the About Me header text to be your favorite color
-> 1. Make the about me paragraph font size equal to 12px
-> 1. Italicize the Skills header either by inline style or formatting elements
-> 1. Bold each skill title but not the description
-> 1. Add the font family of Arial to the Experience header
-> 1. Add a background color of green to the experience paragraph
+> - create a file called nav.html
+    - create an internal style sheet inside nav.html
+    - add a <nav> element and closing tag, put the remaining code from this featureset inside the nav element
+    - make a UL / LI element construct 
+        - with the following hyperlinks (none of these files exist, don't worry)
+            - home : links to home.html 
+            - about us : links to about_us.html
+            - our menu : links to our_menu.html
+            - contact us : links to contact_us.html
+        - remove the bullet points
+        - add a border with appropriate spacing around the menu items
+        - add padding to space the border from the words
+        - capitalize the text within the menu WITHOUT changing the text in your element directly
+        - add margin sufficient to space the menu items out relatively evenly across the page
+        - resize your page.  What happens?  Tweak this till it works correctly at most sizes.
+            - have you tried making the font size depend on the page size?  This might help.  Explore!
+        
+        
+### Feature Set 3 (Layout 3) 
 
-### Feature Set 3 - Research other formatting options
+> - create a file called gallery.html
+    - add an internal style sheet
+    - add 5 photos that feature yourself in them.  If you are a complete recluse, use any photos.  
+    - add css to your stylesheet that allows all 5 photos to exist on the same line, as well as margin/padding/border (as you wish) to space them out from one another
+        - if resizing the photos is required, make sure they maintain their previous aspect ratio
+    - have each photo link to the full size photo directly.  Should open via a hyperlink.  Only clicking the photo should open this link.
 
-> 1. Add a inline style that would increase the spacing between each line of a paragraph tag
-> 1. Add a border around the Experience Heading without a bottom border that is the color red
-> 1. Add a border around the Experience paragraph without a top border that is black
-> 1. Make the border of the paragraph tag not solid
 
 ## After Coding Details
 ##### 1. Save files to Git - Add all modified & created files
@@ -86,7 +112,7 @@ on the information that you obtained through the following resources (<b>If you 
 
 > Run below command in terminal tab
 
-> `git commit -m "html_fundamentals_2 - Eric Johnson"`
+> `git commit -m "css_design_layout_1 - Eric Johnson"`
 > - Eric Johnson should be replaced with your First & Last name
 > - Grouping files with a message allows those changes to be seen by others as a specific version of the code
 
@@ -94,8 +120,9 @@ on the information that you obtained through the following resources (<b>If you 
 
 > Run below command in terminal tab
 
-> `git push origin html_fundamentals_2`
-> - When running the code above, the Git application will send all commits (<b>groupings of saved files</b>) to the remote location (<b>github.com/[your-user-name]/prototypes indicated by origin</b>), specifically to the feature branch/group <b>html_fundamentals_2</b>
+> `git push origin css_design_layout_1`
+> - When running the code above, the Git application will send all commits (<b>groupings of saved files</b>) to the 
+remote location (<b>github.com/[your-user-name]/prototypes indicated by origin</b>), specifically to the feature branch/group <b>css_design_layout_1</b>
 
 ##### 4. See if your feature fits with what everyone else was working on (Pull Request)
 
@@ -123,7 +150,7 @@ on the information that you obtained through the following resources (<b>If you 
 >> 1. `head fork: [your_user_name]/prototypes`
 >>   1. Here you will select the option that matches your username / prototypes
 >>   1. If you can not locate an option that has your username / prototypes, contact an instructor
->> 1. `compare: html_fundamentals_2`
+>> 1. `compare: css_design_layout_1`
 >>   1. Here you will locate the branch name (or feature name) you created at the beginning of the prototype
 >>   1. This will usually be the same as the name of the prototype
 >> 1. Github.com will let you know if the code can be merged automatically (without needing a manual merge)
@@ -135,7 +162,8 @@ on the information that you obtained through the following resources (<b>If you 
 
 > ####Step 4.4 Add details into the pull request
 > 1. Give the pull request a title, by default its the name of the last commit (package) message that was saved
->   1. If you set the commit message above you should get get <b>html_fundamentals_2 - [you name first & last name]</b> already pre populated in the Title field
+>   1. If you set the commit message above you should get get <b>css_design_layout_1 - [you name first & last 
+name]</b> already pre populated in the Title field
 > 1. <b>Don't assign a user.</b> (An Instructor will select who this gets assigned too)
 >   1. Further into the cohort we will have students learn to review pull requests
 > 1. Click on "Create pull Request"
