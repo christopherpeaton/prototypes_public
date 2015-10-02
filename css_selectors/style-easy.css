@@ -1,0 +1,103 @@
+body {
+    height: 600px;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    border-bottom: 3px black solid;
+    background-color: lightblue;
+    justify-content: center;
+    text-align: center;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0 auto;
+}
+
+header ul li {
+    display: inline;
+}
+
+header ul li:first-child, li:nth-child(3) {
+    color: lightgreen;
+}
+
+header ul li:nth-child(2), li:nth-child(4) {
+    color: green;
+}
+
+section {
+    position: relative;
+}
+
+section {
+    display: inline-block;
+    text-align: center;
+}
+
+section div:nth-child(2),
+section div:nth-child(3),
+section div:nth-child(4) {
+    display: inline-block;
+    position: relative;
+    height: 80px;
+    width: 80px;
+    border: 3px solid black;
+    border-radius: 15%;
+}
+
+section div:nth-child(2) {
+    background-color: red;
+    right: 40%;
+    bottom: 8vh;
+}
+
+
+section div:nth-child(3) {
+    background-color: blue;
+}
+
+section div:nth-child(4) {
+    background-color: yellow;
+    right: -40%;
+    bottom: 8vh;
+
+}
+
+section p {
+    color: lavender;
+}
+
+section p:first-of-type, section p:last-of-type {
+    background-color: darkgray;
+    padding: 4px 0px;
+}
+
+section p:nth-last-of-type(2) {
+    color: white;
+    background-color: blue;
+    display: inline;
+    padding: 8px 0px;
+    font-size: 22px;
+}
+
+footer {
+    text-align: center;
+    margin: 0 auto;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+footer h1 {
+    color: darkblue;
+}
+
+footer p {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: underline;
+}

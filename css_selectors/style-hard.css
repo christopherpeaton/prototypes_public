@@ -1,0 +1,68 @@
+header {
+
+}
+
+header ul {
+    height: auto;
+    padding: 8px;
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li:hover {
+    background-color: grey;
+    color: white;
+    display: inline;
+}
+
+header ul ul {
+    display: none;
+}
+
+
+header ul li:hover > ul {
+    display: inline-block;
+    background-color: black;
+}
+
+header ul li:hover > ul li {
+    display: block;
+}
+
+header ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+article img {
+    float: left;
+}
+
+article {
+    text-align: left;
+    display: inline-block;
+    width: 50%;
+    padding: 5px;
+}
+
+aside {
+    clear: left;
+    float: right;
+    display: inline-block;
+    width: 40%;
+}
+
+.aside_class span {
+    color: blue;
+}
+
+aside p:first-of-type::first-letter {
+    color: white;
+    background-color: grey;
+
+}
+
