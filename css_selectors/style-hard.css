@@ -38,10 +38,10 @@ li.collapsible ul li {
 }
 
 li.collapsible>ul{
-visibility: hidden
+    display: none;
 }
 header ul li.collapsible:hover>ul {
-    visibility: visible;
+    display: block;
     z-index: 1;
 }
 /*nav end*/
