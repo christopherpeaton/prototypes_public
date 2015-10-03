@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+        <html>
+            <head>
+                <meta charset="UTF-8">
+                <title>html_forms</title>
+                <style>
+                    #i1{
+                        font-family: fantasy;
+                        border:1px solid red;
+                        background-color: dodgerblue;
+                        border-radius: 20px;
+                        box-shadow: 10px 10px 10px green;
+
+                    }
+                </style>
+            </head>
+            <body>
+                <form action="http://learningfuze.com/echo.php" id="document" target="_blank">
+                    Favorite Food:<input id="i1" type="text" name="food">
+                    <br>
+                    <br>
+                    Favorite Animal:<input id="i2" type="text" name="animal">
+                    <br>
+                    <br>
+                    <textarea name="contact_us" rows="13" cols="50" placeholder="One big text area"></textarea>
+                    <br>
+                    <label for="piz">Pizza</label>
+                    <input type="radio" name="favorite_food" id="piz" value="pizza" checked>
+                    <label for="ice">Ice Cream</label>
+                    <input type="radio" name="favorite_food" id="ice" value="ice cream">
+                    <label for="sush">Sushi</label>
+                    <input type="radio" name="favorite_food" id="sush" value="sushi">
+                    <br><br>
+                    <label for="1">Super Smash Bros Melee</label>
+                    <input type="checkbox" name="game1" id="1" value="ssbm">
+                    <label for="2">Mario</label>
+                    <input type="checkbox" name="game2" id="2" value="mario">
+                    <label for="3">The Legend of Zelda</label>
+                    <input type="checkbox" name="game3" id="3" value="zelda">
+                    <label for="4">N+</label>
+                    <input type="checkbox" name="game4" id="4" value="Ninja" disabled>
+                    <br><br>
+                    <select multiple name="movies">
+                        <option value="Lord of the Rings">Lord of the Rings</option>
+                        <option value="Harry Potter">Harry Potter</option>
+                        <option value="Big Fish">Big Fish</option>
+                        <option value="Fight Club">Fight Club</option>
+                    </select>
+                    <br><br>
+                    <input type="submit" value="Submit">
+
+
+                </form>
+            </body>
+        </html>
