@@ -1,0 +1,156 @@
+body {
+    width: 75vw;
+    min-height: 95vh;
+    margin: 0 auto;
+    
+}
+
+
+section {
+    width: 100%;
+    min-height: 65vh;
+    position: relative;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li:hover {
+    background-color: grey;
+    color: white;
+}
+
+header ul::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+
+header > ul > li {
+    float: left;
+    margin-right: 10px;
+}
+
+.collapsible {
+    position: relative;
+}
+
+.collapsible ul {
+
+    width: 80px;
+    text-align: center;
+    padding-left: 0;
+    position: absolute;
+    top: 18px;
+    z-index: 1;
+}
+
+
+
+header ul ul {
+    display: none;
+    color: white;
+    background-color: black;
+    position: absolute;
+   
+}
+
+header ul li:hover ul {
+    display: block;
+}
+
+
+
+
+
+article {
+    height: 55vh;
+    width: 28vw;
+    float: left;
+}
+
+article img {
+    width: 180px;
+    height: 180px;
+    float: left;
+}
+
+article>p:nth-child(2) {
+    color: green;
+}
+
+aside {
+    height: 55vh;
+    width: 28vw;
+    margin-left: 5vw;
+    float: left;
+    clear: right;
+}
+.aside_class {
+    text-align: right;
+}
+.aside_class span {
+    color: blue;
+}
+
+aside>p:nth-child(2) {
+    color: red;
+    font-weight: bold;
+}
+
+aside>p:nth-child(2)::first-letter {
+    color: white;
+    border: 1px solid gray;
+    background-color: gray;
+    font-size: 25px;
+    border-radius: 50% 0 50% 0;
+}
+
+aside>p:nth-child(3) {
+    color: black;
+}
+
+aside>p:nth-child(3)::first-letter {
+    color: black;
+    border: 1px solid gray;
+    border-radius: 0 50% 0 50%;
+    font-size: 20px;
+    padding: 1px;
+}
+
+
+
+aside>p:nth-child(4) {
+    color: green;
+}
+
+aside>p:nth-child(4)::first-letter {
+    color: black;
+    border: 1px solid gray;
+    border-radius: 0 50% 0 50%;
+    padding: 1px;
+}
+
+footer {
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+    float: left;
+    color: white;
+    position: relative;
+    bottom: 0;
+}
+
+footer div {
+    position: absolute;
+    top: 9vh;
+    left: 33vw;
+    font-size: 18px;
+   
+}
+footer div::first-letter {
+     text-transform: capitalize;
+}
