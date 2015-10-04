@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        /*style for unstyled text inputs */
+
+        .partone {
+            border: 1px solid mediumpurple;
+            display: inline-block;
+            padding: 3px;
+            margin: 20px;
+            box-shadow: 10px 10px 5px #888888;
+        }
+        input[name="firstname"] {
+            background-color: lightpink;
+            font-family: Arial;
+        }
+
+        input[name="lastname"] {
+            font-family: Helvetica;
+            font-style: italic;
+        }
+
+        textarea[name="comment"] {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+<!--Unstyled text inputs x2 -->
+<form class="partone" id="first" action="http://learningfuze.com/echo.php" method="get">
+    First name:<br>
+    <input type="text" name="firstname" placeholder="Your First Name">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname" placeholder="Your Last Name">
+    <br><br>
+    <!-- Text area x 1 -->
+<textarea rows="8" cols="50" name="comment" form="first">
+Enter text here...</textarea>
+    <br><br>
+    <!--Group of 3 radio inputs-->
+    <input type="radio" name="food" value="steak" checked> Steak
+    <br>
+    <input type="radio" name="food" value="guacamole"> Guacamole
+    <br>
+    <input type="radio" name="food" value="desserts"> Desserts
+    <br><br>
+    <!-Group of 4 checkboxes -->
+    <input type="checkbox" name="games" value="mario"> Super Mario Cart<br>
+    <input type="checkbox" name="games" value="cards" checked> Cards Against Humanity<br>
+    <input type="checkbox" name="games" value="cards2"> Apples to Apples<br>
+    <input type="checkbox" name="games" value="2048" disabled> 2048<br>
+    <br><br>
+    <!--Select Menu -->
+    <select>
+        <option value="pitchperfect">Pitch Perfect</option>
+        <option value="rent">Rent</option>
+        <option value="lionking">Lion King</option>
+        <option value="meangirls">Mean Girls</option>
+    </select>
+    <br><br>
+    <!--submit button-->
+    <input type="submit" value="Submit">
+</form>
+
+
+
+
+</body>
+</html>
