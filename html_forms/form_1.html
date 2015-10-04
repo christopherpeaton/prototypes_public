@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form_1</title>
+    <link rel='stylesheet' href='main.css' />
+</head>
+
+<body>
+    <main>
+        <form action="http://learningfuze.com/echo.php">
+            <input type="text" id='one' placeholder="Name">
+            <br/>
+            <br />
+            <input type="text" placeholder='Email'>
+            <br/>
+            <br/>
+            <textarea rows="4" cols="25">Put Text in here!</textarea>
+            <br />
+            <label for="tacos">Tacos</label>
+            <input type="radio" id='tacos' name='tacos'><img src='images/tacos.jpg'>
+            <label for="pho">Pho</label>
+            <input type="radio" name='Pho' id='pho' checked><img src='images/pho.jpg'>
+            <label for="lobster">Lobster</label>
+            <input type="radio" name='Lobster' id='lobster'><img src='images/lobster.jpg'>
+            <br />
+            <label>
+                <input type="checkbox">Street Fighter</label>
+            <br>
+            <label>
+                <input type="checkbox">Batman</label>
+            <br>
+            <label>
+                <input type="checkbox">Madden</label>
+            <br>
+            <label>
+                <input type="checkbox" id='nba_live' disabled='true'>NBA Live</label>
+            <br>
+
+            <select name="select" multiple>
+                <option value="The Dark Knight">The Dark Knight</option>
+                <option value="Batman Begins" selected>Batman Begins</option>
+                <option value="Rounders">Rounders</option>
+                <option value="Ex Machina">Ex Machina</option>
+            </select>
+        </form>
+    </main>
+</body>
+
+</html>
