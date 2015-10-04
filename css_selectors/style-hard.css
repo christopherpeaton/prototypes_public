@@ -1,0 +1,156 @@
+body {
+    margin: auto;
+    width: 75%;
+    font-size: 18px;
+}
+
+header {
+     height:7vh;
+ }
+
+header, footer {
+      width: 100%;
+  }
+ul {
+     list-style: none;
+     padding: 0;
+     margin-left: 30px;
+     font-size: 16px;
+ }
+
+/* Puts the Menu Items on the same line & the sub items under menu item 1 (horizontally) */
+ul li {
+     display: block;
+     position: relative;
+     float: left;
+     margin: 10px 20px;
+     font-size: 18px;
+
+ }
+/* lines the sub items up vertically */
+li ul li {
+     float: none;
+ }
+/* makes the menu items disappear */
+li ul {
+     display: none;
+     width: 120px;
+     height: 100px;
+     text-align: center;
+     padding: 25px 0;
+     margin: 0;
+ }
+
+/* Hover formatting */
+li:hover ul {
+     display: block;
+     position: absolute;
+     background-color: black;
+ }
+
+ul li:hover {
+     color: white;
+     background-color: lightgray;
+ }
+
+li ul li:hover {
+     display: block;
+     background-color: lightgray;
+ }
+
+/* Section formatting */
+section {
+     height: 50vh;
+ }
+
+section h3 {
+     margin-top: 0;
+     margin-bottom: 40px;
+ }
+
+img {
+     float: left;
+     height: 45%;
+     width: 45%;
+ }
+/* Article formatting */
+article {
+     width: 45%;
+     float: left;
+     padding:0 0 20px 10px;
+     line-height: 90%;
+ }
+
+article p:first-of-type {
+     color: green;
+ }
+
+/* Aside formatting */
+aside {
+     width: 47%;
+     float: right;
+     padding: 20px;
+
+ }
+
+aside h3 {
+     text-align: center;
+     margin-bottom: 20px;
+ }
+
+aside span {
+     color: blue;
+ }
+
+aside p:first-of-type {
+     color: red;
+     font-weight: bold;
+ }
+/* changes the first letter of the first sentence*/
+aside p:first-of-type:first-letter{
+     padding: 3px;
+    /* makes the shape */
+    border-radius: 15px 0;
+     background-color: gray;
+    /*formats the font */
+    color: white;
+     font-size: 35px;
+     text-align: center;
+    margin: 2px;
+ }
+
+aside p:first-letter {
+     border: 1px solid gray;
+     border-radius: 0 10px;
+     padding: 1px;
+     font-size: 22px;
+     text-align: center;
+    color: black;
+  }
+
+aside p:last-of-type {
+    font-size: 18px;
+    color: green;
+ }
+
+/*aside p:last-of-type:first-letter {
+     padding: 1px;
+     border: 1px solid lightgray;
+     color: black;
+     text-align: center;
+     border-radius: 0 7px;
+ }*/
+
+footer {
+     color: white;
+     background-color: black;
+     height: 18vh;
+     text-align: center;
+     clear: both;
+ }
+
+footer div {
+     position: relative;
+     height: 50%;
+     bottom: -45%;
+ }
