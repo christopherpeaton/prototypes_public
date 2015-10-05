@@ -1,0 +1,86 @@
+
+.nav {
+    list-style-type: none;
+    float: left;
+    background-color: floralwhite;
+
+}
+.nav-li {
+    margin: 20px;
+    font-size: 30px;
+    display: inline;
+}
+
+#left-column{
+    text-align: left;
+    margin: auto;
+    width: 60%;
+    padding: 50px;
+}
+li {list-style-position: inside;}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: floralwhite;
+}
+
+a:link {
+    text-decoration: none;
+    color: dimgrey;
+}
+
+a:visited {
+    color: black;
+}
+a:hover {font-weight: bold;}
+
+
+
+/* Following is for index.html */
+
+#home-body {
+    background-color: #171717;
+}
+
+#description{
+    font-size:12px;
+    color: floralwhite;
+}
+#about_me{
+    color:#176195;
+}
+
+img {
+    height:300px;
+    float: left;
+}
+
+/* Following is for experience.html*/
+
+#experience-header {
+    font-family: 'Montserrat', sans-serif;
+    color: floralwhite;
+}
+#experience-body {
+    background-color: lightslategray
+}
+#experience-list {
+    list-style-type: circle;
+}
+.list-details {
+    list-style-type: upper-roman;
+    font-weight: bold;
+}
+
+/* Following is for skills.html */
+
+#skills-header {
+    font-family: 'Montserrat', sans-serif;
+    color: floralwhite;
+}
+#skills-body{
+    background-color: rosybrown
+}
+.list-items {
+    color: white
+}
+
