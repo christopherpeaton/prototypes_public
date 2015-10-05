@@ -48,6 +48,20 @@ then please do so now</b>).
 <img src="https://github.com/Learning-Fuze/prototypes/blob/assets/assets/html_fundamentals_5/layouts/portfolio%20layout%201.jpg" width="30%">
 <img src="https://github.com/Learning-Fuze/prototypes/blob/assets/assets/html_fundamentals_5/layouts/portfolio%20layout%202.jpg" width="30%">
 <img src="https://github.com/Learning-Fuze/prototypes/blob/assets/assets/html_fundamentals_5/layouts/portfolio%20layout%203.jpg" width="30%">
+
+Make a folder for each layout, and inside that make an index.html.  So you should have 
+- layout1
+    - index.html
+    - ?
+- layout2
+    - index.html
+    - ?
+- layout3
+    - index.html
+    - ?
+
+? Represents any additional files required.  
+
 ### Feature Set 1 (Layout 1)
 
 > - Using divs, create the **layout 1** above, found above, click <a href="https://drive.google.com/open?id=0B7eOl4joefDuNTNSblF3M3BmaXc" target="_blank">here for a pdf version</a>
@@ -74,7 +88,7 @@ then please do so now</b>).
     - add the following style sheet link to the document:
         - https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css
     - in the footer's ul element, inside the li for the phone number, add the following
-        - <i class="fa fa-mobile"></i>
+        - &lt;i class="fa fa-mobile"&gt;&lt;/i&gt;
     - Put an appropriate icon into the email's li to designate it's role
         - refer to <a href="https://fortawesome.github.io/Font-Awesome/icons/" target="_blank">the font awesome website</a> to find an appropriate icon
 
@@ -113,11 +127,11 @@ then please do so now</b>).
     - main content:
         - Put 4 paragraphs of lorem ipsum in
         - add a form element after the lorem ipsum
-        - add the following inputs:
-            - name (text type)
-            - message (textarea type)
-            - email (text type)
-            - submit (submit type)
+        - add the following h4 tags (we'll get into inputs next week):
+            - name 
+            - message 
+            - email 
+            - submit 
 
 
 ## After Coding Details

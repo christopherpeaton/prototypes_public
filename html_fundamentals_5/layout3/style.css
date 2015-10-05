@@ -1,0 +1,15 @@
+#title{
+    height: 15vh;
+    text-align: center;
+}
+
+#main_content{
+    display: inline-block;
+    width: 80vw;
+}
+
+#left_nav{
+    display: inline-block;
+    vertical-align: top;
+    width: 15vw;
+}
