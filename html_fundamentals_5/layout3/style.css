@@ -1,0 +1,31 @@
+#heading {
+   height: 15vh;
+   text-align: center;
+   background-color: lightsalmon;
+    border: 3px solid black;
+}
+
+#leftnav {
+     width: 15vw;
+     height: 90vh;
+     float: left;
+     background-color: peachpuff;
+    border: 3px solid black;
+     padding: 5px;
+}
+
+
+header {
+    background-color:yellow;
+    text-align:center;
+    vertical-align:middle;
+    height:15vh;
+    border: 3px solid black;
+}
+
+main {
+    text-align:center;
+    height:15vh;
+    padding: 5px
+}
+

@@ -1,0 +1,18 @@
+header, footer {
+    background-color:yellow;
+    text-align:center;
+    vertical-align:middle;
+    height:15vh;
+    border: 3px solid black;
+}
+
+main {
+    text-align:center;
+    height:70vh;
+
+}
+
+div li {
+    list-style: none;
+    display: inline;
+}
