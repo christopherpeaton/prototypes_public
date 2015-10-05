@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #B13939;
+        }
+        div {
+            margin: auto;
+            width: 75%;
+        }
+        h1, ol, li, p {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1:first-of-type {
+            font-size: 2vw;
+            text-align: center;
+        }
+        ol {
+            padding: 0;
+            list-style: decimal inside none;
+        }
+        li, p {
+            font-size: 1.5vw;
+            padding: .5%;
+        }
+        input {
+            padding: 2%;
+            width: 49.5%;
+            box-sizing: border-box;
+            margin: 2% 0 2% 0;
+            box-shadow: 0 2px 2px #8F262B;
+            border: none;
+        }
+        input:nth-of-type(2) {
+            width: 25%;
+        }
+        h1 {
+            font-size: 2.5vw;
+        }
+        form {
+            width: 100%;
+        }
+        input[type=submit] {
+            width: 20%;
+            float: right;
+            background-color: #881717;
+            color: white;
+            box-shadow: #871616;
+        }
+        @media screen and (max-width: 375px) {
+            input {
+                width: 100%;
+            }
+            input[type=submit]{
+                width: 100%;
+            }
+            input:nth-of-type(2) {
+                width: 100%;
+            }
+            h1 {
+                text-align: center;
+            }
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div>
+    <h1>
+        Instructions for Application - Academic Year 2014
+    </h1>
+    <ol>
+        <li>
+            The deadline for 2014-2015 scholarship application: March 30, 2014. Applications received after March 30 will be considered on a funds available basis.
+        </li>
+        <li>
+            Only completed applications will be considered. Do Not Leave Items Blank.
+        </li>
+        <li>
+            Attach a current copy of your high school and/or college transcripts.
+        </li>
+        <li>
+            Two signed letters of recommendation (from non-relatives) must be attached to this application.
+        </li>
+    </ol>
+    <p>
+        Consideration for any scholarship award is based on a point system including GPA, participation in extra-curricular activities, school organizations and community service. This will be a four semester scholarship, and you must maintain criteria set in guidelines.
+    </p>
+    <h1>
+        Applicant Data
+    </h1>
+    <form>
+        <input type="text" name="name" placeholder="Last Name, First Name, MI" >
+        <input type="text" name="ss#" placeholder="Social Security #" >
+        <input type="text" name="location" placeholder="City, State, Zip, County" >
+        <input type="text" name="home phone" placeholder="Permanent Home Phone" >
+        <input type="text" name="intended major" placeholder="Intended Major at University" >
+        <input type="text" name="campus" placeholder="At which location will you be attending?" >
+        <input type="submit" name="submit" value="NEXT >>">
+    </form>
+
+</div>
+
+</body>
+</html>
