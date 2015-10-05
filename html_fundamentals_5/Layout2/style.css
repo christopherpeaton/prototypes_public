@@ -1,0 +1,10 @@
+#h2 {
+    height: 15vh;
+    background-color: aqua;
+}
+ul#header2 li{
+
+    list-style-type:none;
+    display:inline;
+    margin: 20px 35px;
+}

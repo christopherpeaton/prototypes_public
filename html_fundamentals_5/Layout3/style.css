@@ -1,0 +1,26 @@
+#title {
+    height: 15vh;
+    background-color: green;
+    color:white;
+    text-align: center;
+    padding: 5px;
+}
+ul#header3 li{
+    list-style-type:none;
+    text-align: center;
+}
+#left_nav {
+    width: 15vw;
+    background-color: aqua;
+    float:left;
+    line-height:30px;
+    height: 1000px;
+    padding: 20px;
+    text-align: center;
+}
+#body3 {
+    background-color: gray;
+    width: 400px;
+    padding:28px;
+    float: left;
+}
