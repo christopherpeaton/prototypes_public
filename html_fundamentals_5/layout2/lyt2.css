@@ -1,0 +1,16 @@
+#header{
+    height: 15vh;
+
+}
+#body{
+    height:auto;
+
+}
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    float: left;
+    margin: 10px;
+    padding: 0;
+    font-size: 35px;
+}
