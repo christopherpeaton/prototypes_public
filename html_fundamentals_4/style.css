@@ -1,0 +1,111 @@
+#body {
+    text-align: center;
+}
+
+#head {
+    text-align: center;
+    color: white;
+    background-image: url('images/profilepicture.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.nav {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 20px;
+
+}
+nav {
+    text-align: center;
+}
+
+.nav > a {
+    padding-left: 30px;
+    padding-right: 30px;
+    color: red;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+#about {
+    color: blue;
+}
+
+#me {
+   font-size: 12px;
+}
+
+#propic {
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    position: absolute;
+    right: 10%;
+}
+
+#skills-list {
+    list-style-type: lower-roman;
+    margin-left: 15%;
+    color: white;
+}
+
+#skills-list > li > ul > li {
+    color: red;
+    list-style-type: square;
+}
+
+#space {
+    text-align: center;
+    background-image: url('images/fuckyounebula.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#space > header > h1 {
+    color: white;
+}
+
+#exp > header > h1 {
+    color: blue;
+}
+
+#experience-list {
+    list-style-type: lower-roman;
+    margin-left: 15%;
+    color: blue;
+}
+
+.list-group-item {
+    background-color: rgba(0,0,0,0.0) !important;
+    border: none !important;
+    text-align: left !important;
+}
+/* experience background color added with hover effect */
+.list-group-item:hover {
+    background-color: black !important;
+}
+#experience-list > li > ul > li {
+    list-style-type: circle;
+}
+
+#exp {
+    text-align: center;
+    background-image: url('images/yo_videogames.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#skills-list > li, #experience-list > li {
+    display: inline-block;
+    float: left;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
