@@ -5,6 +5,9 @@
     <meta name="author" content="Neal Cloud">
     <title>Form 2</title>
     <style>
+        *{
+            box-sizing: border-box;
+        }
         body{
             background-color: #882d26;
         }
@@ -14,7 +17,11 @@
             color: white;
             font-family: Arial, sans-serif;
         }
+        ol{
+            margin-left: -2%;
+        }
         p, li{
+            text-align: left;
             font-size: .8em;
         }
         form{
@@ -27,11 +34,16 @@
             box-sizing: border-box;
             padding: 10px 5px;
             width: 49%;
-            height: 50px
+            height: 50px;
+            margin-bottom: 2%;
+        }
+        input:nth-child(odd){
+            margin-right: 1%;
         }
         #submit{
-            position: absolute;
-            right: 1.5%;
+            position: relative;
+            color: white;
+            left: 75%;
             width: 25%;
             background-color: #880710;
             box-shadow: 0 3px 0 #882321;
@@ -42,12 +54,12 @@
         #social{
             width:25%;
             box-shadow: 0 3px 0 #882321;
-        }
 
+        }
     </style>
 </head>
 <body>
-    <div id="container">
+<div id="container">
     <article>
         <h2>Instructions for Application - Academic Year 2014</h2>
         <ol>
@@ -67,15 +79,12 @@
     <form action="http://learningfuze.com/echo.php">
         <input type="text" name="full_name" placeholder="Last Name, First Name, MI">
         <input id="social" type="text" name="social_sec" placeholder="Social Security #" maxlength="9">
-        <br><br>
         <input type="text" name="address" placeholder="City, State, Zip, County">
         <input type="text" name="phone" placeholder="Permanent Home Phone">
-        <br><br>
         <input type="text" name="major" placeholder="Intended major at University">
         <input type="text" name="location" placeholder="At which location will you be attending?">
-        <br><br>
-        <input id="submit" type="submit" value="next">
+        <input id="submit" type="submit" value="NEXT >>">
     </form>
-    </div>
+</div>
 </body>
 </html>
