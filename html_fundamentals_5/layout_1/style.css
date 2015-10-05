@@ -1,0 +1,20 @@
+/* Header & Footer formatting */
+#header, #footer{
+    height: 15vh;
+    width: 100%;
+    background-color: lightgray;
+    text-align: center;
+}
+
+/* Main Content formatting */
+#main_content{
+    height: 70vh;
+}
+
+/* Formatting for list elements in unordered lists */
+ul li {
+    list-style-type: none;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+}
