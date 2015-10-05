@@ -1,0 +1,27 @@
+/*Header styling*/
+#header{
+    background-color:yellow;
+    text-align:center;
+    padding:5px;
+    height:15vh;
+}
+ul.header_menu li{
+    list-style: none;
+    display: inline-block;
+}
+/*Content styling*/
+#main_content{
+    height: 70vh;
+    padding:5px;
+}
+
+/*Footer styling*/
+#footer{
+    background-color:yellow;
+    padding: 5px;
+    height:15vh;
+    text-align:center;
+}
+ul.footer_list li{
+    list-style:none;
+}
