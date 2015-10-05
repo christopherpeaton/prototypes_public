@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example - CSS Design Layout 1</title>
+
+    <!-- Internal Stylesheet -->
+    <style>
+        /* feature_set_1_1 parent & child formatting */
+        .feature_set_1_1{
+            width: 75%
+        }
+        .feature_set_1_1 div{
+            display: inline-block;
+            width: 25%;
+            /* height added to see divs more clearly */
+            height: 10vh;
+        }
+        /* First Div */
+        #blue_div{
+            margin-right: 5%;
+            /* color added to see each individual div */
+            background-color: blue;
+        }
+        /* Second Div */
+        #green_div{
+            /* color added to see each individual div */
+            background-color: green;
+        }
+        /* Third Div */
+        #purple_div{
+            margin-left: 5%;
+            /* color added to see each individual div */
+            background-color: purple;
+        }
+
+        /* feature_set_1_2 parent & child formatting */
+        .feature_set_1_2 div{
+            width: 25vw;
+            border: 2px solid black;
+            /* height & display added to see divs more clearly */
+            height: 10vh;
+            display: inline-block;
+        }
+        /* First Div */
+        #red_div{
+            padding: 2em 0em;
+            /* color added to see each individual div */
+            background-color: red;
+        }
+        /* Second Div */
+        #orange_div{
+            padding: 1em 1em 0em 0em;
+            /* color added to see each individual div */
+            background-color: orange;
+        }
+        #yellow_div{
+            padding-bottom: 10px;
+            padding-left: 2px;
+            padding-right: 35px;
+            padding-top: 18px;
+            /* color added to see each individual div */
+            background-color: yellow;
+        }
+
+        /* feature_set_1_3 parent & child formatting */
+        .feature_set_1_3{
+            height: 15em;
+        }
+        .feature_set_1_3 div{
+            width: 100px;
+            /* display added to see divs more clearly */
+            display: inline-block;
+        }
+        /* First Div */
+        #gray_div{
+            height: 25%;
+            /* color added to see each individual div */
+            background-color: gray;
+        }
+        /* Second Div */
+        #black_div{
+            height: 25vh;
+            /* color added to see each individual div */
+            background-color: black;
+        }
+        /* Third Div */
+        #lightgray_div{
+            height: 5em;
+            /* color added to see each individual div */
+            background-color: lightgray;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Feature Set 1_1 -->
+    <div class="feature_set_1_1">
+        <!-- First Div -->
+        <div id="blue_div">
+        </div>
+        <!-- Second Div -->
+        <div id="green_div">
+        </div>
+        <!-- Third Div -->
+        <div id="purple_div">
+        </div>
+    </div>
+
+    <!-- Feature Set 1_2 -->
+    <div class="feature_set_1_2">
+        <!-- First Div-->
+        <div id="red_div">
+        </div>
+        <!-- Second Div -->
+        <div id="orange_div">
+        </div>
+        <!-- Third Div -->
+        <div id="yellow_div">
+        </div>
+    </div>
+
+    <!-- Feature Set 1_3 -->
+    <div class="feature_set_1_3">
+        <!-- First Div -->
+        <div id="gray_div">
+        </div>
+        <!-- Second Div -->
+        <div id="black_div">
+        </div>
+        <!-- Third Div -->
+        <div id="lightgray_div">
+        </div>
+    </div>
+
+</body>
+</html>
