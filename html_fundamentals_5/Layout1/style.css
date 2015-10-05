@@ -1,0 +1,21 @@
+#header {
+    height: 15vh;
+}
+
+#body {
+    height: 70vh;
+}
+
+#footer {
+    height: 15vh;
+}
+
+#nav {
+    display: inline-block;
+    list-style-type: none;
+}
+
+#contact {
+    list-style-type: none;
+}
+
