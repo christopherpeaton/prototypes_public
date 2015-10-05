@@ -63,8 +63,30 @@ input {
     color: white;
     background-color: brown;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 375px) {
     main {
         margin: 0 auto;
+    }
+    input {
+        width: 100%;
+    }
+
+    #ssn {
+        width: 100%;
+    }
+    #submit {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 376px) {
+    input {
+        width: 49%;
+    }
+    #ssn {
+        width: 25%;
+    }
+    #submit {
+        width: 23%;
     }
 }
