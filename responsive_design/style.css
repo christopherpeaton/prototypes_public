@@ -1,0 +1,15 @@
+img {
+    float: left;
+    width: 50%;
+    height: 50%;
+}
+
+p {
+    font-size: 1em;
+}
+
+@media screen and (min-width: 480px) {
+    main {
+        margin: 0 auto;
+    }
+}
