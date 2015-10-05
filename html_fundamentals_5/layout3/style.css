@@ -1,0 +1,14 @@
+#title {
+    height:15vh;
+    text-align:center;
+}
+#left_nav {
+    float: left;
+    width: 15vw;
+    display:block;
+    height: 85vh;
+}
+#main_content {
+    width: 85vw;
+    display: block;
+}
