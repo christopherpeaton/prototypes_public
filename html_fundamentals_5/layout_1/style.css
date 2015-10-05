@@ -1,0 +1,37 @@
+#header {
+    background-color: black;
+    color: floralwhite;
+    height: 15vh;
+}
+
+#footer {
+    background-color: dimgrey;
+    color: floralwhite;
+    list-style-type: none;
+    height: 15vh;
+    text-align: center;
+}
+
+#nav {
+    list-style-type: none;
+}
+
+#main_content {
+    font-size: 18px;
+    height: 70vh;
+}
+
+li {
+    display: inline-block;
+    margin: 25px;
+    font-size: 5vh;
+}
+
+a:link {
+    text-decoration: none;
+    color: floralwhite;
+}
+
+a:visited {
+    color: floralwhite;
+}
