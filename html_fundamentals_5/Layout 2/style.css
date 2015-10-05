@@ -1,0 +1,26 @@
+#header2 {
+    height: 15vh;
+    width: 60%;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+    background-color: cadetblue;
+}
+
+#main_content2 {
+    height: auto;
+    width: 50%;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: inherit;
+}
+
+li {
+    display: inline-block;
+    margin: 5px;
+}

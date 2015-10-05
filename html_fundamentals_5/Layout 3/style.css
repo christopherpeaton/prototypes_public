@@ -1,0 +1,22 @@
+#title3 {
+    height: 15vh;
+    text-align: center;
+    background-color: cadetblue;
+}
+
+#left_nav3 {
+    width: 15vw;
+    height: 90vh;
+    float: left;
+    background-color: gainsboro;
+    padding: 5px;
+}
+
+ul {
+    list-style: none;
+    line-height: 25px;
+}
+
+#main_content3 {
+    padding: 5px;
+}
