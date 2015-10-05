@@ -1,0 +1,38 @@
+#index {
+    text-align: center;
+}
+
+#index p {
+    font-size: 12px;
+}
+
+h3 {
+    color: olivedrab;
+}
+
+img {
+    float: left;
+}
+
+#experience h1 {
+    font-family: Montserrat;
+}
+
+#experience {
+    background-color: steelblue;
+}
+
+#skills h1 {
+    font-family: Montserrat;
+}
+
+.skills_tools {
+    color: pink;
+}
+
+.nav li {
+    list-style-type: none;
+    display: inline;
+    margin: 50px;
+    font-size: 20px;
+}
