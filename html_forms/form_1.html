@@ -3,26 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="stylel.css">
 </head>
 <body>
-    <form>
-        First name:<br>
-        <input id="firstname" type="text" name="first">
-        Last name: <br>
-        <input id="lastname" type="text" name="last">
-        Message:
-        <textarea id="textare" name="message" rows="10" cols="30">
+    <form action="http://learningfuze.com/echo.php ">
+        <label for="firstname">First name:</label><br>
+            <input id="firstname" type="text" name="first"><br>
+        <label for="lastname">Last name:</label><br>
+            <input id="lastname" type="text" name="last"><br>
+       <label for="textarea"> Message:</label><br>
+        <textarea id="textarea" name="message" rows="10" cols="30">
 
         </textarea>
         <br>
-        <input type="radio" name="food" value="cake" checked>Cake
-        <br>
-        <input type="radio" name="food" value="carrots">Carrots
-        <br>
-        <input type="checkbox" name="vehicle" value="Bike"> I have a bike<br>
-        <input type="checkbox" name="vehicle" value="Car" checked="checked"> I have a car<br>
+        <label>Favorite food:</label><br>
+           <input type="radio" name="food" value="cake" checked>Cake<br>
+           <input type="radio" name="food" value="carrots">Carrots<br>
+           <input type="radio" name="food" value="peas">Peaså<br>
+        <label>Games:</label><br>
+            <input type="checkbox" name="games" value="mario">Mario<br>
+            <input type="checkbox" name="games" value="sonic" checked="checked">Sonic<br>
+            <input type="checkbox" name="games" value="angrybirds">Angry Birds<br>
+            <input type="checkbox" name="games" value="none" checked="checked" disabled>I don't play games<br>
+        <label>Movies:</label><br>
         <select name="movies">
-            <br>
             <option value="lionking">Lion King</option>
             <option value="cars">Cars</option>
             <option value="toystory">Toy Story</option>
