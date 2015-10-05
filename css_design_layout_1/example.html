@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prototypes CSS Design Layout Feature Set 1</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+        .parent {
+            border: 1px solid black;
+            height: 30vh;
+        }
+        .sibling {
+            display: inline-block;
+            border: 1px solid black;
+        }
+        .feature_set_1_1 {
+            width: 75%;
+            height: 30vh;
+        }
+        .feature_set_1_1 div {
+            width: 29.54%;
+            height: 100%;
+            background-color: lavender;
+        }
+        .set_1_1 {
+            margin-right: 5%;
+        }
+        .feature_set_1_2 {
+            width: 80vw;
+            height: 30vh;
+        }
+        .feature_set_1_2 div {
+            background-color: lightgray;
+            width: 25vw;
+            height: 75%;
+        }
+        #set_1_2_1 {
+            padding: 5px 0;
+        }
+        #set_1_2_2 {
+            padding: 10px 10px 0;
+        }
+        #set_1_2_3 {
+            padding: 0 15px 5px 10px;
+        }
+        .feature_set_1_3 {
+            width: 25vw;
+        }
+        .feature_set_1_3 div {
+            background-color: #94FFFF;
+            width: 100px;
+        }
+        #set_1_3_1 {
+            height: 25%;
+        }
+        #set_1_3_2 {
+            height: 25vh;
+        }
+        #set_1_3_3 {
+            height: 2cm;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent feature_set_1_1">
+        <div class="sibling set_1_1"></div>
+        <div class="sibling set_1_1"></div>
+        <div class="sibling"></div>
+    </div>
+    <div class="parent feature_set_1_2">
+        <div class="sibling" id="set_1_2_1"></div>
+        <div class="sibling" id="set_1_2_2"></div>
+        <div class="sibling" id="set_1_2_3"></div>
+    </div>
+    <div class="parent feature_set_1_3">
+        <div class="sibling" id="set_1_3_1"></div>
+        <div class="sibling" id="set_1_3_2"></div>
+        <div class="sibling" id="set_1_3_3"></div>
+    </div>
+
+</body>
+</html>
