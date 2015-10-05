@@ -87,7 +87,6 @@ This is intentionally similar to the previous prototype to reinforce comprehensi
 >     1. Italicize the Skills header 
 >     1. Bold each skill title but not the description
 >     1. Add the font family of Arial to the Experience header
->     1. Add a background color of green to the experience paragraph
 
 ### Feature Set 4 - Research other formatting options
 This is intentionally similar to the previous prototype to reinforce comprehension of fundamental material
