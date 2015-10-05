@@ -1,0 +1,45 @@
+/*Set formatting for navigation area.*/
+.nav{
+    list-style-type: none;
+}
+.nav li{
+    width: 100px;
+    display: inline-block;
+    margin: 4px 4px 4px 4px;
+    font-size: 18px;
+}
+
+/* Set formatting for classes */
+.font12{
+    font-size: 12px;
+}
+.favcolor{
+    color: coral;
+}
+.header{
+    font-family: Montserrat, sans-serif;
+}
+
+/* Set formatting for ids. */
+#aboutme{
+    text-align: center;
+}
+#experience-list{
+    background-color: #dfccda;
+    list-style-type: none;
+}
+#experience-list ul {
+    list-style-type: disc;
+}
+#experience-list ul ul{
+    list-style-type: square;
+}
+#skills-list li ul{
+    color: sienna;
+}
+
+/* Set formatting for images. */
+img{
+    height: 250px;
+    float: right;
+}
