@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Neal Cloud">
+    <title>Form 1</title>
+    <style>
+        form{
+            padding: 4%;
+        }
+        #text1{
+            background-color: #806b5b;
+            font-family: Arial, sans-serif;
+            border: 1px solid pink;
+            box-shadow: 10px 10px 5px #888888;
+        }
+    </style>
+</head>
+<body>
+    <form action="http://learningfuze.com/echo.php">
+        <input id="text1" type="text" name="first_text">
+        <br><br>
+        <input type="text" name="second_text">
+        <br><br>
+        <textarea name="text_area"></textarea>
+        <br><br>
+        <label for="pizza">
+            <input type="radio" name="food" value="pizza" checked>
+            Pizza
+        </label>
+        <label for="calamari">
+            <input type="radio" name="food" value="calamari">
+             Calamari </label>
+        <label for="gnocchi">
+            <input type="radio" name="food" value="gnocchi">
+            Gnocchi
+        </label>
+        <br><br>
+        <label for="Heroes of the Storm">
+            <input type="checkbox" name="game" value="Heroes of the Storm">
+             Heroes of the Storm
+        </label>
+        <label for="Payday 2">
+            <input type="checkbox" name="game" value="Payday 2">
+            Payday 2
+        </label>
+        <label for="FTL">
+            <input type="checkbox" name="game" value="FTL">
+            FTL
+        </label>
+        <label for="Don't Starve">
+            <input type="checkbox" name="game" value="Don't Starve" disabled>
+             Don't Starve
+        </label>
+        <br><br>
+        <label for="movie">
+            <select multiple>
+                <option name="movie" value="Willow">Willow</option>
+                <option name="movie" value="Mad Max">Mad Max</option>
+                <option name="movie" value="Avatar">Avatar</option>
+                <option name="movie" value="Django">Django</option>
+            </select>
+        </label>
+        <br><br>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
