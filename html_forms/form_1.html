@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #form_1 {
+                background-color: aquamarine;
+                font-family: fantasy, cursive;
+                border: 1px solid red;
+                box-shadow: 2px 2px 2px dimgrey;
+            }
+
+        </style>
+    </head>
+    <body>
+        <form action="http://learningfuze.com/echo.php">
+            <br><br>
+            First Name:
+            <br><br>
+            <input type="text" name="first_name" id="form_1">
+            <br><br>
+            Middle Name:
+            <br><br>
+            <input type="text" name="middle_name">
+            <br><br>
+            Comment here:
+            <br><br>
+            <textarea name="comment" rows="4" cols="40">
+            </textarea>
+            <br><br>
+            <input id="1" type="radio" name="favorite_food" value="curry rice" checked>
+            <label for="1">
+                curry rice
+            </label>
+            <input id="2" type="radio" name="favorite_food" value="ramen noodles">
+            <label for="2">
+                ramen noodles
+            </label>
+            <input id="3" type="radio" name="favorite_food" value="spam musubi">
+            <label for="3">
+                spam musubi
+            </label>
+            <br><br>
+            <input type="checkbox" name="game1" value="charades"> charades
+            <input type="checkbox" name="game2" value="cranium"> cranium
+            <input type="checkbox" name="game3" value="apples to apples"> apples to apples
+            <input type="checkbox" name="game4" value="poker" disabled> poker
+            <br><br>
+            <select name="movies" multiple>
+                <option value="bridget jones diary">bridget jones diary</option>
+                <option value="iron jawed angels">iron jawed angels</option>
+                <option value="nausicaa">nausicaa of the valley of the wind</option>
+                <option value="mononokehime">mononokehime</option>
+            </select>
+            <br><br>
+            <input type="submit">
+        </form>
+    </body>
+</html>
