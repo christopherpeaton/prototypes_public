@@ -1,0 +1,18 @@
+#header, #main_content {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#header {
+    height:15vh;
+    background-color: yellow;
+}
+
+#main_content {
+    height: auto;
+}
+
+#nav li {
+    list-style-type: none;
+    display: inline-block;
+}
