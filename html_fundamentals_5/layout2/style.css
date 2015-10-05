@@ -1,0 +1,40 @@
+html, body, #main_content {
+    margin: 0;
+}
+#header {
+    height: 15vh;
+    background-color: #9370db;
+    display: table;
+    width: 100%;
+    color: #ffffff;
+    position: relative;
+}
+#nav, #contact {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+#main_content {
+    margin: 0 10%;
+}
+#nav li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 5%;
+}
+#nav li:hover {
+    border: 1px solid #ffffff;
+}
+li a:visited {
+    color: #ffffff;
+}
+a:link {
+    text-decoration: none;
+}
+.top {
+    color: #9370db;
+}
+.top:hover {
+    background-color: #fafad2;
+    border: 2px solid #9370db
+}
