@@ -1,0 +1,93 @@
+
+header {
+    width: 100vw;
+    height: 16vh;
+    background-color: black;
+    position: relative;
+    top: -21px;
+    left: -8px;
+}
+
+header img {
+    position: absolute;
+    height: 100%;
+    width: 10%;
+}
+
+header h1 {
+    color: aliceblue;
+    position: absolute;
+    left: 45%;
+    top: 16%;
+    text-shadow: 0.1em 0.1em #DAA520;
+}
+
+header ul {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    list-style-type: none;
+    bottom: 0;
+    margin: 0;
+}
+
+header li {
+    display: inline-block;
+    color: slategray;
+    margin: 0 4vw 0 0;
+    padding-right: 2vw;
+}
+
+section {
+    width: 100vw;
+    height: 30vh;
+    margin: 0 auto;
+    position: relative;
+    top: -21px;
+    left: -7px;
+}
+
+section div {
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+#one {
+    width: 24vw;
+    display: inline-block;
+    background-image: url("images/new%20radicals.jpg");
+
+}
+#two {
+    width: 75vw;
+    display: inline-block;
+    background-image: url("images/LionelRichieAudience.jpg")
+}
+
+#three {
+    width: 24vw;
+    display: inline-block;
+    background-image: url("images/Lady%20Gaga.jpg")
+}
+
+#four {
+    width: 75vw;
+    display: inline-block;
+    background-image: url("images/Michael%20Jackson.jpg")
+}
+
+footer {
+    width: 100vw;
+    height: 24vh;
+    text-align: center;
+    background-color: cornflowerblue;
+    position: relative;
+    top: -37px;
+    left: -8px;
+}
+
+footer ul {
+    list-style-type: none;
+    position: relative;
+    top: 64px;
+}
