@@ -133,6 +133,7 @@ Make a folder for each layout, and inside that make an index.html.  So you shoul
             - email 
             - submit 
 
+
 ## After Coding Details
 ##### 1. Save files to Git - Add all modified & created files
 > Run below command in terminal tab
