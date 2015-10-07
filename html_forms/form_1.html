@@ -2,9 +2,107 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>HTML Forms Feature Set #1</title>
+    <style>
+        #set1  {
+            background-color: aqua;
+            font-family: cursive;
+            border-color: blueviolet;
+            box-shadow: 8px;
+        }
+    </style>
 </head>
-<body>
 
+<body>
+<div id="set1">
+    <action="http://learningfuze.com/echo.php" method="post">
+
+    <label for="Full Name">
+        What is your full name?
+    </label>
+    <input type="text" name="user_name" id="full name" placeholder="Full Name">
+</div>
+
+    <label for="movie">
+        What is your favorite movie?
+    </label>
+    <input type="text" name="fav_movie" id="movie" placeholder="Favorite Movie">
+    <br>
+
+    <label for="hotel">
+        What is your favorite hotel? Please describe why you like it.
+    </label>
+    <br>
+        <textarea name="fav_hotel" id="hotel" rows="3" cols="30">
+        </textarea>
+    <br>
+
+    Which one is your favorite cuisine?
+    <br>
+
+    <input type="radio" name="fav_food" id="japanese" value="japanese" checked>
+    <label for="Japanese">
+        Japanese
+    </label>
+    <br>
+    <input type="radio" name="fav_food" id="American" value="American">
+    <label for="American">
+        American
+    </label>
+    <br>
+    <input type="radio" name="fav_food" id="Mexican" value="Mexican">
+    <label for="Mexican">
+        Mexican
+    </label>
+    <br>
+
+
+    Which one is your favorite game?
+    <br>
+    <input type="checkbox" name="game1" id="game1" value="creed">
+    <label for="game1">
+        Assassin's Creed
+    </label>
+    <br>
+    <input type="checkbox" name="game2" id="game2" value="nba2k16">
+    <label for="game2">
+        NBA 2k16
+    </label>
+    <br>
+    <input type="checkbox" name="game3" id="game3" value="MGS">
+    <label for="game3">
+        Metal Gear Solid
+    </label>
+    <br>
+    <input type="checkbox" name="game4" id="game4" value="ff" disabled>
+    <label for="game4">
+        Final Fantasy
+    </label>
+    <br>
+
+    <label for="fav_movie">
+        Which one is your favorite movie?
+    </label>
+    <br>
+
+    <select name="fav_movie" id="fav_movie" multiple>
+        <option value="Inside_out">
+            Inside Out
+        </option>
+        <option value="frozen">
+            Frozen
+        </option>
+        <option value="toy_story">
+            Toy Story
+        </option>
+        <option value="Up">
+            Up
+        </option>
+    </select>
+
+    <br>
+
+    <input type="submit" value="Submit">
+</form>
 </body>
 </html>
