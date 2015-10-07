@@ -1,0 +1,110 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>HTML Forms - Feature Set 2</title>
+    <style>
+        body{
+            background-color: darkred;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 9vw;
+        }
+        h1{
+            text-align: center;
+        }
+
+        ol{
+            padding-left: 3%;
+        }
+
+        input{
+            font-size: 100%;
+            padding: 1em;
+            border: none;
+            box-shadow: 0 0.25em 0 0;
+        }
+
+
+        input:last-of-type{
+            float: right;
+            text-align: center;
+            color: white;
+            background-color: darkred;
+            padding-left: 3em;
+            padding-right: 3em;
+            margin-right: 1em;
+        }
+
+        @media screen and (max-width: 375px){
+            body{
+                padding: 2vh 5vw;
+            }
+            h1{
+                text-align: center;
+            }
+
+
+    </style>
+    <!-- I do not know how to adjust the margin between the inputs, especially that I used br to break individual
+    inputs -->
+
+</head>
+
+<body>
+<h1>
+    Instructions for Application - Academic Year 2014
+</h1>
+
+<br>
+
+<ol>
+    <li>
+        The deadline for 2014-2015 scholarship application: March 30, 2014. Applications received after March 30 will
+        be considered on a funds available basis.
+    </li>
+    <li>
+        Only completed applications will be considered. Do Not Leave Items Blank.
+    </li>
+    <li>
+        Attach a current copy of your high school and/or college transcripts.
+    </li>
+    <li>
+        Two signed letters of recommendation (from non-relatives) must be attached to this application.
+    </li>
+</ol>
+
+<p>
+    Consideration for any scholarship award is based on a point system including GPA, participation in extra-curricular
+    activities, school organizations and community service. This will be a four semester scholarship, and you must
+    maintain criteria set in guidelines.
+</p>
+
+<br>
+
+<h2>
+    Applicant Data
+</h2>
+<br>
+
+
+<form action="http://learningfuze.com/echo.php" method="post">
+
+    <input type="text" name="name" size="40" placeholder="Last Name, First Name, MI">
+
+    <input type="text" name="ssn" maxlength="11" size="30" placeholder="Social Security #">
+    <br><br>
+
+    <input type="text" name="address" size="40" placeholder="City, State, Zip, County">
+
+    <input type="text" name="number" maxlength="15" size="40" placeholder="Permanent Home Phone">
+    <br><br>
+
+    <input type="text" name="major" size="40" placeholder="Intended major at University">
+
+    <input type="text" name="location" size="40" placeholder="At which location will you be attending?">
+    <br><br>
+
+    <input type="submit" value="NEXT">
+</form>
+</body>
+</html>
