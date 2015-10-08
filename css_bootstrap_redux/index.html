@@ -9,8 +9,7 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <style>
-        .carousel-inner > .item > img,
-        .carousel-inner > .item > a > img {
+        .carousel-inner .item img {
             width: auto;
             height: 35vh;
             margin: auto;
@@ -62,23 +61,39 @@
 
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img src="images/ss-1.jpg">
+            <img src="images/ss-1.jpg" data-toggle="modal" data-target="#seaslug_modal">
         </div>
 
         <div class="item">
-            <img src="images/ss-2.jpg">
+            <img src="images/ss-2.jpg" data-toggle="modal" data-target="#seaslug_modal">
         </div>
 
         <div class="item">
-            <img src="images/ss-3.jpg">
+            <img src="images/ss-3.jpg" data-toggle="modal" data-target="#seaslug_modal">
         </div>
 
         <div class="item">
-            <img src="images/ss-4.jpg">
+            <img src="images/ss-4.jpg" data-toggle="modal" data-target="#seaslug_modal">
         </div>
 
         <div class="item">
-            <img src="images/ss-5.jpg">
+            <img src="images/ss-5.jpg" data-toggle="modal" data-target="#seaslug_modal">
+        </div>
+    </div>
+
+    <div id="seaslug_modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <img src="images/ss-2.jpg">
+                    <p>This is a sea slug! Isn't it lovely?</p>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+
         </div>
     </div>
 
