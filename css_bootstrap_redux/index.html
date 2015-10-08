@@ -41,7 +41,7 @@
         </nav>
 
         <div class="container">
-            <div id="carouselOfArtists" class="carousel slide" data-ride="carousel" height="260">
+            <div id="carouselOfArtists" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselOfArtists" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselOfArtists" data-slide-to="1"></li>
@@ -52,19 +52,36 @@
 
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src="images/ladygaga.jpg" alt="Lady Gaga">
+                        <a href="#" role="button" data-toggle="modal" data-target="#modalWindow"><img src="images/ladygaga.jpg" alt="Lady Gaga" id="gaga"></a>
                     </div>
                     <div class="item">
-                        <img src="images/beyonce.jpg" alt="Beyonce">
+                        <a href="#" role="button" data-toggle="modal" data-target="#modalWindow"><img src="images/beyonce.jpg" alt="Beyonce" id="bey"></a>
                     </div>
                     <div class="item">
-                        <img src="images/janetjackson.jpg" alt="Janet Jackson">
+                        <a href="#" role="button" data-toggle="modal" data-target="#modalWindow"><img src="images/janetjackson.jpg" alt="Janet Jackson" id="janet"></a>
                     </div>
                     <div class="item">
-                        <img src="images/lanadelrey.jpg" alt="Lana Del Rey">
+                        <a href="#" role="button" data-toggle="modal" data-target="#modalWindow"><img src="images/lanadelrey.jpg" alt="Lana Del Rey" id="lana"></a>
                     </div>
                     <div class="item">
-                        <img src="images/kareno.jpg" alt="Karen O">
+                        <a href="#" role="button" data-toggle="modal" data-target="#modalWindow"><img src="images/kareno.jpg" alt="Karen O" id="kareno"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="modal" id="modalWindow">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h3 class="modal-title">This is a header.</h3>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/ladygaga.jpg">
+                        <p>Women are awesome.</p>
                     </div>
                 </div>
             </div>
