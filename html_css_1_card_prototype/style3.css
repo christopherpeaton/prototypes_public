@@ -31,7 +31,7 @@ body, .game-arena {
     box-sizing: border-box;
     position: absolute;
     width: 100%;
-    transform: scaleX(-1);
+    #transform: scaleX(-1);
 
 }
 
