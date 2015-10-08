@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         @media screen and (min-width: 376px) {
-            * {
-                border: 1px solid black;
-            }
 
             body {
                 line-height: 1.6em;
@@ -19,6 +16,11 @@
                 color: white;
                 position: relative;
                 background-color: #b13939;
+                margin: 0 auto;
+            }
+
+            form>p {
+                width: 90%;
                 margin: 0 auto;
             }
 
@@ -36,7 +38,8 @@
             form > h1 {
                 text-align: center;
                 width: 96%;
-                margin: 0 auto;
+                margin: 3% auto 0 auto;
+                padding-top: 5%
             }
 
             form > input:not([type='submit']) {
@@ -46,11 +49,21 @@
                 width: 45%;
             }
 
+            form > input:nth-child(5) {
+                width: 25%;
+            }
+
             form > input[type='submit'] {
 
                 background-color: #881717;
                 border: none;
                 color: white;
+                width: 20%;
+                height: 3em;
+                margin: 2%;
+                margin-left: 4%;
+                position: relative;
+                left: 69%;
             }
 
             form > input {
@@ -93,6 +106,8 @@
                 text-align: center;
                 width: 90%;
                 margin: 0 auto;
+                padding-top: 5%;
+                line-height: 1.2em;
             }
 
             form > input:not([type='submit']) {
