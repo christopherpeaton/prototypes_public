@@ -12,6 +12,18 @@ body, .game-arena {
 
 .card-container {
     perspective: 2000px;
+    position: relative;
+    display: inline-block;
+}
+
+.second-row {
+    position: relative;
+    top: 19vw;
+}
+
+.third-row {
+    position: relative;
+    top: 38vw;
 }
 
 .card-front {
