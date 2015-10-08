@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Form 1</title>
+        <style>
+
+            body {
+                max-width: 300px;
+                background-color: black;
+                color: white;
+            }
+
+            #first {
+                font-family: "Arial", "Helvetica", sans-serif;
+                border-color: blue;
+                color: blue;
+                box-shadow: 5px 5px 3px lightgray;
+            }
+
+            #last {
+                font-family: "verdana";
+                color: red;
+                border-color: red;
+                background-color: black;
+                box-shadow: -5px 5px 5px lightgray;
+            }
+
+            #message {
+                box-shadow: -5px 5px 3px lightgray;
+                background-color: black;
+                color: white;
+            }
+
+            fieldset {
+                width: 279px;
+                box-shadow: -5px 5px 3px lightgray;
+            }
+
+            select{
+                width: 306px;
+                box-shadow: -5px 5px 3px lightgray;
+                background-color: black;
+                color: white;
+            }
+
+            #submit {
+                box-shadow: -5px 5px 3px lightgray;
+            }
+
+        </style>
+    </head>
+    <body>
+       <form action=" http://learningfuze.com/echo.php " method="get">
+           <label for="first">Name:</label><br>
+           <input type="text" id="first"name="first" size="39" placeholder="enter first name"><br><br>
+           <label for="last">Last:</label><br>
+           <input type="text" id="last" name="last" size="35" placeholder="enter last name"><br><br>
+
+           <label for="message">Message:</label><br>
+           <textarea name="text" id="message" cols="40" rows="10" placeholder="enter message"></textarea><br><br>
+
+           <fieldset>
+               <legend>Favorite Food:</legend>
+               <input type="radio" name="food" value="Chinese Food" checked> Chinese Food<br>
+               <input type="radio" name="food" value="Pizza"> Pizza<br>
+               <input type="radio" name="food" value="Mexican Food"> Mexican Food
+           </fieldset><br>
+
+           <fieldset>
+               <legend>Video Games:</legend>
+               <input type="checkbox" name="game1" value="game1"> Witcher III - The Wild Hunt<br>
+               <input type="checkbox" name="game2" value="game2"> Destiny<br>
+               <input type="checkbox" name="game3" value="game3"> God of War<br>
+               <input type="checkbox" name="game4" value="game4" disabled> E.T. the Extra-Terrestrial
+           </fieldset><br>
+
+           <legend for="movies">Favorite Movie:</legend>
+           <select name="favorite" id="movies" size="3">
+               <option value="tombstone">Tombstone</option>
+               <option value="fifth">The Fifth Element</option>
+               <option value="lebowski">The Big Lebowski</option>
+               <option value="trouble">Big Trouble in Little China</option>
+           </select>
+
+           <br><br>
+           <input type="submit" id="submit" value="submit" formaction=" http://learningfuze.com/echo.php ">
+       </form>
+    </body>
+</html>
