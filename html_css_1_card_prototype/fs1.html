@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <style>
+        .game_area {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .card_container {
+            width: 250px !important;
+            height: 300px !important;
+            border: 1px black solid;
+            overflow: hidden;
+            margin: 10vh 5vh;
+            display: block;
+        }
+
+        .front-face {
+            width: 100%;
+            height: 100%;
+            background-image: url(images/afp-cute-puppy.jpg);
+            background-size: 200px 300px;
+            background-repeat: no-repeat;
+            z-index: -1;
+            -webkit-backface-visibility: hidden;
+            overflow: hidden;
+        }
+
+        .back-face, .card {
+            width: 200px;
+            height: 300px;
+            position: absolute;
+            z-index: 1;
+            background-image: url(images/cardback-rankedladder.png);
+            background-size: 200px 300px;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            background-image: url(images/afp-cute-puppy.jpg);
+            background-size: 200px 300px;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+<div class="container game_area">
+    <div class="row">
+        <div class="col-md-1 card_container">
+            <span class="card"></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
