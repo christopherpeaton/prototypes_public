@@ -38,6 +38,7 @@
     width: 9vw;
     height: 16vh;
     margin: 1em .5em;
+    display: inline-block;
 }
 
 .two_faces img {
@@ -46,17 +47,17 @@
     height: 100%;
 }
 
-.two_faces:hover #backcard {
+.two_faces:hover > .backcard {
     transform: rotateY(-180deg) perspective(1000px);
     transition-duration: 2s;
     backface-visibility: hidden;
 }
 
-#frontcard {
+.frontcard {
     transform: rotateY(180deg);
 }
 
-.two_faces:hover #frontcard {
+.two_faces:hover > .frontcard {
     transform: rotateY(0deg) perspective(1000px);
     transition-duration: 2s;
 }
