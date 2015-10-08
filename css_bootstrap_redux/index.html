@@ -61,7 +61,7 @@
         <!--NOTE TO SELF: FIX IMAGE SIZES -->
         <div class="carousel-inner" role="listbox">
 
-            <div class="item active">
+            <div class="item active" data-toggle="modal" data-target="#myModal">
                 <a title="Image 1" href="#">
                 <img src="http://dummyimage.com/600x350/c00/fff.png&text=one" alt="Joburg" width="460" height="345">
                     </a>
@@ -71,7 +71,7 @@
                 </div>
             </div>
 
-            <div class="item">
+            <div class="item" data-toggle="modal" data-target="#myModal">
                 <img src="http://dummyimage.com/600x350/C70/fff.png&text=two" alt="Irvine" width="460" height="345">
                 <div class="carousel-caption">
                     <h3>Irvine, California</h3>
@@ -79,7 +79,7 @@
                 </div>
             </div>
 
-            <div class="item">
+            <div class="item" data-toggle="modal" data-target="#myModal">
                 <img src="http://dummyimage.com/600x350/ccff00/fff.png&text=three" alt="Sydney" width="460" height="345">
                 <div class="carousel-caption">
                     <h3>Sydney, Australia</h3>
@@ -87,7 +87,7 @@
                 </div>
             </div>
 
-            <div class="item">
+            <div class="item" data-toggle="modal" data-target="#myModal">
                 <img src="http://dummyimage.com/600x350/26ff00/fff.png&text=four" alt="Tel Aviv" width="460" height="345">
                 <div class="carousel-caption">
                     <h3>Tel Aviv, Israel</h3>
@@ -95,7 +95,7 @@
                 </div>
             </div>
 
-                <div class="item">
+                <div class="item" data-toggle="modal" data-target="#myModal">
                     <img src="http://dummyimage.com/600x350/0026ff/fff.png&text=five" alt="Rome" width="460" height="345">
                     <div class="carousel-caption">
                         <h3>Rome, Italy</h3>
@@ -119,6 +119,34 @@
 
 <!--feature set 3 - modal -->
 
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Tel Aviv, Israel</h4>
+            </div>
+            <div class="modal-body">
+                <img src="http://dummyimage.com/600x350/26ff00/fff.png&text=four" alt="Tel Aviv" width="460" height="345">
+                <p>Tel Aviv is my favorite city</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function (){
+        $('#myModal').modal({
+            show: false
+        });
+    });
+</script>
 
 </body>
 </html>
