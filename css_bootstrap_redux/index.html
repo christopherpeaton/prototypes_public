@@ -44,6 +44,15 @@
                 color: yellow;
             }
 
+            .modal-content {
+                color: yellow;
+                background-color: gray;
+            }
+
+            .modal-body img {
+                margin-left: 30px;
+            }
+
         </style>
     </head>
     <body>
@@ -87,54 +96,43 @@
                 <li data-target="#batmanCarousel" data-slide-to="2"></li>
                 <li data-target="#batmanCarousel" data-slide-to="3"></li>
                 <li data-target="#batmanCarousel" data-slide-to="4"></li>
-                <li data-target="#batmanCarousel" data-slide-to="5"></li>
             </ol>
 
             <div class="carousel-inner" role="listbox">
-                <div class="item active" style="background-color: lightgray">
-                    <img src="images/batman-logo.png" alt="Batman Logo">
+                <div class="item active">
+                    <img src="images/batman-logo.png" data-toggle="modal" data-target="#batmanModal" alt="Batman Logo">
                         <div class="carousel-caption">
                             <h3>Next time on Batman!</h3>
                         </div>
                 </div>
 
                 <div class="item">
-                    <img src="images/shark-batman.jpg" alt="Shark biting batman" >
+                    <img src="images/shark-batman.jpg" data-toggle="modal" data-target="#batmanModal" alt="Shark biting batman" >
                         <div class="carousel-caption">
                             <h3>Has Batman jumped the shark?!</h3>
                         </div>
                 </div>
 
                 <div class="item">
-                    <img src="images/impound-batman.jpg" alt="Bat mobile">
+                    <img src="images/impound-batman.jpg" data-toggle="modal" data-target="#batmanModal" alt="Bat mobile">
                         <div class="carousel-caption">
                             <h3>Will Batman get his car out of the impound?</h3>
                         </div>
                 </div>
 
                 <div class="item">
-                    <img src="images/godzilla-batman.jpg" alt="Batman and robin running">
+                    <img src="images/godzilla-batman.jpg" data-toggle="modal" data-target="#batmanModal" alt="Batman and robin running">
                         <div class="carousel-caption">
                             <h3>Will our Dynamic Duo be crushed by Godzilla?</h3>
                         </div>
                 </div>
 
                 <div class="item">
-                    <img src="images/racist-batman.jpg" alt="Batman wearing a fake beard and ghutra">
+                    <img src="images/racist-batman.jpg" data-toggle="modal" data-target="#batmanModal" alt="Batman wearing a fake beard and ghutra">
                         <div class="carousel-caption">
                             <h3>Is Batman terribly racist?!</h3>
                         </div>
                 </div>
-
-                <div class="item" style="background-color: lightgray">
-                    <img src="images/batman-logo.png" alt="Batman Logo">
-                    <div class="carousel-caption">
-                        <h3>To find out tune in next week!</h3>
-
-                        <h4>Same bat time, same bat channel.</h4>
-                    </div>
-                </div>
-
             </div>
 
             <a class="left carousel-control"  href="#batmanCarousel" role="button" data-slide="prev">
@@ -146,6 +144,28 @@
                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
+        </div>
+        <!--                 Modal                    -->
+        <div id="batmanModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove-circle"></span></button>
+
+                        <h4 class="modal-title">To find out tune in next week!</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <img src="images/batman-logo.png" alt="Batman Logo">
+                    </div>
+
+                    <div class="modal-footer">
+                        <h5>Same bat time, same bat channel.</h5>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
     </body>
