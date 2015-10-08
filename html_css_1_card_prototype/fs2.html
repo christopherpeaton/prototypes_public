@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+        .game_area {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .card_img {
+            height: 25%;
+            width: 15%;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            float: left;
+            perspective: 1000px;
+        }
+
+        .card_img img {
+            height: auto;
+            width: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+        }
+
+        .card_img #card_front {
+            transform: rotateY(-180deg);
+        }
+
+        .card_img:hover #card_back {
+            transform: rotateY(180deg);
+            transition-duration: 2s;
+        }
+
+        .card_img:hover #card_front {
+            transform: rotateY(0deg);
+            transition-duration: 2s;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="game_area">
+    <div class="card_img">
+        <img id="card_front" src="images/afp-cute-puppy.jpg">
+        <img id="card_back" src="images/cardback-rankedladder.png">
+    </div>
+</div>
+
+</body>
+
+</html>
