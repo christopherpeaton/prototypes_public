@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    height: 10vh;
+    width: 95vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+header>ul {
+    width: 100%;
+    margin-left: 5%;
+}
+header li:nth-child(2), header li:last-child {
+    margin-left: 5%;
+    width: 100%;
+}
+header>ul>li {
+    display: inline;
+    position: relative;
+}
+.collapsible ul {
+    position: absolute;
+    display: none;
+    width: 100%;
+}
+.collapsible:hover ul {
+    display: block;
+    background-color: black;
+    color: white;
+}
+.collapsible:hover ul li:hover {
+    background-color: lightgray;
+}
+header>ul>li:hover, .collapsible-menu li:hover {
+    background-color: lightgray;
+    color: white;
+}
+section {
+    width: 95vw;
+    height: 50vh;
+    margin-right: auto;
+    margin-left: auto;
+    display: table;
+}
+h3 {
+    font-size: 30px;
+    margin-bottom: 5%;
+}
+img {
+    float: left;
+    width: 50%;
+}
+article {
+    color: green;
+    width: 65%
+}
+article p {
+    display: inline;
+    font-size: 18px;
+}
+article p:nth-child(3) {
+    color: black;
+    display: inline-block;
+    margin-top: 10px;
+}
+aside {
+    display: table-cell;
+    vertical-align: top;
+    width: 50%;
+}
+aside h3 {
+    margin: 15% 0 5% 60%;
+    width: 100%;
+}
+span {
+    color: blue;
+}
+aside p {
+    line-height: 2;
+}
+aside p:nth-child(2) {
+    color: red;
+    font-weight: bold;
+}
+aside p:nth-child(2):first-letter {
+    color: white;
+    font-size: 35px;
+    border: 1px solid lightgray;
+    background-color: lightgray;
+    border-radius: 10px 0 10px 0;
+}
+aside p:nth-child(3):first-letter {
+    font-size: 30px;
+    border: 1px solid lightgray;
+    border-radius: 0 10px 0 10px;
+}
+aside p:nth-child(4) {
+    color: green;
+}
+aside p:nth-child(4):first-letter {
+    font-size: 25px;
+    border: 1px solid lightgray;
+    border-radius: 0 10px 0 10px;
+    color: black;
+}
+footer {
+    clear: both;
+    height: 30vh;
+    width: 95vw;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: table;
+    margin-top: 2%;
+    font-size: 18px;
+}
+footer div {
+    display: table-cell;
+    vertical-align: middle;
+}
