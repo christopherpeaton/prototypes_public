@@ -47,5 +47,16 @@
 }
 
 .two_faces:hover #backcard {
-    visibility: hidden;
+    transform: rotateY(180deg);
+    transition-duration: 2s;
+    backface-visibility: hidden;
+}
+
+#frontcard {
+    transform: rotateY(180deg);
+}
+
+.two_faces:hover #frontcard {
+    transform: rotateY(360deg);
+    transition-duration: 2s;
 }
