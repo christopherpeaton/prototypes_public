@@ -1,0 +1,40 @@
+
+.card1 {
+    width: 5vw;
+    height: 5vh;
+    display: inline-block;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    margin: 0 3vw;
+}
+.frontface {
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+.frontface img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.backface {
+    position: absolute;
+    z-index: 1;
+    display: inline-block;
+    backface-visibility: hidden;
+}
+.backface img{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.card1:hover {
+    transform: rotateY(180deg);
+    transition: transform 1s;
+}
+.gamearea table tr td {
+    padding-bottom: 10vh;
+}
