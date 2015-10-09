@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feature Set 1</title>
+    <style>
+        .play_area{
+            width: 100vw;
+            height:100vh;
+            /* Added for visualization */
+            background-color: lightpink;
+        }
+        .card, .card_back, .card_front{
+            width: 15vw;
+            height: 30vh;
+            background-color: yellow;
+        }
+        .card_back{
+            position: absolute;
+            z-index: 10;
+        }
+        .card_front{
+            position: absolute;
+            z-index: 1;
+        }
+        .card_back:hover{
+            visibility: hidden;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="play_area">
+        <div class="card">
+            <img src="images/cardback-rankedladder.png" class="card_back">
+            <img src="images/afp-cute-puppy.jpg" class="card_front">
+        </div>
+    </div>
+
+</body>
+</html>
