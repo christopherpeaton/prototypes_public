@@ -1,0 +1,9 @@
+.nav-right {
+    float: right;
+}
+
+.modal_caption {
+    text-align: center;
+    font-size: 1em;
+    padding: 10px 0;
+}
