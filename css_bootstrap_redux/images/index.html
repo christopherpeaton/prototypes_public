@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Bootstrap Redux</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <!-- Nav Module -->
+    <nav class="nav">
+        <!-- Site Title -->
+        <div class="navbar-brand">
+            <a href="#">
+                CSS Bootstrap Redux
+                <br>
+                Heather Hernandez
+            </a>
+        </div>
+        <!-- Site page/section links, currently links point to nowhere -->
+        <ul class="nav navbar-nav">
+            <li>
+                <a href="#">
+                    About Me
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Skills
+                </a>
+            </li>
+            <!-- Projects has a sub menu, should be hidden by default -->
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    Projects
+                    <span class="caret">
+                        <!-- Add caret after Projects to indicate there is more -->
+                    </span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#">
+                            MBoutique
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Memory Match
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Calculator
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Tic-Tac-Toe
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Facebook Clone
+                        </a>
+                    </li>
+                </ul><!-- end .projects_sub -->
+            </li>
+            <li>
+                <a href="#">
+                    Experience
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Contact Me
+                </a>
+            </li>
+        </ul><!-- end .navigation -->
+    </nav> <!-- end .menu_bar-->
+
+</body>
+</html>
