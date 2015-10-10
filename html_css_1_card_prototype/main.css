@@ -1,0 +1,50 @@
+html {
+    height: 100%;
+     background-color: white;
+}
+
+body {
+    width: 90vw;
+    margin: 0 auto;
+    min-height: 100vh;
+   
+    background-color: rgba(0,0,0,0.5);
+}
+
+.game_area {
+    width: 90vw;
+    min-height: 100vh;
+    border: 2px double deeppink;
+  
+}
+
+
+.front {
+    width: 7vw;
+    height: 19vh;
+    position: absolute;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.back {
+    width: 7vw;
+    height: 19vh;
+    position: absolute;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.card_container {
+    position: relative;
+    margin: 2vh 3.7vw;
+    display: inline-block;
+    width: 7vw;
+    height: 19vh;
+    border-radius: 5px;
+    border: 2px double green;
+    box-sizing: border-box;
+}
+
+.card_container:hover .back {
+    display: none;
+}
