@@ -1,4 +1,15 @@
-# HTML CSS 1 Card Prototype
+# JavaScript - Primitive Data Types
+
+This prototype is designed to introduce you to primitive data types in JavaScript, to demonstrate how they are used 
+and show how they can be manipulated. Make sure you have reviewed the slides and video before attempting this prototype. (*links below*)
+
+- Presentations
+    - JS Primitive Data Types
+        - <a href="https://drive.google.com/a/learningfuze.com/file/d/0B7eOl4joefDudmtWS1cwM0FMamc/view" target="_blank">Slides Link</a>
+        - <a href="https://www.youtube.com/watch?v=rj7CRTPoNkE" target="_blank">Video Link</a>
+- Projects
+    - This project will help build towards the Memory Match project, as well as be a foundation for general 
+    programming knowledge that will be used in all future projects.
 
 ## Code Setup Details
 
@@ -23,61 +34,62 @@
 > `git pull https://github.com/Learning-Fuze/prototypes.git` & press enter
 > - The command above downloads the newly posted prototypes and saves them to your local machine
 
-> `git checkout -b html_css_1_card_prototype`
+> `git checkout -b js_primitive_data_types`
 > - Creating this feature groupings allow users to modify code without causing issues with the current functioning code.
 > - Any modifications to these files after <b>branching</b> can be undone
-> - "html_css_1_card_prototype" is the branch name.
+> - "js_primitive_data_types" is the branch name.
 
 ## Coding Instructions
-For our examples, we will use the following urls for images.  You can change them if you wish.
-- back image:
-	- cardback-rankedladder.png
-- front image: 
-	- afp-cute-puppy.jpg
 
-### Feature Set 1 (Layout 1)
-#### Create a single card with simple animation
-> - Create a file, fs1.html, put the items for Feature Set 1 within it.
-- Create a container element that will hold all cards.  A good class name would be 'game_area'
-	- should fill all available space, vertically and horizontally
-- Create a single card container that will hold the front and back faces of a card.  
-	- should fill enough space horizontally so that, with maximum available space, 6 cards fit on a single line.  Please note that the card container only holds one of those cards
-- Create a card front face and card back face within that container.  
-	- There are many ways you can do this.  Find a way that works best for you.
-	- The front card face should display the "front image" from above.
-	- The back card face should display the "back image" from above.
-	- Both the back and front should be one on top of the other
-	- The "back image" face should be visible, hiding the "front image" face.
-	- The "back image" face should completely overlap the "front image" face.
-- Add hover functionality via CSS:
-	- On hover of the card container
-	- cause the back face to disappear.  Don't worry about animation, this will be for the next feature set.
+### Getting Started
 
-<img src="https://github.com/Learning-Fuze/prototypes/blob/master/html_css_1_card_prototype/helper_images/side_by_side.png">
+>1. Make an index.html inside the `js_primitive_data_types` folder
+2. Create a basic HTML DOM structure
+	- DOCTYPE tag
+	- HTML tag
+	- head tag
+	- body tag
+3. Add `script` tags between your `head` tags
+4. **DO NOT** edit this README file
 
-### Feature Set 2 (Layout 2) 
-#### Create a single card with rotate animation
-> - Create a file, fs2.html, and put the requisite code in it to satisfy Feature Set 2
-- Use the layout / structure you created for Feature Set 1 and duplicate it in fs2.html
-- Alter the CSS hover effect so that, on hover, the card appears to rotate, revealing the "front image" face, hiding the "back image" face
-- hints:
-	- you probably will need to preemptively flip one of the faces, like you would expect to arrange two sides of a piece of paper
-	- perspective can be helpful
-	- don't forget about duration
-	- For added fidelity, make sure each face is rotating in a way that looks realistic
-	- If you don't specific, the back side, or "backface" of an image will be visible unless you hide it.
+### Feature Set 1 - Creating Variables
 
-    
-### Feature Set 3 (Layout 3) 
+>##### Create three variables inside your script tag
+- Create a variable `firstName`, set it equal to your first name
+- Create a variable `lastName`, set it equal to your last name
+- create a variable `age`, set it equal to your age
 
-> - Create a file, fs3.html, to contain the version for this prototype
-- Copy your code from fs2.html
-- Duplicate your card container such that your cards are side by side, with an appropriate spacing between them if desired.
-	- At max, should be 6 cards wide by 3 cards high.
-	- Should be somewhat responsive to resizing.
-	- All cards should be hover functional still, without animations spilling over to other cards inadvertently 
+### Feature Set 2 - Concatenation &amp; console.log() 
 
-<img src="https://github.com/Learning-Fuze/prototypes/blob/master/html_css_1_card_prototype/helper_images/all_cards.png">
+>##### Concatenation
+- Create a variable `output1`
+	- Using your variables from *Feature Set 1* and concatenation, create a string that resembles the example string 
+	below and store it in output1
+	- *String Example:* "First name: Marry, Last name: Smith, Age: 57."
+
+>##### console.log()
+- Use `console.log()` in your script tag to log out your `output1` variable to the console
+
+### Feature Set 3 - Adding Variables Together
+
+>##### Two more Variables
+- Create two more variables 
+	- Create a variable `x`, set it equal to any whole number between 1-100
+	- Create a variable `y`, set it equal to any DIFFERENT whole number between 1-100
+
+>##### Log out some more info
+- Create three more output variables:
+	- `output2`
+	- `output3`
+	- `output4`
+- Set your output variables as follows:
+- As an example I'll choose x=12 and y=55
+	- **output2** = the total of `x` and `y`
+		- *Example output:* `67`
+	- **output3** = x and y concatenated 
+		- *Example output:* `"1255"`
+	- **output4** = Text concatenated with the total of `x` and `y`
+		- *Example output:* `"The total of x and y is 67"`
 
 ## After Coding Details
 ##### 1. Save files to Git - Add all modified & created files
@@ -91,7 +103,7 @@ For our examples, we will use the following urls for images.  You can change the
 
 > Run below command in terminal tab
 
-> `git commit -m "html_css_1_card_prototype - Eric Johnson"`
+> `git commit -m "js_primitive_data_types - Eric Johnson"`
 > - Eric Johnson should be replaced with your First & Last name
 > - Grouping files with a message allows those changes to be seen by others as a specific version of the code
 
@@ -99,10 +111,10 @@ For our examples, we will use the following urls for images.  You can change the
 
 > Run below command in terminal tab
 
-> `git push origin html_css_1_card_prototype`
+> `git push origin js_primitive_data_types`
 > - When running the code above, the Git application will send all commits (<b>groupings of saved files</b>) to the 
 remote location (<b>github.com/[your-user-name]/prototypes indicated by origin</b>), specifically to the feature 
-branch/group <b>html_css_1_card_prototype</b>
+branch/group <b>js_primitive_data_types</b>
 
 ##### 4. See if your feature fits with what everyone else was working on (Pull Request)
 
@@ -130,7 +142,7 @@ branch/group <b>html_css_1_card_prototype</b>
 >> 1. `head fork: [your_user_name]/prototypes`
 >>   1. Here you will select the option that matches your username / prototypes
 >>   1. If you can not locate an option that has your username / prototypes, contact an instructor
->> 1. `compare: html_css_1_card_prototype`
+>> 1. `compare: js_primitive_data_types`
 >>   1. Here you will locate the branch name (or feature name) you created at the beginning of the prototype
 >>   1. This will usually be the same as the name of the prototype
 >> 1. Github.com will let you know if the code can be merged automatically (without needing a manual merge)
@@ -142,7 +154,7 @@ branch/group <b>html_css_1_card_prototype</b>
 
 > ####Step 4.4 Add details into the pull request
 > 1. Give the pull request a title, by default its the name of the last commit (package) message that was saved
->   1. If you set the commit message above you should get get <b>html_css_1_card_prototype - [you name first & last 
+>   1. If you set the commit message above you should get get <b>js_primitive_data_types - [you name first & last 
 name]</b> already pre populated in the Title field
 > 1. <b>Don't assign a user.</b> (An Instructor will select who this gets assigned too)
 >   1. Further into the cohort we will have students learn to review pull requests
