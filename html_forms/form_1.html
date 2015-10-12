@@ -1,0 +1,70 @@
+<html>
+<head>
+    <style>
+        #form_1{
+            background-color:beige;
+            font-family:cursive;
+            border:1px solid steelblue;
+            box-shadow:10px 10px 5px #888888;
+            padding:15px;
+        }
+    </style>
+</head>
+<body>
+    <form action="http://learningfuze.com/echo.php" method="get">
+        <div>
+            <form id="form_1">
+                First name:<br>
+                <input type="text" name="first_name">
+                <br>
+                Last name:<br>
+                <input type="text" name="last_name">
+            </form>
+
+            <form>
+                First name:<br>
+                <input type="text" name="first_name">
+                <br>
+                Last name:<br>
+                <input type="text" name="last_name">
+            </form>
+        </div>
+        <div>
+        <textarea rows="4" cols="50">
+            Hello world. This is my text area.
+        </textarea>
+        </div>
+        <div>
+            <form>What is your favorite food?
+                <br>
+                <input type="radio" name="food" value="sashimi" checked>Sashimi
+                <br>
+                <input type="radio" name="food" value="poke">Poke
+                <br>
+                <input type="radio" name="food" value="Lobster">Lobster
+            </form>
+        </div>
+        <div>
+            <form>
+                <input type="checkbox" name="game" value="Super Smash Bros"> Super Smash Bros
+                <br>
+                <input type="checkbox" name="game" value="Bioshock"> Bioshock
+                <br>
+                <input type="checkbox" name="game" value="Spades" checked="checked"> Spades
+                <br>
+                <input type="checkbox" name="game" disabled="disabled" value="I do not play games"> I do not play games
+                <br>
+            </form>
+        </div>
+        <div>
+            <select>
+                <option>Forgetting Sarah Marshall</option>
+                <option>Midnight in Paris</option>
+                <option>Ex Machina</option>
+                <option>Her</option>
+            </select>
+        </div>
+    <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
