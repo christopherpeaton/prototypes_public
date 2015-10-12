@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Forms - Feature Set 2</title>
+    <!-- Internal Stylesheet -->
+    <style>
+        body{
+            background-color: #a31919;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 2vh 9vw;
+            font-size: 100%;
+        }
+        h1{
+            font-weight: 300;
+            font-size: 160%;
+        }
+        h1:first-child{
+            text-align: center;
+        }
+        ol{
+            padding-left: 3%;
+        }
+
+        /* Form Input Boxes */
+        form {
+            width: 100%;
+        }
+        input{
+            font-size: 105%;
+            width: 45%;
+            padding: 1em;
+            margin-right: 1%;
+            margin-bottom: 1em;
+            border: none;
+            box-shadow: 0 0.25em 0 #771919;
+        }
+
+        /* Social Security box */
+        input:nth-of-type(2){
+            width: 30%;
+        }
+
+        /* Submit Button */
+        input:last-of-type{
+            float: right;
+            text-align: center;
+            color: #ffffff;
+            background-color: #820000;
+            width: 30%;
+            margin-right: 2%;
+        }
+
+        /* Mobile Screen (iPhone 6) adjustments */
+        @media screen and (max-width: 375px){
+            body{
+                padding: 2vh 9vw;
+            }
+            h1{
+                text-align: center;
+            }
+
+            /* Form Input boxes */
+            form{
+                width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+            input{
+                width: 89%;
+                margin-right: 0;
+                margin-bottom: 10%;
+            }
+            /* Social Security box */
+            input:nth-of-type(2){
+                width: 89%;
+            }
+            /* Submit button */
+            input:last-of-type{
+                width: 100%;
+                margin: 0;
+                padding: 1em 0;
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Instructions for Application - Academic Year 2014
+    </h1>
+
+    <!-- Application Instructions -->
+    <ol id="app_steps">
+        <li>
+            The deadline for 2014-2015 scholarship application: March 30, 2014. Applications received after March 30 will
+            be considered on a funds available basis.
+        </li>
+        <li>
+            Only completed applications will be considered. Do Not Leave Items Blank.
+        </li>
+        <li>
+            Attach a current copy of your high school and/or college transcripts.
+        </li>
+        <li>
+            Two signed letters of recommendation (from non-relatives) must be attached to this application.
+        </li>
+    </ol>
+
+    <!-- Application Disclaimer -->
+    <p>
+        Consideration for any scholarship award is based on a point system including GPA, participation in extra-curricular
+        activities, school organizations and community service. This will be a four semester scholarship, and you must
+        maintain criteria set in guidelines.
+    </p>
+
+    <h1>
+        Applicant Data
+    </h1>
+    <br>
+    <!-- Form Data -->
+    <form action="http://learningfuze.com/echo.php" method="post">
+        <!-- Applicant Name -->
+        <input type="text" name="full_name" placeholder="Last Name, First Name, MI">
+        <!-- Social Security Number -->
+        <input type="text" name="social_sec_num" maxlength="11" placeholder="Social Security #">
+        <!-- Address -->
+        <input type="text" name="address" placeholder="City, State, Zip, County">
+        <!-- Phone Number -->
+        <input type="text" name="phone_num" maxlength="13" placeholder="Permanent Home Phone">
+        <!-- Major -->
+        <input type="text" name="major" placeholder="Intended major at University">
+        <!-- University Location -->
+        <input type="text" name="uni_location" placeholder="At which location will you be attending?">
+        <!-- Next page -->
+        <input type="submit" value="NEXT &raquo">
+    </form>
+</body>
+</html>
