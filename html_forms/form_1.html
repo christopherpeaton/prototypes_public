@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms Feature Set 1</title>
+    <style>
+        .feature_set_1 .shadow {
+            background-color: mediumpurple;
+            font-variant-alternates: stylistic(user-defined-ident);
+            border: 2px solid yellow;
+            box-shadow: 5px 5px 5px black;
+            margin-right: 20px;
+            color: white;
+        }
+        .move-right {
+            margin-right: 20px;
+        }
+        input, textarea, select {
+            margin-top: 1%;
+        }
+    </style>
+</head>
+<body>
+    <form class="feature_set_1" action="http://learningfuze.com/echo.php" method="get">
+        <fieldset>
+            <legend>Feature Set 1</legend>
+            <label for="input1">Text Input 1</label>
+            <input class="shadow" type="text" id="input1">
+            <label for="input2">Text Input 2</label>
+            <input type="text" id="input2"><br>
+            <label for="textarea">TextArea</label>
+            <textarea id="textarea"></textarea><br>
+            <input type="radio" name="favorite_food"  id="sushi" value="sushi" checked="checked">
+            <label for="sushi" class="move-right">Sushi</label>
+            <input type="radio" name="favorite_food" id="pizza" value="pizza">
+            <label for="pizza" class="move-right">Pizza</label>
+            <input type="radio" name="favorite_food" id="mac&amp;cheese" value="mac&amp;cheese">
+            <label for="mac&amp;cheese">Mac&amp;Cheese</label><br>
+            <input type="checkbox" name="favorite_games" id="spades" value="spades">
+            <label for="spades" class="move-right">Spades</label>
+            <input type="checkbox" name="favorite_games" id="1-4-24" value="1-4-24">
+            <label for="1-4-24" class="move-right">Ace-Four-Twenty Four</label>
+            <input type="checkbox" name="favorite_games" id="poker" value="poker">
+            <label for="poker" class="move-right">Poker</label>
+            <input type="checkbox" name="favorite_games" id="rummikub" value="rummikub" disabled>
+            <label for="rummikub" class="move-right">Rummikub</label><br>
+            <label for="favorite_movies">Favorite Movies</label>
+            <select id="favorite_movies" name="favorite_movies">
+                <option value="pulp fiction">Pulp Fiction</option>
+                <option value="one flew over the cuckoo's nest">One Flew Over the Cuckoo's nest</option>
+                <option value="sin city">Sin City</option>
+                <option value="a leage of their own">A League Of Their Own</option>
+            </select><br>
+            <input type="submit" value="submit">
+        </fieldset>
+    </form>
+</body>
+</html>
