@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Forms - Feature Set 1</title>
+
+    <!-- Using internal stylesheet only. -->
+    <style>
+        #name{
+            background-color: #66e0a3;
+            font-family: "Times New Roman", Time, serif;
+            font-size: 120%;
+            border: 2px #a319a3 solid;
+            box-shadow: 7px 7px 8px #888888;
+        }
+        label{
+            margin-right: 1%;
+        }
+    </style>
+
+</head>
+<body>
+    <form action="http://learningfuze.com/echo.php" method="post">
+        <!-- Text Inputs -->
+        <label for="name">
+            What is your name?
+        </label>
+        <input type="text" name="user_name" id="name" placeholder="Name">
+        <br><br>
+        <label for="book">
+            What is your favorite book/book series?
+        </label>
+        <input type="text" name="fav_book" id="book" placeholder="Favorite Book">
+        <br><br>
+
+        <!-- Text Area -->
+        <label for="music">
+            What type of music do you like? Who are some of your favorite artists?
+        </label>
+        <br>
+        <textarea name="fav_music" id="music" rows="5" cols="50">
+        </textarea>
+        <br><br>
+
+        <!-- Radio Buttons -->
+        Which of these is your favorite type of food?
+            <br>
+            <input type="radio" name="fav_food" id="squash" value="squash" checked>
+                <label for="squash">
+                    Squash
+                </label>
+            <br>
+            <input type="radio" name="fav_food" id="cheese" value="cheese">
+                <label for="cheese">
+                    Cheese
+                </label>
+            <br>
+            <input type="radio" name="fav_food" id="poultry" value="poultry">
+                <label for="poultry">
+                    Poultry
+                </label>
+        <br><br>
+
+        <!-- Checkboxes -->
+        Which of these is your favorite game?
+            <br>
+            <input type="checkbox" name="game1" id="game1" value="cornhole">
+                <label for="game1">
+                    Cornhole
+                </label>
+            <br>
+            <input type="checkbox" name="game2" id="game2" value="yahtzee">
+                <label for="game2">
+                    Yahtzee
+                </label>
+            <br>
+            <input type="checkbox" name="game3" id="game3" value="catch_phrase">
+                <label for="game3">
+                    Catch Phrase
+                </label>
+            <br>
+            <input type="checkbox" name="game4" id="game4" value="jumanji" disabled>
+                <label for="game4">
+                    Jumanji
+                </label>
+        <br><br>
+
+        <!-- Select Menu -->
+        <label for="fav_movie">
+            Choose your favorite movie?
+        </label>
+        <br>
+            <select name="fav_movie" id="fav_movie" multiple>
+                <option value="peter_pan">
+                    Peter Pan
+                </option>
+                <option value="about_boy">
+                    About a Boy
+                </option>
+                <option value="zero_dark">
+                    Zero Dark Thirty
+                </option>
+                <option value="ferris">
+                    Ferris Bueller's Day Off
+                </option>
+            </select>
+        <br><br>
+
+        <!-- Submit Form -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
