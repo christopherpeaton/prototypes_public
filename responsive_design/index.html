@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @media screen and (min-width: 376px) {
+
+            body {
+                line-height: 1.6em;
+                width: 100%;
+            }
+
+            form {
+                width: 100%;
+                color: white;
+                position: relative;
+                background-color: #b13939;
+                margin: 0 auto;
+            }
+
+            form>p {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            form > ol {
+                margin-left: -2%;
+                font-size: 1em;
+                width: 100%;
+            }
+
+            form > ol > li {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            form > h1 {
+                text-align: center;
+                width: 96%;
+                margin: 3% auto 0 auto;
+                padding-top: 5%
+            }
+
+            form > input:not([type='submit']) {
+                height: 4em;
+                margin: 1% 1%;
+                display: inline-block;
+                width: 45%;
+            }
+
+            form > input:nth-child(5) {
+                width: 25%;
+            }
+
+            form > input[type='submit'] {
+
+                background-color: #881717;
+                border: none;
+                color: white;
+                width: 20%;
+                height: 3em;
+                margin: 2%;
+                margin-left: 4%;
+                position: relative;
+                left: 69%;
+            }
+
+            form > input {
+                box-shadow: black 0 2px;
+            }
+        }
+
+        @media screen and (max-width:375px){
+
+            body {
+                line-height: 1.4em;
+                width: 100%;
+            }
+
+            form {
+                width: 96%;
+                color: white;
+                position: relative;
+                background-color: #b13939;
+                margin: 0 auto;
+            }
+
+            form > ol {
+                margin-left: -4%;
+                font-size: 1em;
+                width: 100%;
+            }
+
+            form>p {
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            form > ol > li {
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            form > h1 {
+                text-align: center;
+                width: 90%;
+                margin: 0 auto;
+                padding-top: 5%;
+                line-height: 1.2em;
+            }
+
+            form > input:not([type='submit']) {
+                height: 4em;
+                margin: 2% auto;
+                display: block;
+                width: 90%;
+            }
+
+            form > input[type='submit'] {
+
+                background-color: #881717;
+                border: none;
+                color: white;
+                width: 20%;
+                height: 3em;
+                margin: 2%;
+                margin-left: 4%;
+            }
+
+            form > input {
+                box-shadow: black 0 2px;
+            }
+        }
+
+
+        }
+
+    </style>
+</head>
+<body>
+
+<form>
+    <h1>Instructions for Application - Academic Year 2014</h1>
+    <ol>
+        <li>The deadline for 2014-2015 scholarship application: March 30,2014. Applications received after March
+            30 will be considered on a funds available basis</li>
+        <li>Only completed applications will be considered. Do Not Leave Items Blank.</li>
+        <li>Attach a current copy of your high school and/or college transcripts.</li>
+        <li>Two signed letters of recommnedation (from non-relatives) must be attached to this application</li>
+    </ol>
+
+    <p>Consideration for any scholarship award is based on a point system including GPA, participation in
+        extra-curricular activites, school organization and community service. This will be a four semester
+        scholarship, and you must maintain criteria set in the guidelines.</p>
+    <input type="text" name="full-name" placeholder="Last Name, First Name, MI">
+    <input type="password" name="social-security #" placeholder="Social Security #">
+
+    <input type="text" name="address" placeholder="City, State, Zip, County">
+    <input type="tel" name="phone-number" placeholder="Permanent Home Phone">
+
+    <input type="text" name="major" placeholder="Intended Major at University">
+    <input type="text" name="location" placeholder="At which location will you be attending?">
+
+    <input type="submit" value="NEXT>>" name="submit">
+</form>
+
+</body>
+</html>
