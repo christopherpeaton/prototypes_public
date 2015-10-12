@@ -1,0 +1,22 @@
+body {
+    padding: 0;
+    margin: 0 auto;
+    width: 94vw;
+}
+
+main {
+    border: 1px solid deeppink;
+    margin: 25px;
+    min-height: 80vh; 
+}
+
+#one {
+    background-color: aqua;
+    font-family: Helvetica;
+    -webkit-box-shadow: 1px 1px 2px 3px #ccc;
+    /*Safari, Chrome, and Android*/
+    -moz-box-shadow: 1px 1px 2px 3px #ccc;
+    /* Firefox 3.5 - 3.6 */
+    box-shadow: 1px 1px 2px 3px #ccc;
+    /*horizontal offset, vertical offset, blur-radius, optional spread radius*/
+}
