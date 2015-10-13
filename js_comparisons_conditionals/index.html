@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script>
+        //feature set 1
+        var mySmallNumber = 5;
+        var myString = "5";
+        var myBigNumber = 225;
+        //feature set 2
+        var output1;
+        var output2;
+        var output3;
+        var output4;
+
+        output1 = "mySmallNumber == myString is " + (mySmallNumber == myString);
+        output2 = "mySmallNumber === myString is " + (mySmallNumber === myString);
+        output3 = "mySmallNumber < myBigNumber is" + (mySmallNumber < myBigNumber);
+        output4 = "mySmallNumber > myBigNumber is " + (mySmallNumber > myBigNumber);
+
+        console.log(output1);
+        console.log(output2);
+        console.log(output3);
+        console.log(output4);
+        //small challenge
+        var challenge = ((mySmallNumber + myString) === (mySmallNumber + myString);
+        console.log(challenge);
+//        Uncaught SyntaxError: Unexpected token }
+//        at Object.InjectedScript._evaluateOn (<anonymous>:904:140)
+//        at Object.InjectedScript._evaluateAndWrap (<anonymous>:837:34)
+//        at Object.InjectedScript.evaluate (<anonymous>:693:21)
+
+        //feature set 3
+        myTruth = true;
+        myLie = false;
+
+        //feature set 4
+        if(myTruth == true){
+            console.log("I'm true!");
+        }
+
+        if(myTruth == true){
+            console.log("I'm true!");
+        }
+        else{
+            console.log("I'm false!");
+        }
+
+        if(myLie == false){
+            console.log("I'm a true lie!");
+        }
+        //feature set 5
+        var myNumber = 55;
+        switch(myNumber){
+            case 20:
+                console.log('You gotta small number.');
+                break;
+            case 55:
+                console.log('You got a cool number.');
+                break;
+            case 95:
+                console.log('You gotta big number.');
+                break;
+            default:
+                break;
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
