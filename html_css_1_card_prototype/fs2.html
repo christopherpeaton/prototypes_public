@@ -1,0 +1,67 @@
+<!doctype html>
+    <html>
+        <head>
+            <title>Cards for Card Game</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+           <style>
+                body{
+                    margin:auto;
+                 }
+                .game_area{
+                    height:100%;
+                    width:100%;
+                    background-color: darkgrey;
+                    position:fixed;
+                 }
+                .card{
+                    display:inline-block;
+                    width:100%;
+                    height:100%;
+                    position:relative;
+                 }
+                .front{
+                    width:100%;
+                    height:100%;
+                    display:inline-block;
+                    position:absolute;
+                    transform:rotateY(180deg);
+                    backface-visibility: hidden;
+                 }
+                .card{
+                    width: 100%;
+                    height: 100%;
+                    perspective: 1000;
+                    transform-style: preserve-3d;
+                    transition: all 1.0s linear;
+                 }
+                .container:hover .card {
+                    transform: rotateY(180deg);
+                 }
+                .container{
+                    width:50px;
+                    height:73px;
+                 }
+                @media screen and (min-width: 380){
+                    body{
+                        background-color: darkgray;
+                    }
+
+                }
+           </style>
+        </head>
+           <body>
+              <div class="game_area">
+              <div class="container">
+              <div class="card">
+                   <div class="front">
+                        <img src="images/afp-cute-puppy.jpg" width="100%" height="100%">
+                   </div>
+                   <div class="back">
+                        <img src="images/cardback-rankedladder.png" width="100%" height="100%">
+                   </div>
+              </div>
+              </div>
+              </div>
+           </body>
+    </html>
