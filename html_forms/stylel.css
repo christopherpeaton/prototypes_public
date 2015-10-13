@@ -1,0 +1,45 @@
+#firstname {
+    background-color: aqua;
+}
+#lastname {
+    border:1px solid deeppink;
+    box-shadow: 10px 10px 5px #888888;
+
+}
+label {
+    font: 1.4em compact, sans-seif;
+}
+div {
+    width:80%;
+    height: 100%;
+    background-color: darkred;
+    color: #fff;
+    padding: 5%;
+}
+div h1 {
+    font-size: 1.4em;
+    text-align: center;
+}
+input {
+    color:#888;
+    width:45%;
+    height:6vh;
+    margin: 1%;
+    box-shadow: 0px 2px 0px #222;
+    font-size:1em;
+    text-align: left;
+
+}
+#social {
+    width:20%;
+}
+
+#submit {
+    float: right;
+    text-align: center;
+    width:20%;
+    height:6vh;
+    background-color: darkred;
+    border: 1px solid #888888;
+
+}
