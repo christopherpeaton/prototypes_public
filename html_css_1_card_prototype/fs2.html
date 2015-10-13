@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Feature Set 2</title>
+    <style>
+
+        .play_area{
+            width: 100vw;
+            height:100vh;
+        }
+        /* Card formatting */
+        .card, .back, .front, img{
+            width: 15vw;
+            height: 30vh;
+        }
+        .front, .back{
+            backface-visibility: hidden;
+            position: absolute;
+        }
+
+        /* Time to turn card */
+        .card{
+            transition-duration: 3s;
+            transform-style: preserve-3d;
+        }
+
+        /* Turn the card over */
+        .card:hover{
+            transform: rotateY(180deg);
+        }
+        .back{
+            z-index: 2;
+            transform: rotateY(0deg);
+        }
+        .front{
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="play_area">
+        <div class="card">
+            <div class="front">
+                <img src="images/afp-cute-puppy.jpg">
+            </div>
+            <div class="back">
+                <img src="images/cardback-rankedladder.png">
+            </div>
+        </div><!-- end .card -->
+    </div><!-- end .play_area -->
+
+</body>
+</html>
