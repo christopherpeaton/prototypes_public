@@ -1,14 +1,4 @@
-# HTML & CSS - Responsive Design
-
-##Dev Tools Instruction - This is important
-   - Using dev tools to see mobile views in the browser - <a href="https://github.com/Learning-Fuze/prototypes/blob/assets/assets/html_css_responsive/README.md" target="_blank">Reference Link</a>
-
-## Subject Resources
-- Presentation
-    -  HTML & CSS Responsive and Mobile First - <a href="https://www.youtube.com/watch?v=aZbTiZg_i1U" target="_blank">Video Link</a>
-- Readings
-    - HTML & CSS: Responsive & Mobile First - <a href="https://drive.google.com/a/learningfuze.com/file/d/0B7eOl4joefDubE1qWDRZSVJXcWM/view?usp=sharing" target="_blank">Link</a>
-    - w3schools: HTML Responsive - <a href="http://www.w3schools.com/html/html_responsive.asp" target="_blank">Link</a>
+# HTML CSS 1 Card Prototype
 
 ## Code Setup Details
 
@@ -33,48 +23,62 @@
 > `git pull https://github.com/Learning-Fuze/prototypes.git` & press enter
 > - The command above downloads the newly posted prototypes and saves them to your local machine
 
-> `git checkout -b html_css_responsive`
+> `git checkout -b html_css_1_card_prototype`
 > - Creating this feature groupings allow users to modify code without causing issues with the current functioning code.
 > - Any modifications to these files after <b>branching</b> can be undone
-> - "html_css_responsive" is the branch name.
+> - "html_css_1_card_prototype" is the branch name.
 
 ## Coding Instructions
+For our examples, we will use the following urls for images.  You can change them if you wish.
+- back image:
+	- cardback-rankedladder.png
+- front image: 
+	- afp-cute-puppy.jpg
 
-### Feature Set 1 - Basic responsive layout
-####  Create index.html
-##### Include:
-> - A graphic that is 50% of its available size - minimum 75px
-> - Float the graphic left
-> - 2 paragraphs containing <a href="http://www.lipsum.com/" target="_blank">lorem ipsum</a>
-> - Ensure that fonts are responsive to the page and scale as necessary
->
+### Feature Set 1 (Layout 1)
+#### Create a single card with simple animation
+> - Create a file, fs1.html, put the items for Feature Set 1 within it.
+- Create a container element that will hold all cards.  A good class name would be 'game_area'
+	- should fill all available space, vertically and horizontally
+- Create a single card container that will hold the front and back faces of a card.  
+	- should fill enough space horizontally so that, with maximum available space, 6 cards fit on a single line.  Please note that the card container only holds one of those cards
+- Create a card front face and card back face within that container.  
+	- There are many ways you can do this.  Find a way that works best for you.
+	- The front card face should display the "front image" from above.
+	- The back card face should display the "back image" from above.
+	- Both the back and front should be one on top of the other
+	- The "back image" face should be visible, hiding the "front image" face.
+	- The "back image" face should completely overlap the "front image" face.
+- Add hover functionality via CSS:
+	- On hover of the card container
+	- cause the back face to disappear.  Don't worry about animation, this will be for the next feature set.
 
-### Feature Set 2 - Responsive form
-> - Make form2.html responsive
+<img src="https://github.com/Learning-Fuze/prototypes/blob/html_css_1_card_prototype/html_css_1_card_prototype/helper_images/side_by_side.png">
 
-#### Create responsive.html
+### Feature Set 2 (Layout 2) 
+#### Create a single card with rotate animation
+> - Create a file, fs2.html, and put the requisite code in it to satisfy Feature Set 2
+- Use the layout / structure you created for Feature Set 1 and duplicate it in fs2.html
+- Alter the CSS hover effect so that, on hover, the card appears to rotate, revealing the "front image" face, hiding the "back image" face
+- hints:
+	- you probably will need to preemptively flip one of the faces, like you would expect to arrange two sides of a piece of paper
+	- perspective can be helpful
+	- don't forget about duration
+	- For added fidelity, make sure each face is rotating in a way that looks realistic
+	- If you don't specific, the back side, or "backface" of an image will be visible unless you hide it.
 
-> - copy and paste the code from form2.html that you previously created in the <a href="https://github.com/Learning-Fuze/prototypes/tree/master/html_forms" target="_blank">html forms prototype</a>
-> 
-#### Media queries
-> 
-##### At the iphone6 screen width (375px)
->
-Your form should do the following:
->
-> 1. inputs should be in a single column 
-> 1. inputs should be nearly full width, with some side gutters
-> 1. Should be adaptable between desktop and mobile
->
-### Example images
-> 
-form3 should look like the following at the iphone6 width and height:
-> #### iphone6 devtools view:
-  - Using dev tools to see mobile views in the browser - <a href="https://github.com/Learning-Fuze/prototypes/blob/assets/assets/html_css_responsive/README.md" target="_blank">Reference Link</a>
-> <img src="https://github.com/Learning-Fuze/prototypes/blob/assets/assets/html_css_responsive/iphone6_responsive.png">
->
-> #### close up: 
-> <img src="https://github.com/Learning-Fuze/prototypes/blob/assets/assets/html_css_responsive/form3_responsive.png">
+    
+### Feature Set 3 (Layout 3) 
+
+> - Create a file, fs3.html, to contain the version for this prototype
+- Copy your code from fs2.html
+- Duplicate your card container such that your cards are side by side, with an appropriate spacing between them if desired.
+	- At max, should be 6 cards wide by 3 cards high.
+	- Should be somewhat responsive to resizing.
+	- All cards should be hover functional still, without animations spilling over to other cards inadvertently 
+
+<img src="https://github.com/Learning-Fuze/prototypes/blob/html_css_1_card_prototype/html_css_1_card_prototype/helper_images/all_cards.png">
+
 ## After Coding Details
 ##### 1. Save files to Git - Add all modified & created files
 > Run below command in terminal tab
@@ -87,16 +91,18 @@ form3 should look like the following at the iphone6 width and height:
 
 > Run below command in terminal tab
 
-> `git commit -m "html_css_responsive - Your Name"`
-> - Your Name should be replaced with your First & Last name
+> `git commit -m "html_css_1_card_prototype - Eric Johnson"`
+> - Eric Johnson should be replaced with your First & Last name
 > - Grouping files with a message allows those changes to be seen by others as a specific version of the code
 
 ##### 3. Allow others to see your changes by uploading them to the Github website
 
 > Run below command in terminal tab
 
-> `git push origin html_css_responsive`
-> - When running the code above, the Git application will send all commits (<b>groupings of saved files</b>) to the remote location (<b>github.com/[your-user-name]/prototypes indicated by origin</b>), specifically to the feature branch/group <b>html_css_responsive</b>
+> `git push origin html_css_1_card_prototype`
+> - When running the code above, the Git application will send all commits (<b>groupings of saved files</b>) to the 
+remote location (<b>github.com/[your-user-name]/prototypes indicated by origin</b>), specifically to the feature 
+branch/group <b>html_css_1_card_prototype</b>
 
 ##### 4. See if your feature fits with what everyone else was working on (Pull Request)
 
@@ -124,7 +130,7 @@ form3 should look like the following at the iphone6 width and height:
 >> 1. `head fork: [your_user_name]/prototypes`
 >>   1. Here you will select the option that matches your username / prototypes
 >>   1. If you can not locate an option that has your username / prototypes, contact an instructor
->> 1. `compare: html_css_responsive`
+>> 1. `compare: html_css_1_card_prototype`
 >>   1. Here you will locate the branch name (or feature name) you created at the beginning of the prototype
 >>   1. This will usually be the same as the name of the prototype
 >> 1. Github.com will let you know if the code can be merged automatically (without needing a manual merge)
@@ -136,7 +142,8 @@ form3 should look like the following at the iphone6 width and height:
 
 > ####Step 4.4 Add details into the pull request
 > 1. Give the pull request a title, by default its the name of the last commit (package) message that was saved
->   1. If you set the commit message above you should get get <b>html_css_responsive - [you name first & last name]</b> already pre populated in the Title field
+>   1. If you set the commit message above you should get get <b>html_css_1_card_prototype - [you name first & last 
+name]</b> already pre populated in the Title field
 > 1. <b>Don't assign a user.</b> (An Instructor will select who this gets assigned too)
 >   1. Further into the cohort we will have students learn to review pull requests
 > 1. Click on "Create pull Request"
