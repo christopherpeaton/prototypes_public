@@ -1,0 +1,54 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    padding: 0;
+}
+
+.game_area {
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    perspective: 1000px;
+    margin: auto;
+    position: relative;
+}
+
+.card {
+    transition: 1s;
+    transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+    transform-style: preserve-3d;
+    float: left;
+    margin: 1vh 2vw;
+}
+
+.card, .front, .back, .front img, .back img {
+    height: 250px;
+}
+
+.front img, .back img {
+    width: 150px;
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front {
+    transform: rotateY(-180deg);
+    border-radius: 11px;
+}
+
+.back {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
