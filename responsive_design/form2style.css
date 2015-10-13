@@ -1,0 +1,55 @@
+body {
+    background-color: #b13939;
+}
+#wrap {
+    width: 90%;
+    margin: auto;
+    font-family: arial, helvetica, sans-serif;
+    color: white;
+    text-align: left;
+}
+div h1:first-child {
+    text-align: center;
+    margin: 2em;
+}
+div h1:nth-child(4) {
+    margin: 2em;
+    margin-left: 1em;
+}
+ol {
+    padding-left:0;
+}
+ol li {
+    list-style-position: inside;
+}
+#ss {
+    width: 20%;
+    box-shadow: 0 8px 4px -4px #932929;
+}
+form input{
+    width: 48%;
+    padding: 1em;
+    height: 5vh;
+    color: darkgrey;
+    margin-bottom: 2em;
+    margin-right: .5em;
+    float: left;
+}
+form input[type=submit] {
+    float: right;
+    clear:both;
+    width: 20%;
+    color: white;
+    background-color: #881717;
+    border: none;
+    box-shadow: 0 8em 4em -4em #932929;
+}
+@media screen and (min-width: 480px) {
+    #wrap h1 {font-size: 80%}
+    #wrap ol li {font-size:50%; padding: 1% 0;}
+    #wrap p {font-size: 50%}
+    div h1:nth-child(4) {text-align:center}
+    #ss {width: 100%}
+    form input {width: 100%; font-size: 130%; height: 50%;}
+    form input[type=submit] {width: 100%; float: left;}
+}
