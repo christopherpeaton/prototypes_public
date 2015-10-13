@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript-Comparisons and Conditionals</title>
+    <script>
+        //Feature Set 1 - Create some variables
+        var mySmallNumber = 5;
+        var myString = "5";
+        var myBigNumber = 255;
+        //Feature Set 2 - Create output
+        var output1 = "mySmallNumber == myString is " + (mySmallNumber == myString);
+        var output2 = "mySmallNumber === myString is " + (mySmallNumber === myString);
+        var output3 = "mySmallNumber < myBigNumber is " + (mySmallNumber < myBigNumber);
+        var output4 = "mySmallNumber > myBigNumber is " + (mySmallNumber > myBigNumber);
+        console.log(output1);
+        console.log(output2);
+        console.log(output3);
+        console.log(output4);
+        //Small challenge - Result is true, concatenating a number and string, both ways will turn it into a string
+        var challenge = (mySmallNumber + myString) === (myString + mySmallNumber);
+        console.log(challenge);
+        //Feature Set 3 - Create some more variables
+        var myTruth = true;
+        var myLie = false;
+        // Feature Set 4 - Conditionals
+        //1.
+        if (myTruth) {
+            console.log("I'm true!");
+        }
+        //2.
+        if (myLie) {
+            console.log("I'm true!");
+        }else {
+            console.log("I'm false");
+        }
+        //3.
+        if (myTruth == myLie) {
+            console.log("I'm true!");
+        }else {
+            console.log("I'm false!");
+        }
+        //4.
+        if (!myLie) {
+            console.log("I'm a true lie!");
+        }
+        //Feature Set 5 - Switch Statement
+        var myNumber = 86;
+        switch(myNumber) {
+            case 1:
+                console.log("not even close");
+                break;
+            case 69:
+                console.log("getting warmer!");
+                break;
+            case 86:
+                console.log("86 is right!");
+                break;
+            default:
+                console.log("none of them are right");
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
