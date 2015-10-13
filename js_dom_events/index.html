@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>JS DOM Events</title>
 </head>
-<!-- Feature Set 3 -->
-<body onload="console.log('JS DOM Events body loaded')">
+<!-- Feature Set 3 & 4 -->
+<body onload="console.log('JS DOM Events body loaded')" onclick="console.log('Body clicked too')">
     <!-- Feature Set 1 -->
     <!-- Button to Click -->
     <button onclick="console.log('Button clicked')">
@@ -22,7 +22,11 @@
         Hover mouse pointer on this line.
     </h2>
 
-
+    <!-- Feature Set 4 -->
+    <!-- Paragraph to Click -->
+    <p>
+        Click on this <em onclick="console.log('WORD clicked')">word</em> only.
+    </p>
 
 </body>
 </html>
