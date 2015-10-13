@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feature Set 2</title>
+
+    <style>
+
+        .game_area {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .card, .front, .back  {
+            height: 25%;
+            width: 15%;
+            float: left;
+        }
+
+        .back:hover {
+            visibility: hidden;
+        }
+
+        .card {
+            transition-duration: 2s;
+        }
+
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+        .front {
+            transform: rotateY(0deg);
+        }
+        .back {
+            transform: rotateY(180deg);
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+<!-- Feature Set 2 -->
+
+<div class="game_area">
+    <div class="card">
+        <div class="front">
+            <img src="images/afp-cute-puppy.jpg">
+        </div>
+        <div class="back">
+            <img src="images/cardback-rankedladder.png">
+        </div>
+    </div>
+
+</body>
+</html>
