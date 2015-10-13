@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        var mySmallNumber = 5;
+        var myString = "5";
+        var myBigNumber = 255;
+
+        var output1 = "mySmallNumber == myString is " + (mySmallNumber == myString);
+        var output2 = "mySmallNumber === myString is " + (mySmallNumber === myString);
+        var output3 = "mySmallNumber < myBigNumber is " + (mySmallNumber < myBigNumber);
+        var output4 = "mySmallNumber > myBigNumber is " + (mySmallNumber > myBigNumber);
+
+        console.log(output1);
+        console.log(output2);
+        console.log(output3);
+        console.log(output4);
+
+        var challenge = mySmallNumber + myString === myString - mySmallNumber;
+        console.log(challenge);
+        /* console.log(challenge) will = FALSE */
+
+        var myTruth = true;
+        var myLie = false;
+
+        if (myTruth) {
+            console.log("I'm true!")
+        }
+
+        if (myLie == true) {
+            console.log("I'm true!")
+        }
+        else {
+            console.log("I'm false!")
+        }
+
+        if (myTruth != myLie) {
+            console.log("I'm true!")
+        }
+        else {
+            console.log("I'm false")
+        }
+
+        if (!myLie) {
+            console.log("I'm a true lie!")
+        }
+
+        var myNumber = 77;
+        switch(myNumber) {
+            case 1: console.log("my number wasn't 1");
+                break;
+            case null: console.log("something went wrong");
+                break;
+            case 77: console.log("My number was 77!");
+                break;
+            default: console.log("code didn't work.");
+        }
+    </script>
+</head>
+
+<body></body>
+
+</html>
