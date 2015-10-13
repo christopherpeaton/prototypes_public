@@ -1,0 +1,67 @@
+<!doctype html>
+   <html>
+      <head>
+          <meta name="description" content="form data sending">
+          <meta charset="utf-8">
+          <title></title>
+          <style>
+              #form{
+                  background: red;
+              }
+              form{
+                  font-family: cursive;
+                  border-color: blue;
+                  box-shadow: 10px 10px 5px #888888;
+              }
+          </style>
+      </head>
+
+     <body>
+     <form action="http://learningfuze.com/echo.php" method="GET">
+
+     <form id="form" action="action_page.php">
+         First name:<br>
+         <input type="text" name="Jehonadab">
+         <br>
+         Last name:<br>
+         <input type="text" name="De Alejandro">
+     </form>
+            <br><br>
+     <form action="">
+         User name:<br>
+         <input type="text" name="Jehonadab">
+         <br>
+         User password:<br>
+         <input type="password" name="DeAlejandro">
+     </form>
+     <br><br>
+     <textarea rows="4" cols="50">
+         There is a lot to take in, but in the end the overall result will be worth it. Taking it one prototype at a
+         time.
+     </textarea>
+           <br><br>
+     <form>
+         <input type="radio" name="food" value="favorite" checked> Italian
+         <br>
+         <input type="radio" name="food" value="favorite"> Mexican
+         <br>
+         <input type="radio" name="food" value="favorite"> Chinese
+     </form>
+     <br><br>
+     <form action="demo_form.asp" method="get">
+         <input type="checkbox" name="game" value="favorite"> Rugby<br>
+         <input type="checkbox" name="game" value="favorite"> Soccer<br>
+         <input type="checkbox" name="game" value="favorite"> Baseball<br>
+         <input type="checkbox" disabled="disabled" checked="checked" name="game" value="favorite"> Basketball<br>
+     </form>
+            <br><br>
+     <select>
+         <option value="movie">The Godfather</option>
+         <option value="movie">PUBLIC ENEMIES</option>
+         <option value="movie">FURY</option>
+         <option value="movie">BLOOD IN BLOOD OUT</option>
+     </select>
+         <input type="submit" name="submit_button" value="submit">
+     </form>
+     </body>
+   </html>
