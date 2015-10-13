@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Form 2</title>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <style>
+        #main {
+            position: relative;
+            color: white;
+            background-color: #b1393a;
+            font-family: "Calibri";
+            box-sizing: border-box;
+            font-size: 0.8em;
+            text-align: center;
+        }
+
+        h2, h3 {
+            font-size: 2em;
+        }
+
+
+        ol, .p {
+            font-size: 1em;
+            text-align: left;
+        }
+
+        .p{
+            clear: both;
+            padding-left: 0;
+        }
+
+        h3 {
+            text-align: left;
+        }
+
+        .form-control {
+            border-radius: 0;
+            margin: 5px;
+            height: 40px;
+        }
+
+        .col-sm-5, .col-sm-3 {
+            padding-left: 0;
+        }
+
+        .btn {
+            border-radius: 0;
+            clear: both;
+            border: none;
+            color: white;
+            background-color: #881817;
+            height: 40px;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        @media screen and (max-width: 375px) {
+            #main {
+                height: 100vh;
+                font-size: 0.5em;
+            }
+
+            h3 {
+                text-align: center;
+            }
+
+            .form-control {
+                padding-bottom: 5px;
+                height: 30px;
+                font-size: 1.5em;
+                margin-left: 10px;
+            }
+
+            .form-group {
+                margin-bottom: 0;
+            }
+
+            .btn {
+                height: 30px;
+                margin-top: 5px;
+                margin-left: -5px;
+                width: 330px;
+
+            }
+
+            ol, .p {
+                padding-left: 15px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+<div id="main" class="container col-xs-12 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6">
+    <h2>Instructions for Application - Academic Year 2014</h2>
+
+    <ol class="col-xs-12 col-sm-offset-1 col-sm-11">
+        <Li>The deadline for 2014-2015 scholarship application: March 30, 2014. Applications received after
+            March 30 will be considered on a funds available basis.</li>
+        <li>Only completed applications will be considered.  Do Not Leave Items Blank.</li>
+        <li>Attach a current copy of your high school and/or college transcripts.</li>
+        <li>Two signed letters of recommendation (from non-relatives) must be attached to this application.</li>
+    </ol>
+
+    <p class="col-xs-12 col-sm-offset-1 col-sm-10 p">Consideration for any scholarship award is based on a point system including GPA, participation in
+       extra-curricular activities, school organizations and community service. This will be a four semester
+       scholarship, and you must maintain criteria set in the guidelines.</p>
+
+    <h3 class="col-sm-offset-1">Applicant Data</h3>
+
+    <form method="post" action="submit.php" class="form container-fluid">
+        <div class="form-group">
+            <div class="row">
+                 <div class="col-xs-12 col-sm-offset-1 col-sm-5">
+                    <input class="form-control" type="text" name="name" placeholder="Last Name, First Name, MI"/>
+                 </div>
+
+                <div class="col-xs-12 col-sm-3">
+                    <input class="form-control" type="number" name="social" placeholder="Social Security #" id="ssn"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="row">
+               <div class="col-xs-12 col-sm-offset-1 col-sm-5">
+                    <input class="form-control" type="text" name="address" placeholder="City, State, Zip, Country"/>
+                </div>
+
+                <div class="col-xs-12 col-sm-5">
+                    <input class="form-control" type="tel" name="phone" placeholder="Permanent Home Phone"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="row">
+                <div class="col-xs-12 col-sm-offset-1 col-sm-5">
+                    <input class="form-control" type="text" name="major" placeholder="Intended major at University"/>
+                </div>
+
+                <div class="col-xs-12 col-sm-5">
+                    <input class="form-control" type="text" name="location" placeholder="At which location will you be attending?">
+                </div>
+            </div>
+        </div>
+
+        <button class="btn col-xs-12 col-sm-offset-8 col-sm-3">Next &#187;</button>
+    </form>
+</body>
+</html>
