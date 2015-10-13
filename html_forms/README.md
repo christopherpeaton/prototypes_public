@@ -5,7 +5,7 @@
 - Presentations
     - HTML Forms and Inputs
         - <a href="https://drive.google.com/a/learningfuze.com/file/d/0B7eOl4joefDuVmRORkljSDVGTUk/views" target="_blank">Slides Link</a>
-    - HTML Forms and Form Elements Video:
+    - HTML Forms and Form Elements Video: 
         - <a href="https://www.youtube.com/watch?v=R6NGGRiU7nEs" target="_blank">Video Link</a>
 
 ## Code Setup Details
@@ -66,7 +66,8 @@
 > - Your least favorite game will be the 4th (or I don't play games, if you don't play games)
 > - The 4th game checkbox should be DISABLED: (*hint* you may need to google search this)
 >
-#### Select menu including:
+
+#### Select menu including: 
 >
 > - 4 select options
 > - each option a favorite movie
@@ -74,8 +75,8 @@
 >
 #### Submit button x 1
 >All form elements must be inside a form tag
->Form must be submittable:
->action
+>Form must be submittable: 
+>action 
 >method
 >the form should send its data to:
 >http://learningfuze.com/echo.php (*hint* you may need to google search this)
@@ -83,7 +84,7 @@
 >Verify that the form data is reflected in the echo.php results
 >*note* submitting the form will leave your current page.
 
-##Feature Set 2:
+##Feature Set 2: 
 
 >(The following feature set is intentionally vague to encourage subject exploration)
 #### Create a new html file called form2.html. In it  Duplicate the following contact form:
@@ -111,7 +112,7 @@
 > Run below command in terminal tab
 
 > `git push origin html_forms`
-> - When running the code above, the Git application will send all commits (<b>groupings of saved files</b>) to the
+> - When running the code above, the Git application will send all commits (<b>groupings of saved files</b>) to the 
 remote location (<b>github.com/[your-user-name]/prototypes indicated by origin</b>), specifically to the feature branch/group <b>html_forms</b>
 
 ##### 4. See if your feature fits with what everyone else was working on (Pull Request)
@@ -152,7 +153,7 @@ remote location (<b>github.com/[your-user-name]/prototypes indicated by origin</
 
 > ####Step 4.4 Add details into the pull request
 > 1. Give the pull request a title, by default its the name of the last commit (package) message that was saved
->   1. If you set the commit message above you should get get <b>html_forms - [you name first & last
+>   1. If you set the commit message above you should get get <b>html_forms - [you name first & last 
 name]</b> already pre populated in the Title field
 > 1. <b>Don't assign a user.</b> (An Instructor will select who this gets assigned too)
 >   1. Further into the cohort we will have students learn to review pull requests
@@ -171,5 +172,3 @@ name]</b> already pre populated in the Title field
 
 ##### 6. Pull Request Closed
 > - In the LearningFuze workflow the pull requests are closed to indicate assessment has been given to the student and recorded.
-
-
