@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Comparisons Conditionals</title>
+    <script>
+        /* Feature Set 1 */
+        var mySmallnumber = 5;
+        var myString = 5;
+        var myBigNumber = 255;
+
+        /*Feature Set 2 */
+        var output1 = console.log ("myString is " +(mySmallNumber==myString));
+        /*true */
+        var output2 = console.log ("myString is " +(mySmallnumber===myString));
+        /*false */
+        var ouptut3 = console.log ("myBigNumber is " + (mySmallnumber<myBigNumber));
+        /*true */
+        var output4 = console.log ("myBigNumber is " + (mySmallnumber>myBigNumber));
+        /*false */
+
+        /* Feature Set 2 - Optional */
+
+        var challenge = mySmallNumber + myString;
+        console.log ("challenge");
+
+        /* Feature Set 3 */
+        myTruth = true;
+        myLie = false;
+
+        /* Feature Set 4 */
+        if(myTruth===true) {
+            console.log("I'm True!");
+        }
+
+        if(myLie===false) {
+            console.log("I'm true!");
+        } else {
+            console.log("I'm false!");
+        }
+
+        if(myTruth==myLie) {
+            console.log("I'm true!");
+        } else {
+            console.log("I'm false!");
+        }
+
+        if(myLie===false) {
+            console.log("I'm a true lie!");
+        }
+
+        /* Feature set 5 */
+        var myNmber = 33;
+
+        switch(myNumber){
+            case 1 :
+                console.log("myNumber is equal to 1");
+                break;
+            case 'cliff':
+                console.log("myNumber is equal to cliff");
+            case 33:
+                console.log("myNumber is true!!!");
+                break;
+            default:
+                console.log("default case");
+                break;
+        }
+
+    </script>
+<body>
+
+</body>
+</html>
