@@ -7,6 +7,14 @@
         var mySmallNumber = 5;
         var myString = '5';
         var myBigNumber = 255;
+        var output1 = "my string" + ' is ' +(mySmallNumber == myString);
+        console.log(output1); //true
+        var output2 = "my string" + ' is ' +(mySmallNumber === myString);
+        console.log(output2);//false
+        var output3 = 'my string' + ' is ' + (mySmallNumber < myBigNumber);
+        console.log(output3);//true
+        var output4 = 'my string' + ' is ' + (mySmallNumber > myBigNumber);
+        console.log(output4);//false
     </script>
 </head>
 <body>
