@@ -1,0 +1,35 @@
+#head{
+    text-align: center;
+
+}
+#inst{
+    list-style-position: inside;
+    text-align: left;
+    padding-top:2%;
+}
+#note{text-align: left}
+#title{
+    margin:2% 0;
+    font-size: 15px;
+    font-family: Arial, Helveltica, sans-serif;
+}
+#app{
+    font-size: 20px;
+
+
+}
+#cont{
+    width:70vw;
+    margin:auto;
+
+}
+body{
+    background-color: #A80000;
+    color:white;
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        font-size: 9px;
+    }
+}
