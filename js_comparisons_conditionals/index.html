@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+    <script>
+        var mySmallNumber = 5;
+        var myString = "5";
+        var myBigNumber = 255;
+
+        output1= mySmallNumber == myString;
+        output2= mySmallNumber === myString;
+        output3= mySmallNumber < myBigNumber;
+        output4= mySmallNumber > myBigNumber;
+        console.log(output1);
+        console.log(output2);
+        console.log(output3);
+        console.log(output4);
+
+        //Feature Set 3
+        var myTruth=true;
+        var myLie=false;
+
+        //Feature Set 4
+        if(myTruth==true){
+            console.log("I'm true!")
+        }
+
+        if(myTruth==true){
+            console.log("I'm true!")
+        }
+        else{
+            console.log("I'm false")
+        }
+
+
+
+        if(myTruth=false){
+            console.log("I'm true!")
+        }
+        else{
+            console.log("I'm false!")
+        }
+
+
+        if(myTruth==myLie) {
+            console.log("I'm true!")
+        }
+        else{
+            console.log("I'm false!")
+        }
+
+
+        if(myTruth>myLie) {
+            console.log("I'm true!")
+        }
+        else{
+            console.log("I'm false!")
+        }
+
+        if(myLie==myLie){
+            console.log("I'm a true lie!")
+        }
+
+        //Feature Set 5
+        var myNumber=20;
+            switch (myNumber){
+                case 19:
+                    console.log("Not quite there");
+                    break;
+                case 20:
+                    console.log("Right on the money!");
+                    break;
+                case 65:
+                    console.log("Way over");
+                    break;
+                default:
+                    console.log(false);
+                    break;
+            }
+    </script>
+</head>
+<body>
+
+
+</body>
+</html>
