@@ -1,0 +1,24 @@
+
+
+body, .game-arena {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-arena .card {
+    width: 15vw;
+}
+
+.card-back {
+    position: absolute;
+    width: 15vw;
+}
+
+.card-front {
+    width: 15vw;
+}
+
+.card-back:hover {
+    opacity: 0;
+}

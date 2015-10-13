@@ -1,0 +1,71 @@
+
+
+body, .game-arena {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-arena .card-container, .card  {
+    width: 15vw;
+}
+
+.card-container {
+    perspective: 2000px;
+    position: relative;
+    display: inline-block;
+}
+
+.second-row {
+    position: relative;
+    top: 19vw;
+}
+
+.third-row {
+    position: relative;
+    top: 38vw;
+}
+
+.card-front {
+    border: 3px solid grey;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    #transform: scaleX(-1);
+
+}
+
+.card-back {
+    border: 3px solid black;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+}
+
+.card-container:hover .card {
+    transform: rotateY(180deg);
+    transition-duration: 2s;
+}
+
+.card {
+    transition-duration: .4s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.card-back, .card-front {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.back {
+    z-index: 2;
+    /* for firefox 31 */
+    #transform: rotateY(0deg);
+}
+
+.front {
+    transform: rotateY(180deg);
+}
