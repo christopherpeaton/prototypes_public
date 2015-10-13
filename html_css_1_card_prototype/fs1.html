@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML CSS 1 Card Prototype - Feature Set 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .game_area {
+            width: 100vw;
+            height: 100vh;
+        }
+        .card {
+            width: 15%;
+            height: 50%;
+            position: relative;
+            display: inline-block;
+        }
+        .card_front, .card_back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: 50%
+        }
+        .card_front {
+            background-image: url(images/afp-cute-puppy.jpg);
+        }
+        .card_back {
+            background-image: url(images/cardback-rankedladder.png);
+        }
+        .card:hover .card_back {
+            visibility: hidden;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="game_area">
+        <div class="card">
+            <div class="card card_front"></div>
+            <div class="card card_back"></div>
+        </div>
+    </div>
+</body>
+</html>
