@@ -1,0 +1,116 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body{
+            background-color: darkred;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left:3vw;
+            margin-right:3vw;
+            width:90vw;
+        }
+        div{
+            width:100%;
+            position:relative;
+        }
+        form input{
+            width:100%;
+        }
+        /* For mobile phones: */
+        [class*="col-"] {
+            width: 100%;
+        }
+        .col-5{
+            width:100%;
+        }
+        form input{
+            padding:5px 75px 5px 5px;
+            margin:5px;
+            box-shadow: 5px 5px 1px black;
+            font-size:.75em;
+            color:lightgray;
+        }
+        #next{
+            background-color: red;
+            color:white;
+        }
+        @media only screen and (min-width: 376px){
+            body {
+                background-color: darkred;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .container{
+                width:100%;
+            }
+            ol li{
+                font-size:.75em;
+            }
+            h1{
+                font-size:1.5em;
+            }
+            form{
+                width:100%;
+            }
+            form input{
+                padding:5px 75px 5px 5px;
+                margin:5px;
+                box-shadow: 5px 5px 1px black;
+                font-size:.75em;
+                color:lightgray;
+            }
+            #next{
+                background-color: red;
+                color:white;
+            }
+            /* For desktop: */
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Instructions for Application - Academic Year 2014</h1>
+    <ol>
+        <li>The deadline for 2014-2015 scholarship application: March 20, 2014. Applications received after March 30
+            will be considered on a funds available basis.
+        </li>
+        <li>Only completed applications will be considered. Do Not Leave Items Blank.</li>
+        <li>Attach a current copy of your high school and/or college transcripts.</li>
+        <li>Two signed letters of recommendations (from non-relatives) must be attached to this application.</li>
+    </ol>
+    <p>
+        Consideration for any scholarship award is based on a point system including GPA, participation in
+        extra-curricular activities, school organizations and community service. This will be a four semester
+        scholarship, and you must maintain criteria set in the guidelines.
+    </p>
+</div>
+<div>
+    <h1>Applicant Data</h1>
+    <form class="col-12">
+        <input class="col-5" type="text" name="name" value="Last Name,First Name,MI">
+        <input class="col-5" type="text" name="social_security" value="Social Security #">
+        <br>
+        <input class="col-5" type="text" name="address" value="City,State,Zip,County">
+        <input class="col-5" type="text" name="phone_number" value="Permanent Home Phone">
+        <br>
+        <input class="col-5" type="text" name="major" value="Intended major at University">
+        <input class="col-5" type="text" name="location" value="At which location will you be attending?">
+        <br>
+        <input class="col-5" id="next" type="submit" name="next" value="Next >>">
+    </form>
+</div>
+</body>
+</html>
