@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JS Comparisons & Conditionals</title>
+
+    <script>
+        var mySmallNumber = 5;
+        var myString = "5";
+        var myBigNumber = 255;
+
+        var output1 =  "mySmallNumber == myString is " + (mySmallNumber == myString);
+        var output2 = "mySmallNumber === myString is " + (mySmallNumber === myString);
+        var output3 = "mySmallNumber < myBigNumber is " + (mySmallNumber < myBigNumber);
+        var output4 = "mySmallNumber > myBigNumber is " + (mySmallNumber > myBigNumber);
+
+        console.log(output1);
+        console.log(output2);
+        console.log(output3);
+        console.log(output4);
+
+        var challenge = (mySmallNumber + myString) === (myString + mySmallNumber);
+
+        console.log(challenge);  //true
+
+        var myTruth = true;
+        var myLie = false;
+
+        if(myTruth == true) {
+            console.log("I'm true!")
+        }
+
+        if(myLie == false) {
+            console.log("I'm true!")
+        } else {
+            console.log("I'm false!")
+        }
+
+        if((myTruth == myLie)) {
+            console.log("I'm true!")
+        } else {
+            console.log("I'm false!")
+        }
+
+        if(myLie == false) {
+            console.log("I'm a true lie!")
+        }
+
+        var myNumber = 13;
+
+        switch (myNumber) {
+            case 187:
+                console.log("myNumber 187.");
+                break;
+
+            case 87:
+                console.log("myNumber is 87!");
+                break;
+            case 13:
+                console.log("myNumber is 13!");
+                break;
+            default:
+                console.log("myNumber doesn't match your number.  :(")
+                break;
+        }
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
