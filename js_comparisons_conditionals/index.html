@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+
+    <script>
+
+        var mySmallNumber = 5;
+        var myString = "5";
+        var myBigNumber = 255;
+
+        var output1 = "mySmallNumber == myString  is " + (mySmallNumber == myString);
+        var output2 = "mySmallNumber === myString is " + (mySmallNumber === myString);
+        var output3 = "mySmallNumber < myBigNumber is " + (mySmallNumber < myBigNumber);
+        var output4 = "mySmallNumber > myBigNumber is " + (mySmallNumber > myBigNumber);
+
+        console.log(output1);
+        console.log(output2);
+        console.log(output3);
+        console.log(output4);
+
+        var myTruth = true;
+        var myLie = false;
+
+        if(myTruth) {
+            document.write("I'm true");
+        }
+        else {
+            document.write("I'm false");
+        }
+
+
+        if(myLie !=  myTruth) {
+            document.write("I'm true");
+        }
+        else {
+            document.write("I'm false");
+        }
+c
+
+
+        if(!myLie) {
+            document.write("I'm true");
+        }
+        else {
+            document.write("I'm false");
+        }
+
+        var myNumber = 10;
+
+        switch(myNumber) {
+            case 1:
+                console.log("No too easy");
+                break;
+            case 10:
+                console.log("Yeah! Thats it!!");
+                break;
+            case 100:
+                console.log("way off");
+                break;
+            default:
+                console.log("Nope");
+        }
+
+        var challenge = (mySmallNumber + myString) === ("55");
+        console.log(challenge);
+
+
+
+
+    </script>
+
+
+</head>
+<body>
+
+</body>
+</html>
