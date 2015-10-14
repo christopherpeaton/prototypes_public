@@ -13,7 +13,7 @@
 
 				//.addClass is used to add a class to any element
 				//here we are targeting the div1 element
-				$("#div1").addClass("red"); //change the word red to pink *note these classes have already been created in the CSS file
+				$("#div1").addClass("pink"); //change the word red to pink *note these classes have already been created in the CSS file
 
 
 				//.click is like using the onclick attribute we used before
@@ -36,7 +36,23 @@
 					} 
 				});
 				//----Write your code bellow----//
+				$("#div3").addClass("card-back");
+				$("#div4").addClass("card-back");
 
+				$("#div3").click(function(){
+					$("#div3").toggleClass("flag");
+					if ($("#div3").hasClass("flag")){
+						console.log("I am flag!")
+					}
+				});
+
+				$("#div4").click(function(){
+
+					$("#div4").toggleClass("path");
+					if ($("#div4").hasClass("path")){
+						console.log("I am path!")
+					}
+				});
 
 
 
