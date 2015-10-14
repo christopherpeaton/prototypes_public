@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        //FEATURE SET 1
+        var mySmallNumber = 5;
+        var myString = "5";
+        var myBigNumber = 255;
+
+        //FEATURE SET 2
+        var output1 = "mySmallNumber == myString is " + (mySmallNumber == myString);
+        console.log(output1);
+        var output2 = "mySmallNumber === myString is " + (mySmallNumber === myString);
+        console.log(output2);
+        var output3 = "mySmallNumber < myBigNumber is " + (mySmallNumber < myBigNumber);
+        console.log(output3);
+        var output4 = "mySmallNumber > myBigNumber is " + (mySmallNumber > myBigNumber);
+        console.log(output4);
+
+        //SMALL CHALLENGE...I feel like I did this wrong. The result was true
+        var challenge = (mySmallNumber + '' + myString) === (mySmallNumber + '' + myString);
+        console.log(challenge);
+
+        //FEATURE SET 3
+        var myTruth = true;
+        var myLie = false;
+
+        //FEATURE SET 4
+        if (myTruth == true) {
+            console.log("I'm true!");
+        }
+
+        if (myLie == true) {
+            console.log("I'm true!");
+        } else {
+            console.log("I'm false!");
+        }
+
+        if (myTruth !== myLie) {
+            console.log("I'm true!");
+        } else {
+            console.log("I'm false!");
+        }
+
+        if (myLie !== true) {
+            console.log("I'm a true lie!");
+        }
+
+        //FEATURE SET 5
+        var myNumber = 82;
+        switch (myNumber) {
+            case '1':
+                console.log("This is case 1");
+                break;
+            case '82':
+                console.log("This is the case with string 82");
+                break;
+            case 82:
+                console.log("This is the case I think will work");
+                break;
+            default:
+                console.log("If this prints then I don't understand the topic");
+                break;
+        }
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
