@@ -11,8 +11,10 @@
 			$(document).ready(function(){
 				//Here are some examples using jQuery
 
-				//.addClass is used to add a class to any element
-				//here we are targeting the div1 element
+				/*.addClass is used to add a class to any element
+				here we are targeting the div1 element*/
+
+				//Add class pink instead of red
 				$("#div1").addClass("pink"); //change the word red to pink *note these classes have already been created in the CSS file
 
 
@@ -24,7 +26,7 @@
 
 				//Here is another .click example that changes the color of the div every time you click on it
 				$("#div2").click(function(){
-					$("#div2").toggleClass("green");    //Advanced: $(this).toggleClass("green");
+					$(this).toggleClass("green");    //Advanced: $(this).toggleClass("green");
 					
 					//Here is an if statement that outputs the color of div2 to the console when it is clicked
 					if($("#div2").hasClass("green")){
@@ -36,8 +38,6 @@
 					} 
 				});
 				//----Write your code bellow----//
-
-				//Feature Set 2
 
 				//Editing Div3
 				$("#div3").addClass("card-back")
