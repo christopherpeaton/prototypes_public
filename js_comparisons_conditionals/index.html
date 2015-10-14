@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+        <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <title>comparisons_conditionals</title>
+                <script>
+                    var mySmallNumber = 5;
+                    var myString ="5";
+                    var myBigNumber = 255;
+
+                    var output1;
+                    var output2;
+                    var output3;
+                    var output4;
+
+                    output1 = "mySmallNumber == myString is " + (mySmallNumber == myString);
+                    output2 = "mySmallNumber === myString is " + (mySmallNumber === myString);
+                    output3 = "mySmallNumber < myBigNumber is " + (mySmallNumber < myBigNumber);
+                    output4 = "mySmallNumber > myBigNumber is " + (mySmallNumber > myBigNumber);
+                    console.log(output1,output2,output3,output4);
+
+                    var challenge= ((mySmallNumber+myString)===(mySmallNumber+myString));
+                    console.log(challenge);
+                    <!--The answer to the above was true-->
+
+
+                    <!--Begin Conditionals FS-->
+                    var myTruth = true;
+                    var myLie = false;
+
+                    if (myTruth){
+                        console.log("I'm True!");
+                    }
+                    if (myLie==false){
+                        console.log("I'm false");
+                    }
+                    else{
+                        console.log("I'm True");
+                    }
+
+                    if(myLie!=myTruth){
+                        console.log("I'm True!");}
+                    else{
+                        console.log("I'm False");
+                    }
+                    if (myLie==false){
+                        console.log("I am true in my falsehood!");
+                    }
+                    <!--fs5......Switch-->
+                    var myNumber = 23
+
+                    switch(myNumber) {
+                        case 45:
+                            console.log("the number is 45")
+                            break;
+                        case 33:
+                            console.log("the number is 33")
+                            break;
+                        case 23:
+                            console.log("the age is 23")
+                            break;
+                        default:
+                            console.log("We are not concerned with this number")
+                            break;
+                    }
+
+
+
+
+
+
+                </script>
+
+            </head>
+            <body>
+
+            </body>
+</html>
