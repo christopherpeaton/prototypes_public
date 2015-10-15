@@ -21,7 +21,7 @@ function cardFlip(clickedElement) {
 }
 
 function getSrc(clickElement) {
-    return $(clickElement).parent().find('.class').attr('src');
+    return $(clickElement).prev().find("img").attr('src');
 }
 
 var result = add2(add2(5,10), add2(20,30));
