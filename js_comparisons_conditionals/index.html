@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <script>
+
+
+
+                var mySmallNumber = 5;
+                var myString = "5";
+                var myBigNumber = 255;
+
+                var output1 = "mySmallNumber == myString is " + (mySmallNumber==myString);
+                var output2 = "mySmallNumber === myString is " + (mySmallNumber===myString);
+                var output3 = "mySmallNumber < myBigNumber is " + (mySmallNumber < myBigNumber);
+                var output4 = "mySmallNumber > myBigNumber is " + (mySmallNumber > myBigNumber);
+                console.log(output1);
+                console.log(output2);
+                console.log(output3);
+                console.log(output4);
+
+                var myTruth = true;
+                var myLie = false;
+
+                if (myTruth==true) {console.log("I'm true!")}
+
+                if (myLie==false) {console.log("I'm true!")}
+                else {console.log ("I'm false!")}
+
+                if (myTruth === myLie) {console.log("I'm true!")}
+                else {console.log("I'm false!")}
+
+                if (myLie ==false) {console.log ("I'm a true lie!")}
+
+                var myNumber = 5;
+                switch (myNumber) {
+                    case 2 + 2:
+                        console.log("2 + 2 = 5");
+                        break;
+                    case 3 + 2:
+                        console.log("3 + 2 = 5");
+                        break;
+                    case 42 - 33:
+                        console.log("42 - 33 = 5");
+                        break;
+                    default:
+                        console.log("Nevermind");
+                        break;
+                }
+            </script>
+        </head>
+        <body>
+
+        </body>
+    </html>
