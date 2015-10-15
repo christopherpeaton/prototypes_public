@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS Dom Events</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <style>
+        .makeDissappear {
+            display: none;
+        }
+        
+        .blue-me {
+            color: darkblue;
+        }
+    </style>
+    <script>
+        function buttonFunction() {
+            var button = document.querySelector("#button");
+            button.classList.add("makeDissappear");
+        }
+
+        function changeHeader(str) {
+            var header = document.querySelector("div h1");
+            header.textContent = str;
+        }
+
+        function getRid_Class() {
+            var h2 = document.querySelector("div h2");
+            h2.removeAttribute('class');
+        }
+    </script>
+</head>
+<!-- Wanted to play around a bit with bootstrap and practice writing functions. 
+So I tried experimenting with some of the feature sets to do more than just console.log
+  -->
+<body onclick="console.log('Body has been clicked!');" onload='console.log("Body has loaded!");'>
+    <div class="row">
+        <div class="col-md-4">
+            <h1 onclick='changeHeader("Goodbye World!");'>Hello World!</h1>
+        </div>
+        <div class="col-md-4">
+            <button id="button" type="button" class="btn btn-success btn-lg" onclick="buttonFunction();">
+                Make me dissappear!
+            </button>
+        </div>
+        <div class="col-md-4">
+            <h2 onmouseover="getRid_Class();" class="blue-me">You hovered over my h2 element</h2>
+            <p>Why so <em onclick="console.log('Em element has been clicked!');">serious?</em> </p>
+
+        </div>
+    </div>
+</body>
+
+</html>
