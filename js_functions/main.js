@@ -9,6 +9,12 @@ function add2(x,y) {
     return total;
 }
 var add2result = add2(10,40)
+
 function cardFlip(element) {
     $(element).hide();
+    src = getSrc("ele");
+    console.log(src);
+}
+function getSrc(back) {
+    return $(back).previous().find("img").attr("src");
 }
