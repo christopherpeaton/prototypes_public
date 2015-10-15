@@ -1,14 +1,15 @@
-# HTML & CSS - Responsive Design
+# JavaScript - Primitive Data Types
 
-##Dev Tools Instruction - This is important
-   - Using dev tools to see mobile views in the browser - <a href="https://github.com/Learning-Fuze/prototypes/blob/assets/assets/html_css_responsive/README.md" target="_blank">Reference Link</a>
+This prototype is designed to introduce you to primitive data types in JavaScript, to demonstrate how they are used 
+and show how they can be manipulated. Make sure you have reviewed the slides and video before attempting this prototype. (*links below*)
 
-## Subject Resources
-- Presentation
-    -  HTML & CSS Responsive and Mobile First - <a href="https://www.youtube.com/watch?v=aZbTiZg_i1U" target="_blank">Video Link</a>
-- Readings
-    - HTML & CSS: Responsive & Mobile First - <a href="https://drive.google.com/a/learningfuze.com/file/d/0B7eOl4joefDubE1qWDRZSVJXcWM/view?usp=sharing" target="_blank">Link</a>
-    - w3schools: HTML Responsive - <a href="http://www.w3schools.com/html/html_responsive.asp" target="_blank">Link</a>
+- Presentations
+    - JS Primitive Data Types
+        - <a href="https://drive.google.com/a/learningfuze.com/file/d/0B7eOl4joefDudmtWS1cwM0FMamc/view" target="_blank">Slides Link</a>
+        - <a href="https://www.youtube.com/watch?v=rj7CRTPoNkE" target="_blank">Video Link</a>
+- Projects
+    - This project will help build towards the Memory Match project, as well as be a foundation for general 
+    programming knowledge that will be used in all future projects.
 
 ## Code Setup Details
 
@@ -33,48 +34,63 @@
 > `git pull https://github.com/Learning-Fuze/prototypes.git` & press enter
 > - The command above downloads the newly posted prototypes and saves them to your local machine
 
-> `git checkout -b html_css_responsive`
+> `git checkout -b js_primitive_data_types`
 > - Creating this feature groupings allow users to modify code without causing issues with the current functioning code.
 > - Any modifications to these files after <b>branching</b> can be undone
-> - "html_css_responsive" is the branch name.
+> - "js_primitive_data_types" is the branch name.
 
 ## Coding Instructions
 
-### Feature Set 1 - Basic responsive layout
-####  Create index.html
-##### Include:
-> - A graphic that is 50% of its available size - minimum 75px
-> - Float the graphic left
-> - 2 paragraphs containing <a href="http://www.lipsum.com/" target="_blank">lorem ipsum</a>
-> - Ensure that fonts are responsive to the page and scale as necessary
->
+### Getting Started
 
-### Feature Set 2 - Responsive form
-> - Make form2.html responsive
+>1. Make an index.html inside the `js_primitive_data_types` folder
+2. Create a basic HTML DOM structure
+	- DOCTYPE tag
+	- HTML tag
+	- head tag
+	- body tag
+3. Add `script` tags between your `head` tags
+4. **DO NOT** edit this README file
 
-#### Create responsive.html
+### Feature Set 1 - Creating Variables
 
-> - copy and paste the code from form2.html that you previously created in the <a href="https://github.com/Learning-Fuze/prototypes/tree/master/html_forms" target="_blank">html forms prototype</a>
-> 
-#### Media queries
-> 
-##### At the iphone6 screen width (375px)
->
-Your form should do the following:
->
-> 1. inputs should be in a single column 
-> 1. inputs should be nearly full width, with some side gutters
-> 1. Should be adaptable between desktop and mobile
->
-### Example images
-> 
-form3 should look like the following at the iphone6 width and height:
-> #### iphone6 devtools view:
-  - Using dev tools to see mobile views in the browser - <a href="https://github.com/Learning-Fuze/prototypes/blob/assets/assets/html_css_responsive/README.md" target="_blank">Reference Link</a>
-> <img src="https://github.com/Learning-Fuze/prototypes/blob/assets/assets/html_css_responsive/iphone6_responsive.png">
->
-> #### close up: 
-> <img src="https://github.com/Learning-Fuze/prototypes/blob/assets/assets/html_css_responsive/form3_responsive.png">
+>##### Create three variables inside your script tag
+- Create a variable `firstName`, set it equal to your first name
+- Create a variable `lastName`, set it equal to your last name
+- create a variable `age`, set it equal to your age
+
+### Feature Set 2 - Concatenation &amp; console.log() 
+
+>##### Concatenation
+- Create a variable `output1`
+	- Using your variables from *Feature Set 1* and concatenation, create a string that resembles the example string 
+	below and store it in output1
+	- *String Example:* "First name: Marry, Last name: Smith, Age: 57."
+
+>##### console.log()
+- Use `console.log()` in your script tag to log out your `output1` variable to the console
+
+### Feature Set 3 - Adding Variables Together
+
+>##### Two more Variables
+- Create two more variables 
+	- Create a variable `x`, set it equal to any whole number between 1-100
+	- Create a variable `y`, set it equal to any DIFFERENT whole number between 1-100
+
+>##### Log out some more info
+- Create three more output variables:
+	- `output2`
+	- `output3`
+	- `output4`
+- Set your output variables as follows:
+- As an example I'll choose x=12 and y=55
+	- **output2** = the total of `x` and `y`
+		- *Example output:* `67`
+	- **output3** = x and y concatenated 
+		- *Example output:* `"1255"`
+	- **output4** = Text concatenated with the total of `x` and `y`
+		- *Example output:* `"The total of x and y is 67"`
+
 ## After Coding Details
 ##### 1. Save files to Git - Add all modified & created files
 > Run below command in terminal tab
@@ -87,16 +103,18 @@ form3 should look like the following at the iphone6 width and height:
 
 > Run below command in terminal tab
 
-> `git commit -m "html_css_responsive - Your Name"`
-> - Your Name should be replaced with your First & Last name
+> `git commit -m "js_primitive_data_types - Eric Johnson"`
+> - Eric Johnson should be replaced with your First & Last name
 > - Grouping files with a message allows those changes to be seen by others as a specific version of the code
 
 ##### 3. Allow others to see your changes by uploading them to the Github website
 
 > Run below command in terminal tab
 
-> `git push origin html_css_responsive`
-> - When running the code above, the Git application will send all commits (<b>groupings of saved files</b>) to the remote location (<b>github.com/[your-user-name]/prototypes indicated by origin</b>), specifically to the feature branch/group <b>html_css_responsive</b>
+> `git push origin js_primitive_data_types`
+> - When running the code above, the Git application will send all commits (<b>groupings of saved files</b>) to the 
+remote location (<b>github.com/[your-user-name]/prototypes indicated by origin</b>), specifically to the feature 
+branch/group <b>js_primitive_data_types</b>
 
 ##### 4. See if your feature fits with what everyone else was working on (Pull Request)
 
@@ -124,7 +142,7 @@ form3 should look like the following at the iphone6 width and height:
 >> 1. `head fork: [your_user_name]/prototypes`
 >>   1. Here you will select the option that matches your username / prototypes
 >>   1. If you can not locate an option that has your username / prototypes, contact an instructor
->> 1. `compare: html_css_responsive`
+>> 1. `compare: js_primitive_data_types`
 >>   1. Here you will locate the branch name (or feature name) you created at the beginning of the prototype
 >>   1. This will usually be the same as the name of the prototype
 >> 1. Github.com will let you know if the code can be merged automatically (without needing a manual merge)
@@ -136,7 +154,8 @@ form3 should look like the following at the iphone6 width and height:
 
 > ####Step 4.4 Add details into the pull request
 > 1. Give the pull request a title, by default its the name of the last commit (package) message that was saved
->   1. If you set the commit message above you should get get <b>html_css_responsive - [you name first & last name]</b> already pre populated in the Title field
+>   1. If you set the commit message above you should get get <b>js_primitive_data_types - [you name first & last 
+name]</b> already pre populated in the Title field
 > 1. <b>Don't assign a user.</b> (An Instructor will select who this gets assigned too)
 >   1. Further into the cohort we will have students learn to review pull requests
 > 1. Click on "Create pull Request"
