@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Comparisons & Conditionals</title>
+
+    <script>
+        //Feature Set 1
+        // Declare Variables & set values
+        var mySmallNumber = 5;
+        var myString = "5";
+        var myBigNumber = 255;
+        // Feature Set 2
+        var output1 = "mySmallNumber == myString is " + (mySmallNumber == myString);
+        var output2 = "mySmallNumber === myString is " + (mySmallNumber === myString);
+        var output3 = "mySmallNumber < myBigNumber is " + (mySmallNumber < myBigNumber);
+        var output4 = "mySmallNumber > myBigNumber is " + (mySmallNumber > myBigNumber);
+
+        // Console Output
+        console.log(output1);
+        console.log(output2);
+        console.log(output3);
+        console.log(output4);
+
+        // Challenge
+        var concatenate1 = mySmallNumber + myString;
+        var concatenate2 = myString + mySmallNumber;
+        var challenge = concatenate1 === concatenate2;//true
+
+        // Feature Set 3
+        var myTruth = true;
+        var myLie = false;
+
+        // Feature Set 4
+        if(myTruth == true){
+            console.log("I\'m true!");
+        }//end if myTruth
+        if(myLie == true){
+            console.log("I\'m true!");
+        }else{
+                console.log("I\'m false!");
+        }//end if else myLie
+        if(myLie != true){
+            console.log("I\'m a true lie!");
+        }//enf if myLie
+
+        //Feature Set 5
+        var myNumber = 50;
+        switch(myNumber){
+            case 0:
+                console.log("Pick a number from 1 to 100.");
+                break;
+            case 101:
+                console.log("Pick a number less than or equal to 100.");
+                break;
+            case 50:
+                console.log("Number is smack in the middle.");
+                break;
+            default:
+                console.log("Number is between 1 & 100.");
+                break;
+        }//end myNumber switch
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
