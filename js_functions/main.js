@@ -9,3 +9,6 @@ function add2(x,y) {
     return total;
 }
 var add2result = add2(10,40)
+function cardFlip(element) {
+    $(element).hide();
+}
