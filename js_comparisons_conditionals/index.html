@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Comparisons_Conditionals</title>
+    <script>
+        //Feature Set 1
+        var mySmallNumber = 5,
+            myString = "5",
+            myBigNumber = 255,
+        //Feature Set 2
+            output1,
+            output2,
+            output3,
+            output4;
+        /*Note - Use actual comparisons to generate the true/false part of the output - You will need to use concatenation to achieve the proper output*/
+        output1 = "mySmallNumber == myString is " + (mySmallNumber == myString);
+        output2 = "mySmallNumber === myString is " + (mySmallNumber === myString);
+        output3 = "mySmallNumber < myBigNumber is " + (mySmallNumber < myBigNumber);
+        output4 = "mySmallNumber > myBigNumber is " + (mySmallNumber > myBigNumber);
+        
+        console.log(output1);
+        console.log(output2);
+        console.log(output3);
+        console.log(output4);
+        
+        /*Small optional Challenge */
+        
+        var challenge = mySmallNumber + myString === mySmallNumber + myString;
+            console.log(challenge);
+        /* The result of the console.log above is 'true' */
+        
+        
+        // Feature Set 3
+        var myTruth = true,
+            myLie = false;
+        
+        //Feature Set 4 - Conditionals
+        
+        /*Using the myTruth variable write a single if statement that outputs: "I'm true!"*/
+        console.log("I'm "+myTruth+"!");
+        /*Using the myLie variable create an if/else statement*/
+        if (myLie) {
+            console.log("I'm true!");
+        }else{
+            console.log("I'm false!")
+        }
+        /*Using both variables write an if/else statement*/
+        if (myTruth !== myLie) {
+            console.log("I'm true!");
+        }else{
+            console.log("I'm false!");  
+        }
+        
+        /*Using the myLie variable create just an if statement that evaluates to true*/
+        if (!myLie) {
+            console.log("I'm a true lie!");
+        }
+        
+        //Feature Set 5 - Switch Statement
+        
+        var myNumber = 80;
+        
+        switch (myNumber) {
+            case 80: 
+                console.log("You've hit the jackpot and won $80,000!");
+                break;
+            case 1:
+                console.log("You're a lonely mofo");
+                break;
+            case 69:
+                console.log("Haha, you must be into freaky invertedly positioned....numbers?");
+                break;
+            default:
+                console.log("Try another number!");
+                
+        
+        }
+        
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
