@@ -9,22 +9,29 @@
 </head>
 <body>
 
+    <button onclick="myMessage('')">click me</button>
+
+    <button onclick="add('2,3')">add</button>
+
+    <button onclick="console.log(add2result)">add #2</button>
+
+
 <div id="game-area">
     <div class="card">
         <div class="front"><img src="imgs/british_flag.jpg" alt=""></div>
-        <div class="back"><img src="imgs/card_design.png" alt="Card Back"></div>
+        <div class="back" onclick="cardflip(this)"><img src="imgs/card_design.png" alt="Card Back"></div>
     </div>
     <div class="card">
         <div class="front"><img src="imgs/path.jpg" alt=""></div>
-        <div class="back"><img src="imgs/card_design.png" alt="Card Back"></div>
+        <div class="back" onclick="cardflip(this)"><img src="imgs/card_design.png" alt="Card Back"></div>
     </div>
     <div class="card">
         <div class="front"><img src="imgs/british_flag.jpg" alt=""></div>
-        <div class="back"><img src="imgs/card_design.png" alt="Card Back"></div>
+        <div class="back" onclick="cardflip(this)"><img src="imgs/card_design.png" alt="Card Back"></div>
     </div>
     <div class="card">
         <div class="front"><img src="imgs/path.jpg" alt=""></div>
-        <div class="back"><img src="imgs/card_design.png" alt="Card Back"></div>
+        <div class="back" onclick="cardflip(this)"><img src="imgs/card_design.png" alt="Card Back"></div>
     </div>
 </div>
 
