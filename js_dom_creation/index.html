@@ -61,6 +61,7 @@
             $(playground_source_1_div).appendTo("#playground1");//append source1 to destination1
 
             //playground 2 code
+
             var playground_source_2_div = $("<div>", {
                 class: 'playground source'
             });
@@ -75,7 +76,7 @@
                 class: "awesome_class",
                 id: "my_awesome_div3",
                 'data-coolness': "high",
-                text: "Here is EVEN MORE awesome div text"
+                html: "Here is an <strong>EVEN MORE</strong> awesome div text"
 
             }))
 
@@ -90,12 +91,12 @@
                 class: "neato",
             })
 
-            $(source3_ul).append($('<li>',{
-                text:'Link1',
-            }),$('<li>',{
-                text:'Link2',
-            }),$('<li>',{
-                text:'Link3',
+            $(source3_ul).append($('<li>', {
+                text: 'Link1',
+            }), $('<li>', {
+                text: 'Link2',
+            }), $('<li>', {
+                text: 'Link3',
             }));
 
             var picture3 = $('<figure>', {
@@ -104,7 +105,7 @@
             $(picture3).append($('<img>', {
                 src: "http://comerecommended.com/wp-content/uploads/2013/01/how-to-get-awesome-back.jpg",
             }), $('<figcaption>', {
-                text: "That's right,you are"
+                html: 'That\'s right, <span class="bold_text">you are</span>'
             }))
             $(playground_source3_div).append(source3_ul, picture3);
             $(playground_source3_div).appendTo('#playground3')
