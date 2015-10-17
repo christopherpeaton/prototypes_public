@@ -41,10 +41,37 @@
 $(document).ready(function()
 {
 	//playground 1 code
+	var playground_source = $('<div>').addClass('playground playground_source');
+	var h1 = $('<h1>',{text: 'I am a heading'});
+	var p1 = $('<p>',{text: 'This is an awesome paragraph'});
+	var p2 = $('<p>').text('This has red text').css({color: 'red'});
 
+	$('#playground1').append(h1).append(p1).append(p2);
 	//playground 2 code
+//*************************************************************************************************
+	var ps2div1 = $('<div>').addClass('awesome_class').text('Here is some awesome div text.');    //good.
+	var ps2div2 = $('<div>').addClass('awesome_class').attr("id",'my_awesome_div2').text('Here is MORE awesome div text.');
+	var ps2div3 = $('<div>').addClass('awesome_class').attr("id", 'my_awesome_div3',"data-coolness", "high").text('Here is EVEN MORE awesome div text.');
+	ps2div3.html(ps2div3.html().replace("EVEN MORE", "<strong>EVEN MORE</strong>"));
+	$('#playground2').append(ps2div1).append(ps2div2).append(ps2div3);
+//*************************************************************************************************************
 
 	//playground 3 code
+	var ps3ul = $('<ul>').addClass('neato');
+	var ps3li1 = $('<li>').text('Link1');
+	var ps3li2 = $('<li>').text('Link2');
+	var ps3li3 = $('<li>').text('Link3');
+	ps3ul.append(ps3li1).append(ps3li2).append(ps3li3);
+	$('#playground3').append(ps3ul);
+
+	var ps3figure = $('<figure>').addClass('awesome_picture');
+	var image = $('<img>').attr({src: "http://comerecommended.com/wp-content/uploads/2013/01/how-to-get-awesome-back.jpg"});
+	var ps3caption = $('<figcaption>').text('That\'s right, you are');
+	var span = $('<span>').addClass('bold_text');
+	$('#playground3').append(ps3figure);
+	var figure = ps3figure.append(image);
+	figure.append(ps3caption).append(span);
+
 });
 </script>
 </head>
@@ -105,5 +132,5 @@ $(document).ready(function()
 		<!--copy code into here using jQuery ONLY-->
 		<!-- ******** NO COPY AND PASTE ******** -->
 	</div>
-
+<body>
 </html>
