@@ -74,20 +74,16 @@
                 text: 'Here is MORE awesome div text'
             });
 
-            var strong_1 = $("<strong>", {
-                class: 'awesome_class',
-                id: 'my_awesome_div3',
-                text: 'EVEN MORE'
-            });
 
             var div_3 = $("<div>", {
                 class: 'awesome_class',
                 id: 'my_awesome_div3',
-                text: 'Here is '+ strong_1 +' awesome div text'
+                html: 'Here is <strong>EVEN MORE</strong> awesome div text'
             });
 
 
             $('#playground2').append(div_1).append(div_2).append(div_3);
+
             //playground 3 code
 
             var ul_1 = $("<ul>", {
