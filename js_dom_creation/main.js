@@ -26,12 +26,16 @@ $(document).ready(function() {
 
     //playground 3 code
 
+
     var ul = $("<ul>").addClass('neato');
     var li_1 = $("<li>").text('Link 1');
     var li_2 = $("<li>").text('Link 2');
     var li_3 = $("<li>").text('Link 3');
-    $('#playground3').append(ul);
-    $('#playground3').append(li_1);
-    $('#playground3').append(li_2);
-    $('#playground3').append(li_3);
+    $('#playground3').append(ul).append(li_1).append(li_2).append(li_3);
+
+    var pic = $("<figure>").addClass('awesome_picture');
+    var img = $('<img>').src("http://comerecommended.com/wp-content/uploads/2013/01/how-to-get-awesome-back.jpg");
+    $('#playground3').append(pic);
+    $('pic').append(img);
+
 }
