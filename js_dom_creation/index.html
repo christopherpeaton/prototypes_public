@@ -69,8 +69,7 @@ $(document).ready(function()
 	var ps3caption = $('<figcaption>').text('That\'s right, you are');
 	var span = $('<span>').addClass('bold_text');
 	$('#playground3').append(ps3figure);
-	var figure = ps3figure.append(image);
-	figure.append(ps3caption).append(span);
+	ps3figure.append(image).append(ps3caption).append(span);
 
 });
 </script>
