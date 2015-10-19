@@ -47,53 +47,45 @@
     <script>
         $(document).ready(function () {
             //playground 1 code
-            var pg1_div = $("<div>", {
+            var pg1_div = $("<div>",{
                 class: "playground playground_source"
             });
-
-            var pg1_h1 = $("<h1>", {
+            var pg1_h1 = $("<h1>",{
                 text: "I am a heading"
             });
-
-            var pg1_p = $("<p>", {
+            var pg1_p = $("<p>",{
                 text: "This is an awesome paragraph"
             });
-
             var pg1_p2 = $("<p>", {
                 style: 'color: red',
                 text: "This has red text"
             });
-
             pg1_div.append(pg1_h1).append(pg1_p).append(pg1_p2);
-            $("#playground1").append(pg1_div)
-        });
-            //playground 2 code
+            $("#playground1").append(pg1_div);
 
-//            var pg2_div = $("<div>", {
-//                class: "playground playground_source"
-//            });
-//
-//            var pg2_div2 = $("<div>", {
-//                class: "awesome_class",
-//                text: "Here is some awesome text"
-//            });
-//
-//            var pg2_div3 = $("<div>", {
-//                class: "awesome class",
-//                id: "my awesome div2",
-//                text: "Here is MORE awesome div text"
-//            });
-//
-//            var pg2_div4 = $("<div>", {
-//                class: "awesome class",
-//                id: "my awesome div3.data-coolness: "high"",
-//                text: "Here is <strong>EVEN MORE</strong> awesome div text"
-//            });
-//
-//            pg2_div.append(pg2_div2).append(pg2_div3).append(pg2_div4);
-//            $("#playground2").append(pg2_div);
-//        });
-            //playground 3 code
+            //playground 2 code
+            var pg2_div0 = $("<div>",{
+                class: "playground playground_source"
+            });
+        var pg2_div1 = $("<div>",{
+                class: "awesome_class",
+                text: "Here is some awesome div text"
+        });
+        var pg2_div2 = $("<div>",{
+                class: "awesome_class",
+                id: "my_awesome_div2",
+                text:"Here is MORE awesome div text"
+        });
+        var pg2_div3 = $("<div>",{
+                class: "awesome_class",
+                id: "my_awesome_div3 data-coolness = 'high'",
+                text: "Here is <string style: strong>EVEN MORE</string> awesome div text"
+        });
+
+        pg2_div0.append(pg2_div1).append(pg2_div2).append(pg2_div3);
+        $("#playground2").append(pg2_div0)
+
+        //playground 3 code
     </script>
 </head>
 <body>
@@ -155,8 +147,5 @@
     <!--copy code into here using jQuery ONLY-->
     <!-- ******** NO COPY AND PASTE ******** -->
 </div>
-
+</body>
 </html>
-
-
-
