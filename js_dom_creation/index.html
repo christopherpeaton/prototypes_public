@@ -41,7 +41,12 @@
 $(document).ready(function()
 {
 	//playground 1 code
-
+	var h1 = $("<h1>").text('I am a heading');
+	$(h1).appendTo('#playground1');
+	var p_awesome = $("<p>").text('This is an awesome paragraph');
+	$(p_awesome).appendTo('#playground1');
+	var p_red = $("<p>").text('This has red text').css({'color':'red'});
+	$(p_red).appendTo('#playground1');
 	//playground 2 code
 
 	//playground 3 code
@@ -62,6 +67,7 @@ $(document).ready(function()
 	<div class="playground playground_destination" id="playground1">
 		<!--copy code into here using jQuery ONLY-->
 		<!-- ******** NO COPY AND PASTE ******** -->
+
 	</div>
 
 <!-- ************** Playground 2 ************** -->	
