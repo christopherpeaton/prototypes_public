@@ -55,28 +55,42 @@ $(document).ready(function()
 	var awesome_div_3 = $("<div>").text('Here is EVEN MORE awesome div text').addClass('awesome_class').attr('id','my_awesome_div3').attr('data-coolness','high');
 	$(awesome_div_3).appendTo('#playground2');
 	//playground 3 code
+	var ul = $("<ul>").addClass('neato');
+	var li_1 = $("<li>").text('Link 1');
+	var li_2 = $("<li>").text('Link 2');
+	var li_3 = $("<li>").text('Link 3');
+	$(ul).append(li_1);
+	$(ul).append(li_2);
+	$(ul).append(li_3);
+	$('#playground3').append(ul);
+	var figure_awesome = $("<figure>").addClass('awesome_picture');
+	var figure_img = $("<img>").attr('src','http://comerecommended.com/wp-content/uploads/2013/01/how-to-get-awesome-back.jpg');
+	$(figure_awesome).append(figure_img);
+	$('#playground3').append(figure_awesome);
+	var fig_caption = $("<figcaption>").text('That\'s right, ');
+	var span_bold = $('<span>').addClass('bold_text').text('you are');
+	$(fig_caption).append(span_bold);
+	$(figure_awesome).append(fig_caption);
+
+
 });
 </script>
 </head>
 <body>
 <!-- ************** Playground 1 ************** -->
-	
 	<!-- ********** Playground 1 Source ********** -->
 	<div class="playground playground_source">
 		<h1>I am a heading</h1>
 		<p>This is an awesome paragraph</p>
 		<p style="color:red">This has red text</p>
 	</div>
-
 	<!-- ********** Playground 1 Destination ********** -->
 	<div class="playground playground_destination" id="playground1">
 		<!--copy code into here using jQuery ONLY-->
 		<!-- ******** NO COPY AND PASTE ******** -->
 
 	</div>
-
-<!-- ************** Playground 2 ************** -->	
-	
+<!-- ************** Playground 2 ************** -->
 	<!-- ********** Playground 2 Source ********** -->
 	<div class="playground playground_source">
 		<div class='awesome_class'>
@@ -89,15 +103,12 @@ $(document).ready(function()
 			Here is <strong>EVEN MORE</strong> awesome div text
 		</div>
 	</div>
-
 	<!-- ********** Playground 2 destination ********** -->
 	<div class="playground playground_destination" id="playground2">
 		<!--copy code into here using jQuery ONLY-->
 		<!-- ******** NO COPY AND PASTE ******** -->
 	</div>
-
 <!-- ************** Playground 3 ************** -->
-	
 	<!-- ********** Playground 3 Source ********** -->
 	<div class="playground playground_source">
 		<ul class="neato">
