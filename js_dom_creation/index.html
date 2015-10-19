@@ -48,7 +48,12 @@ $(document).ready(function()
 	var p_red = $("<p>").text('This has red text').css({'color':'red'});
 	$(p_red).appendTo('#playground1');
 	//playground 2 code
-
+	var awesome_div_1 = $("<div>").text('Here is some awesome div text').addClass('awesome_class');
+	$(awesome_div_1).appendTo('#playground2');
+	var awesome_div_2 = $("<div>").text('Here is MORE awesome div text').addClass('awesome_class').attr('id','my_awesome_div2');
+	$(awesome_div_2).appendTo('#playground2');
+	var awesome_div_3 = $("<div>").text('Here is EVEN MORE awesome div text').addClass('awesome_class').attr('id','my_awesome_div3').attr('data-coolness','high');
+	$(awesome_div_3).appendTo('#playground2');
 	//playground 3 code
 });
 </script>
