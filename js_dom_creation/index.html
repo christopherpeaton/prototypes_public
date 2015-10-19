@@ -1,109 +1,192 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <style>
 
-.playground{
-	margin: 2%;
-	min-height: 50vh;
-}
-.playground_source{
-	background-color: lavender;
-}
-.playground_destination{
-	background-color: lightyellow;
-}
-.awesome_class{
-	text-shadow: 1px 1px red;
-	font-weight: bold;
-}
-.neato{
-	padding: 1%;
-}
-.neato > li{
-	margin: 0px 1%;
-	padding: 0px;
-	list-style-type: none;
-	display: inline-block;
-}
-.awesome_picture{
-	display:inline-block;
-}
-.awesome_picture > figcaption{
-	text-align: center;
-	font-weight: bold;
-	font-style: italic;
-	font-size:120%;
-}
-</style>
-<script>
-$(document).ready(function()
-{
-	//playground 1 code
+        .playground {
+            margin: 2%;
+            min-height: 50vh;
+        }
 
-	//playground 2 code
+        .playground_source {
+            background-color: lavender;
+        }
 
-	//playground 3 code
-});
-</script>
+        .playground_destination {
+            background-color: lightyellow;
+        }
+
+        .awesome_class {
+            text-shadow: 1px 1px red;
+            font-weight: bold;
+        }
+
+        .neato {
+            padding: 1%;
+        }
+
+        .neato > li {
+            margin: 0px 1%;
+            padding: 0px;
+            list-style-type: none;
+            display: inline-block;
+        }
+
+        .awesome_picture {
+            display: inline-block;
+        }
+
+        .awesome_picture > figcaption {
+            text-align: center;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 120%;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            //playground 1 code
+            var playground_one_div = $("<div>", {
+                class: "playground playground_destination"
+            });
+            var playground_one_h1 = $("<h1>", {
+                text:"I am a heading"
+            });
+            var playground_one_first_p = $("<p>", {
+               text: "This is an awesome paragraph"
+            });
+            var playground_one_second_p = $("<p>", {
+                style: "color:red",
+                text: "This has red text"
+            });
+            $(playground_one_div).append(playground_one_h1).append(playground_one_first_p).append(playground_one_second_p);
+            $('#playground1').append(playground_one_div);
+            console.log(playground_one_first_p);
+
+
+            //playground 2 code
+
+            var playground_two_div1 = $("<div>", {
+                class: "awesome_class",
+                text: "Here is some awesome div text"
+            });
+            var playground_two_div2 = $("<div>", {
+                class: "awesome_class",
+                id: "my_awesome_div2",
+                text: "Here is MORE awesome div text"
+            });
+            var playground_two_div3 = $("<div>", {
+                class: "awesome_class",
+                id: "my_awesome_div3",
+                html: "Here is <strong>EVEN MORE</strong> awesome div text",
+                "data-coolness": "high"
+            });
+
+           // var strong_text = ($('<strong>').text(EVEN MORE))
+            $('#playground2').append(playground_two_div1).append(playground_two_div2).append(playground_two_div3);
+
+            //playground 3 code
+            var playground_3_div = $("<div>", {
+                class: "playground playground_destination"
+            });
+            var playground_3_ul = $("<ul>", {
+                class: "neato"
+            });
+            var playground_3_li_1 = $("<li>", {
+                text: "Link 1"
+            });
+            var playground_3_li_2 = $("<li>", {
+                text: "Link 2"
+            });
+            var playground_3_li_3 = $("<li>", {
+                text: "Link 3"
+            });
+            var playground_3_li_4 = $("<li>", {
+                text: "Link 4"
+            });
+
+            var figure = $("<figure>", {
+                class: "awesome_picture"
+            });
+            var img = $("<img>", {
+                src: "http://comerecommended.com/wp-content/uploads/2013/01/how-to-get-awesome-back.jpg"
+            });
+            var imgcaption2 = $("<span>", {
+                class: "bold_text",
+                text: "You are"
+            });
+
+            var imgcaption1 = $("<figcaption>", {
+                text: 'That\'s right, '
+            });
+            $(imgcaption1).append(imgcaption2);
+
+            $(figure).append(img).append(imgcaption1);
+            $(playground_3_ul).append(playground_3_li_1).append(playground_3_li_2).append(playground_3_li_3).append(playground_3_li_4);
+            $(playground_3_div).append(playground_3_ul).append(figure);
+            $('#playground3').append(playground_3_div);
+        });
+    </script>
 </head>
 <body>
 <!-- ************** Playground 1 ************** -->
-	
-	<!-- ********** Playground 1 Source ********** -->
-	<div class="playground playground_source">
-		<h1>I am a heading</h1>
-		<p>This is an awesome paragraph</p>
-		<p style="color:red">This has red text</p>
-	</div>
 
-	<!-- ********** Playground 1 Destination ********** -->
-	<div class="playground playground_destination" id="playground1">
-		<!--copy code into here using jQuery ONLY-->
-		<!-- ******** NO COPY AND PASTE ******** -->
-	</div>
+<!-- ********** Playground 1 Source ********** -->
+<div class="playground playground_source">
+    <h1>I am a heading</h1>
 
-<!-- ************** Playground 2 ************** -->	
-	
-	<!-- ********** Playground 2 Source ********** -->
-	<div class="playground playground_source">
-		<div class='awesome_class'>
-			Here is some awesome div text
-		</div>
-		<div class='awesome_class' id='my_awesome_div2'>
-			Here is MORE awesome div text
-		</div>
-		<div class='awesome_class' id='my_awesome_div3' data-coolness='high'>
-			Here is <strong>EVEN MORE</strong> awesome div text
-		</div>
-	</div>
+    <p>This is an awesome paragraph</p>
 
-	<!-- ********** Playground 2 destination ********** -->
-	<div class="playground playground_destination" id="playground2">
-		<!--copy code into here using jQuery ONLY-->
-		<!-- ******** NO COPY AND PASTE ******** -->
-	</div>
+    <p style="color:red">This has red text</p>
+</div>
+
+<!-- ********** Playground 1 Destination ********** -->
+<div class="playground playground_destination" id="playground1">
+    <!--copy code into here using jQuery ONLY-->
+    <!-- ******** NO COPY AND PASTE ******** -->
+</div>
+
+<!-- ************** Playground 2 ************** -->
+
+<!-- ********** Playground 2 Source ********** -->
+<div class="playground playground_source">
+    <div class='awesome_class'>
+        Here is some awesome div text
+    </div>
+    <div class='awesome_class' id='my_awesome_div2'>
+        Here is MORE awesome div text
+    </div>
+    <div class='awesome_class' id='my_awesome_div3' data-coolness='high'>
+        Here is <strong>EVEN MORE</strong> awesome div text
+    </div>
+</div>
+
+<!-- ********** Playground 2 destination ********** -->
+<div class="playground playground_destination" id="playground2">
+    <!--copy code into here using jQuery ONLY-->
+    <!-- ******** NO COPY AND PASTE ******** -->
+</div>
 
 <!-- ************** Playground 3 ************** -->
-	
-	<!-- ********** Playground 3 Source ********** -->
-	<div class="playground playground_source">
-		<ul class="neato">
-			<li>Link 1</li>
-			<li>Link 2</li>
-			<li>Link 3</li>
-		</ul>
-		<figure class="awesome_picture">
-			<img src="http://comerecommended.com/wp-content/uploads/2013/01/how-to-get-awesome-back.jpg">
-			<figcaption>That's right, <span class="bold_text">you are</span></figcaption>
-		</figure>
-	</div>
 
-	<!-- ********** Playground 3 Destination ********** -->
-	<div class="playground playground_destination" id="playground3">
-		<!--copy code into here using jQuery ONLY-->
-		<!-- ******** NO COPY AND PASTE ******** -->
-	</div>
+<!-- ********** Playground 3 Source ********** -->
+<div class="playground playground_source">
+    <ul class="neato">
+        <li>Link 1</li>
+        <li>Link 2</li>
+        <li>Link 3</li>
+    </ul>
+    <figure class="awesome_picture">
+        <img src="http://comerecommended.com/wp-content/uploads/2013/01/how-to-get-awesome-back.jpg">
+        <figcaption>That's right, <span class="bold_text">you are</span></figcaption>
+    </figure>
+</div>
+
+<!-- ********** Playground 3 Destination ********** -->
+<div class="playground playground_destination" id="playground3">
+    <!--copy code into here using jQuery ONLY-->
+    <!-- ******** NO COPY AND PASTE ******** -->
+</div>
 
 </html>
