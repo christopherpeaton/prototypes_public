@@ -22,15 +22,15 @@
         student.hasQuestion = false;
 
         student.greeting = function () {
-            return console.log("Hello, my name is " + student.firstName);
+            return ("Hello, my name is " + student.firstName);
         };
         student.aboutMe = function () {
-            return console.log("My full name is " + student.firstName + " " + student.lastName + ", I am " + student.age + " years old and I am a student at " + student.school + ".");
+            return ("My full name is " + student.firstName + " " + student.lastName + ", I am " + student.age + " years old and I am a student at " + student.school + ".");
         };
         student.askQuestion = function (question) {
             student.questionList.push(question);
             student.hasQuestion = true;
-            return console.log("A question has been added to your list");
+            return ("A question has been added to your list");
         };
         student.answerQuestion = function () {
             if (student.hasQuestion == true) {
@@ -39,9 +39,9 @@
             }
             else
             {
-                console.log("You have no pending questions");
+                return ("You have no pending questions");
             }
-        }
+        };
 
         console.log("Greeting:", student.greeting());
         console.log("About:", student.aboutMe());
