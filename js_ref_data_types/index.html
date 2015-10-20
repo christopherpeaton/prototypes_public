@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        //Feature Set 1
+        var student_array = ["student1", "student2", "student3", "student4", "student5"];
+        console.log(student_array[2]);
+
+        //Feature Set 1.1
+        console.log(student_array.length);
+        student_array.push("student6", "student7");
+        console.log(student_array.length);
+
+        //Feature Set 2.0
+        var student = {};
+        student.firstName='Michal';
+        student.lastName='Penn';
+        student.age='24';
+        student.school='LearningFuze';
+        student.questionList=[];
+        student.hasQuestion=false;
+
+        //Feature Set 2.1
+        student.greeting = function(){
+            return "Hello, my name is " + this.firstName;
+        };
+        console.log(student.greeting());
+
+        student.aboutMe = function(){
+            return "My full name is " + this.firstName + " " + this.lastName + ", I am " + this.age + " years old and I am a student at " + this.school + ".";
+        };
+        console.log(student.aboutMe());
+
+        student.askQuestion = function(question) {
+            this.questionList.push(question);
+            this.hasQuestion = true;
+            return "A question has been added to your list";
+        };
+
+        student.answerQuestion = function() {
+            if(student.hasQuestion==true) {
+                this.hasQuestion = false;
+                var last_question = this.questionList[this.questionList.length - 1];
+                return last_question;
+            }
+            else {
+                return "You have no pending questions";
+            }
+        };
+
+        //Feature Set 2.2
+
+        console.log("Greeting function: ", student.greeting());
+        console.log("About Me function: ", student.aboutMe());
+        console.log("Answer Question function: ", student.answerQuestion());
+        console.log("Ask Question function: ", student.askQuestion("What is the meaning of life?"));
+        console.log("Ask Question function: ", student.askQuestion("What is your favorite Disney movie?"));
+        console.log("Ask Question function: ", student.askQuestion("Do you have chocolate?"));
+        console.log("Answer Question function: ", student.answerQuestion());
+        console.log(student.questionList);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
