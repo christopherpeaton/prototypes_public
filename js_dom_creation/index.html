@@ -41,7 +41,17 @@
 $(document).ready(function()
 {
 	//playground 1 code
+   var div1 = $('div.playground:first-of-type').html();
+    console.log(div1);
+	$('#playground1').append(div1);
 
+	var div2 =$('div.playground:nth-of-type(3)').html();
+	 console.log(div2);
+	$('#playground2').append(div2);
+
+	var div3 =$('div.playground:nth-of-type(5)').html();
+	console.log(div3);
+	$('#playground3').append(div3);
 	//playground 2 code
 
 	//playground 3 code
@@ -105,5 +115,5 @@ $(document).ready(function()
 		<!--copy code into here using jQuery ONLY-->
 		<!-- ******** NO COPY AND PASTE ******** -->
 	</div>
-
+</body>
 </html>
