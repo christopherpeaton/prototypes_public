@@ -46,6 +46,8 @@
             if(this.hasQuestion == true) {
                 this.hasQuestion = false;
                 return this.questionList[this.questionList.length-1];
+            } else {
+                return "You have no pending questions."
             }
         };
 
