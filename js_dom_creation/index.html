@@ -87,7 +87,9 @@
             var pg2_div4 = $("<div>", {
                 class: "awesome_class",
                 id: "my awesome div3.data-coolness: 'high'",
-                text: "Here is <strong>EVEN MORE</strong> awesome div text"
+                text: "Here is",
+                strong: "even more",
+                text: "awesome div text"
             });
 
             pg2_div.append(pg2_div2).append(pg2_div3).append(pg2_div4);
@@ -95,7 +97,7 @@
 
             //playground 3 code
 
-            var pg3_div = $("<div>", {
+            var pg3_div1 = $("<div>", {
                 class: "playground playground_source"
             });
 
@@ -119,15 +121,22 @@
                 display: "inline"
             });
 
-            var pg3_div = $("<figure>", {
+            var pg3_div2 = $("<figure>", {
                 class: "awesome_picture"
             });
 
             var pg3_img = $("<img>", {
                 src: "http://comerecommended.com/wp-content/uploads/2013/01/how-to-get-awesome-back.jpg"
-            })
-            pg3_div.append(pg3_ul).append(pg3_li1).append(pg3_li2).append(pg3_li3);
-            $("#playground3").append(pg3_div)
+            });
+
+            var pg3_div3 = $("<figcaption>", {
+                span_class: "bold_text",
+                text: "That's right, you are"
+            });
+            pg3_div2.append(pg3_img).append(pg3_div3);
+            pg3_ul.append(pg3_li1).append(pg3_li2).append(pg3_li3);
+            pg3_div1.append(pg3_ul).append(pg3_div2);
+            $("#playground3").append(pg3_div1)
         });
     </script>
 </head>
