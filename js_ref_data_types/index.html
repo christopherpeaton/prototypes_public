@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript - Reference Data Types</title>
+    <script>
+        //Feature Set 1.0
+        var student_array = ["Vick", "David", "Nick", "Sara", "Chris"];
+        console.log(student_array[2]);
+        //Feature Set 1.1 - Array Methods
+        console.log(student_array);
+        console.log(student_array.length);
+        student_array.push("Adia", "Aldo");
+        console.log(student_array.length);
+        console.log(student_array);
+        //Feature Set 2.0 - Build an object
+        var student = {};
+        student.firstName = "Chelsea";
+        student.lastName = "Leopold";
+        student.age = 29;
+        student.school = "LearningFuze";
+        student.questionList = [];
+        student.hasQuestion = false;
+        //Feature Set 2.1 - Add methods to the madness
+        student.greeting = function(){
+            return "Hello, my name is " + student.firstName;
+        };
+        student.aboutMe = function(){
+            return "My full name is " + student.firstName + " " + student.lastName + ", I am " + student.age + " years old and I am a student at " + student.school + ".";
+        };
+        student.askQuestion = function(question){
+            student.questionList.push(question);
+            student.hasQuestion = true;
+            return "A question has been added to your list";
+        };
+        student.answerQuestion = function(){
+          if (student.hasQuestion === true) {
+              student.hasQuestion = false;
+              return student.questionList[student.questionList.length-1];
+          }else {
+              return "You have no pending questions";
+          }
+        };
+        //Feature Set 2.2 - Test Your student
+        console.log("1. Greeting function: ", student.greeting());
+        console.log("2. About Me function: ", student.aboutMe());
+        console.log("3. Answer Question function: ", student.answerQuestion());
+        console.log("4. Ask Question function: ", student.askQuestion("How can you add a video using jQuery?"));
+        console.log("5. Ask Question function: ", student.askQuestion("How do you create a delay function that will not allow a user to click on something?"));
+        console.log("6. Ask Question function: ", student.askQuestion("How can I create different settings?"));
+        console.log("7. Answer Question function: ", student.answerQuestion("I don't know"));
+    </script>
+</head>
+<body>
+</body>
+</html>
