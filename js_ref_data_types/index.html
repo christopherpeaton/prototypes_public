@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        var myArray = ['David', 'Steven', 'Andrew', 'Josh', 'Ryan'];
+        console.log(myArray[2]);
+        console.log(myArray);
+        console.log(myArray.push);
+        myArray.push('Lori', 'Harvey');
+        console.log(myArray);
+        //
+        var student = {};
+        student.firstName = 'David';
+        student.lastName = 'lastName';
+        student.age = 15;
+        student.school = 'hopkins';
+        student.questionList = [];
+        student.hasQuestion = false;
+        //
+        student.greeting = function (){
+            return 'hello, my name is' + this.firstName;
+        }
+        student.aboutMe = function (){
+            return 'My full name is' + this.firstName + ' ' + this.lastName + ', I am ' + this.age + ' years old and I am a student at ' + this.school;
+        }
+        student.askQuestion = function (question){
+            student.questionList.push(question);
+            student.hasQuestion = true;
+            return 'A question has been added to your list';
+        }
+        student.answerQuestion = function(){
+            if(student.hasQuestion){
+                student.hasQuestion = false;
+                var length = student.questionList.length;
+                return student.questionList[length-1];
+            }else{
+                return 'You have no pending questions';
+            }
+        }
+
+        //
+        console.log('Greeting: ', student.greeting());
+        console.log('aboutMe :', student.aboutMe());
+        console.log('answer questions :  ', student.answerQuestion());
+        console.log('ask question function: ', student.askQuestion('why is the sky blue?'));
+        console.log('ask question function: ', student.askQuestion('Does david like the beach?'));
+        console.log('ask question function: ', student.askQuestion('Does david like huskies?'));
+        console.log('answer question: ', student.answerQuestion());
+
+        //
+        console.log('here is my student object' + student);
+        console.log('here is my student object', student);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
