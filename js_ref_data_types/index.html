@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var studentarr = ["a", "b", "c", "d", "e"];
+        console.log(studentarr[4]);
+        console.log(studentarr);
+        console.log(studentarr.length);
+        studentarr.push("f", "g");
+        console.log(studentarr.length);
+        console.log(studentarr);
+
+        var student = {};
+        student.firstname = "John";
+        student.lastname = "Doe";
+        student.age = 900;
+        student.school = "Oxford University";
+        student.questionList = [];
+        student.hasQuestion = false;
+        student.greeting = function () {
+            return "Hello, my name is " + this.firstname;
+        };
+        student.aboutMe = function () {
+            return "My full name is " + this.firstname + " " + this.lastname + ", " + "I am " + this.age + " years old and I am a student at " + this.school;
+        };
+        student.askQuestion = function (question) {
+            this.hasQuestion = true;
+            this.questionList.push(question);
+            return "A question has been added to your list";
+        };
+        student.answerQuestion = function () {
+            if (this.hasQuestion === true) {
+                var lastquestion = this.questionList[this.questionList.length - 1];
+                return lastquestion;
+            }
+            return "You have no pending questions";
+        };
+
+        console.log("Greeting Function: " + student.greeting());
+        console.log("About Me Function: " + student.aboutMe());
+        console.log("Ask Question Function: " + student.askQuestion("who?"));
+        console.log("Ask Question Function: " + student.askQuestion("how?"));
+        console.log("Ask Question Function: " + student.askQuestion("what?"));
+        console.log("Answer Question Function: " + student.answerQuestion());
+        console.log("Here is my student object " + student);
+        console.log("here is my student object", student);
+    </script>
+</head>
+<body></body>
+</html>
