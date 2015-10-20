@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <title>js_ref_data_types</title>
+            <meta charset="UTF-8">
+            <script>
+                /*FS1*/
+                student_array = ['Joseph','Aldo','Nick','Clifford','Heather'];
+                console.log(student_array[2]);
+                /*FS1.1*/
+                console.log(student_array);
+                console.log(student_array.length);
+                student_array.push('Johnny','Brenden');
+                console.log(student_array.length);
+                console.log(student_array);
+                /*FS2*/
+                var student = {};
+                student.firstName="Tanner";
+                student.lastName="Bierbaum";
+                student.age = 22;
+                student.school = "SCHS";
+                student.questionList = [];
+                student.hasQuestion = false;
+                console.log(student);
+                /*FS2.1*/
+                student.greeting=function(){
+                    return "Hello, my name is "+this.firstName;
+                };
+                student.aboutMe=function(){
+                    return "My full name is "+this.firstName+" "+this.lastName+" , I am "+this.age+" years old and I am a student at "+this.school+"."
+                };
+                student.askQuestion=function(question){
+                    this.questionList+=question;
+                    this.hasQuestion=true;
+                    return "A question has been added to your list";
+                };
+                student.answerQuestion=function(){
+                    if(student.hasQuestion){
+                        student.hasQuestion=false;
+                        return student.questionList[student.questionList.length-1];
+
+                    }
+                    else{
+                        return "You have no pending questions"
+                    }
+                };
+                /*FS2.2*/
+                console.log("Greeting Function:",student.greeting());
+                console.log("About Me:",student.aboutMe());
+                console.log("answer:", student.answerQuestion());
+                console.log("ask:", student.askQuestion("How_old_are_you?"));
+                console.log("ask:", student.askQuestion("What's_your_middle_name?"));
+                console.log("ask:", student.askQuestion("Where_did_you_grow_up?"));
+                console.log("answer:", student.answerQuestion());
+
+
+                /*Quick console.log() exercise*/
+                console.log("Here is my student object "+ student);
+                console.log("Here is my student object", student);
+
+
+
+
+
+            </script>
+
+        </head>
+        <body>
+
+        </body>
+</html>
