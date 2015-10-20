@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        //        feature set 1
+        var student_array = ['Nicole', 'Sara', 'Chris', 'Rhett', 'Andrew'];
+        console.log(student_array[2]);
+
+        console.log(student_array);
+        console.log(student_array.length);
+        student_array.push('Mihir', 'Stefanie');
+        console.log(student_array.length);
+        console.log(student_array);
+
+        //        feature set 2
+        var student = {};
+        student.firstName = 'Andrew';
+        student.lastName = 'Ngai';
+        student.age = '25';
+        student.school = 'UCSB';
+        student.questionList = [];
+        student.hasQuestion = false;
+
+        student.greeting = function () {
+            return "Hello, my name is " + this.firstName;
+        };
+        student.aboutMe = function () {
+            return "My full name is " + this.firstName + " " + this.lastName + ", I am " + this.age + " years old and I am a student at " + this.school;
+        };
+        student.askQuestion = function(question) {
+            this.questionList.push(question);
+            this.hasQuestion = true;
+            return "A question has been added to your list";
+        };
+        student.answerQuestion = function(){
+            if(this.hasQuestion){
+                this.hasQuestion = false;
+                return this.questionList[this.questionList.length - 1];
+            }
+            else{
+                return "You have no pending questions";
+            }
+        }
+        console.log("Greeting function: ", student.greeting());
+        console.log("About me function: ", student.aboutMe());
+        console.log("Answer question function: ", student.answerQuestion());
+        console.log("Ask question function: ", student.askQuestion("what is love?"));
+        console.log("Ask question function: ", student.askQuestion("baby don't hurt me"));
+        console.log("Ask question function: ", student.askQuestion("don't hurt me, no more"));
+        console.log("Answer question function: ", student.answerQuestion());
+        console.log(student.questionList);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
