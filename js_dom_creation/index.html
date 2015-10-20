@@ -56,10 +56,16 @@ $(document).ready(function()
 	//playground 2 code
 	var div1 = $('<div>').attr('class', 'awesome_class').text('Here is some awesome text');
 	var div2 = $('<div>').attr('class', 'awesome_class').attr('id', 'my_awesome_div2').text('Here is MORE awesome div text');
-	var div3 = $('<div>').attr('class','awesome_class').attr('id', 'my_awesome_div3').attr('data-coolness', 'high').html('Here is ' + '<strong>' + 'EVEN MORE ' + '</strong>' + 'Awesome Div Text')
+	var div3 = $('<div>').attr({'class': ' awesome ',  })
 	$('#playground2').append(div1);
 	$('#playground2').append(div2);
 	$('#playground2').append(div3);
+
+
+
+
+
+
 	//playground 3 code
 	var ul = $('<ul>').addClass('neato');
 	$('.neato > li').clone().appendTo(ul);
