@@ -95,7 +95,39 @@
 
             //playground 3 code
 
-            var pg3
+            var pg3_div = $("<div>", {
+                class: "playground playground_source"
+            });
+
+            var pg3_ul = $("<ul>", {
+                class: "neato",
+                list_style_type: "none"
+            });
+
+            var pg3_li1 = $("<li>", {
+                text: 'link1',
+                display: "inline"
+            });
+
+            var pg3_li2 = $("<li>", {
+                text: "link2",
+                display: "inline"
+            });
+
+            var pg3_li3 = $("<li>", {
+                text: "link3",
+                display: "inline"
+            });
+
+            var pg3_div = $("<figure>", {
+                class: "awesome_picture"
+            });
+
+            var pg3_img = $("<img>", {
+                src: "http://comerecommended.com/wp-content/uploads/2013/01/how-to-get-awesome-back.jpg"
+            })
+            pg3_div.append(pg3_ul).append(pg3_li1).append(pg3_li2).append(pg3_li3);
+            $("#playground3").append(pg3_div)
         });
     </script>
 </head>
