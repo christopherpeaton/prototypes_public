@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script>
+        var student_array = ["student1", "student2", "student3", "student4", "student5"];
+        console.log(student_array[2]);
+
+        console.log(student_array);
+        console.log(student_array.length);
+        student_array.push("student6", "student7");
+        console.log(student_array.length);
+        console.log(student_array);
+
+        var student = {};
+        student.firstName = "Stefanie";
+        student.lastName = "Yoshimura";
+        student.age = 28;
+        student.school = "LearningFuze";
+        student.questionList = [];
+        student.hasQuestion = false;
+
+        student.greeting = function () {
+            return console.log("Hello, my name is " + student.firstName);
+        };
+        student.aboutMe = function () {
+            return console.log("My full name is " + student.firstName + " " + student.lastName + ", I am " + student.age + " years old and I am a student at " + student.school + ".");
+        };
+        student.askQuestion = function (question) {
+            student.questionList.push(question);
+            student.hasQuestion = true;
+            return console.log("A question has been added to your list");
+        };
+        student.answerQuestion = function () {
+            if (student.hasQuestion == true) {
+                student.hasQuestion = false;
+                return student.questionList[student.questionList.length - 1];
+            }
+            else
+            {
+                console.log("You have no pending questions");
+            }
+        }
+
+        console.log("Greeting:", student.greeting());
+        console.log("About:", student.aboutMe());
+        console.log("Answer:", student.answerQuestion());
+        console.log("Ask:", student.askQuestion("What is the moon?"));
+        console.log("Ask:", student.askQuestion("Who is the moon?"));
+        console.log("Ask:", student.askQuestion("Where is the moon?"));
+        console.log("Answer:", student.answerQuestion());
+        console.log("Question List:", student.questionList);
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
