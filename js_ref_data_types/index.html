@@ -21,7 +21,7 @@
         var student = {};
         student.firstName = "Clifford";
         student.lastName = "Chen";
-        student.age = "30";
+        student.age = 30;
         student.school = "LearningFuze";
         student.questionList = [];
         student.hasQuestion = false;
@@ -38,15 +38,15 @@
         };
 
         student.askQuestion = function(question){
-            this.questionList.push(question);
-            student.hasQuestion = true;
+            student.questionList.push(question);
+            student.hasQuestion = true ;
             return console.log('A question has been added to your list');
         };
 
         // Not sure how to do this previous question part //
 
         student.answerQuestion = function(){
-            if (student.hasQuestion == true){
+            if (student.hasQuestion = true){
                 student.hasQuestion = false;
                 return student.questionList[student.questionList.length-1];}
                 else {
@@ -56,12 +56,12 @@
 
         // Feature Set 2.2 //
 
-        console.log("Greeting function: ", student.greeting());
+        console.log("Greeting: ", student.greeting());
         console.log("About Me ", student.aboutMe());
         console.log("Answer Question ", student.answerQuestion());
-        console.log("Ask Question ", student.askQuestion("Who?"));
-        console.log("Ask Question ", student.askQuestion("Why?"));
-        console.log("Ask Question ", student.askQuestion("How?"));
+        console.log("Ask Question ", student.askQuestion('Who?'));
+        console.log("Ask Question ", student.askQuestion('Why?'));
+        console.log("Ask Question ", student.askQuestion('How?'));
         console.log("Answer Question ", student.answerQuestion());
 
         // Quick Exercise //
