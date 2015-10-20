@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script>
+        var mySmallNumber = 5;
+        var myString = "5";
+        var myBigNumber = 255;
+
+        var output1 = "mySmallNumber == myString is " + (mySmallNumber == myString);
+        var output2 = "mySmallNumber === myString is " + (mySmallNumber === myString);
+        var output3 = "mySmallNumber < myBigNumber is " + (mySmallNumber < myBigNumber);
+        var output4 = "mySmallNumber > myBigNumber is " + (mySmallNumber > myBigNumber);
+
+        console.log(output1);
+        console.log(output2);
+        console.log(output3);
+        console.log(output4);
+
+        var challenge = (mySmallNumber + myString) === (mySmallNumber + myString);
+        console.log(challenge);
+
+        var myTruth = true;
+        var myLie = false;
+
+        if (myTruth == true) {
+            console.log("I'm true!")
+        }
+
+        if (myLie == true) {
+            console.log("I'm true!")
+        }
+        else {
+            console.log("I'm false!")
+        }
+
+        if (myTruth == myLie) {
+            console.log("I'm true!")
+        }
+        else {
+            console.log("I'm false!")
+        }
+
+        if (myLie != true) {
+            console.log("I'm a true lie!")
+        }
+
+        var myNumber = 77;
+
+        switch (myNumber / 11) {
+            case 13:
+                console.log("Pretty unlucky!")
+                break;
+
+            case 0:
+                console.log("Did you even pick a number?")
+                break;
+
+            case 7:
+                console.log("Two short of a triple 7!")
+                break;
+
+            default:
+                console.log("Try another number.")
+        }
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
