@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+//feature set 1
+        var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//ascending loop
+        for(var i=0; i<numbers.length; i++){
+            console.log(numbers[i]);
+        }
+//descending loop
+        for(var i=(numbers.length - 1); i>-1; i--){
+            console.log(numbers[i]);
+        }
+//ascending odd loop
+        for(var i=0; i<numbers.length-1; i += 2){
+            console.log(numbers[i])
+        }
+        var mixedArray = [4, 56, 11, 13, 97, 22, 7, 36, 19, 5, 8, 10];
+        for(var i=0; i<mixedArray.length-1; i += 2){
+            console.log(mixedArray[i]);
+        }
+//answer to question: can add if statement to filter array
+//feature set 2
+        var classRoom = {desk1: 'Stu', desk2: 'Peggy', desk3: 'LoneStar', desk4: 'George', desk5: 'Sheldon'};
+        for(var key in classRoom){
+            console.log(classRoom[key] + 'is at ' + key);
+        }
+//feature set 3
+        var studentArray = [{name: "Bob", grade: 87},
+        {name: "Fred", grade: 82},
+        {name: "George", grade: 93},
+        {name: "Robert", grade: 85}];
+        function findStudent(student_name){
+            var output = '';
+            var i = 0;
+            var found = false;
+            while(!found && i<studentArray.length){
+                var student = studentArray[i];
+                if(student.name == student_name){
+                    output = "Found "+student_name+" Grade: "+student.grade;
+                    found = true;
+                }
+                i++;
+            }
+            if(!found){
+                output = "Student " + student_name + " not found.";
+            }
+            return output;
+        }
+        console.log(findStudent("George"));
+        console.log(findStudent("Fred"));
+        console.log(findStudent("Hank"));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
