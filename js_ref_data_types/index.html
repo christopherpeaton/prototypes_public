@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var student_array = ["David", "Adia", "Aldo", "Chris", "Joseph"]
+        console.log(student_array[2]);
+        console.log(student_array);
+        console.log(student_array.length);
+        student_array.push('Vick', 'Lance');
+        console.log(student_array.length);
+        console.log(student_array);
+        var student = {
+
+            firstName: "David",
+            lastName: "Nguyen",
+            age: "34",
+            school: "LearningFuze",
+            questionList: "[]",
+            hasQuestion: false,
+
+            greeting: function () {
+                return "Hello, my name is " + student.firstName;
+            },
+
+            aboutMe: function () {
+                return "My full name is " + student.firstName + " " + student.lastName + ", I am " + student.age + " years " +
+                        "old and I am a student at " + student.school + ".";
+            },
+
+            askQuestion: function () {
+                student.questionList.push();
+                student.hasQuestion = true;
+
+                return "A question has been added to your list";
+            },
+
+            answer_question: function () {
+                if (student.hasQuestion == true) {
+                    student.hasQuestion = false;
+                    return (student.questionList.length - 1)
+
+                } else {
+                    return "You have no pending questions";
+                }
+            }
+        };
+
+        console.log(student.greeting());
+
+        console.log(student.aboutMe());
+        console.log(student.answer_question());
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
