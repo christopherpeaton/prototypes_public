@@ -1,0 +1,13 @@
+form {
+
+}
+
+.text_box input:first-child {
+    background-color: blue;
+    box-shadow: #515151;
+}
+
+.text_box input:nth-child(2) {
+    font-family: cursive;
+    box-shadow: 0 2em 2em 0 gray;
+}
