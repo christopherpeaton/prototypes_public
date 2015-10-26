@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+}
+#carousel-feature-set-2 {
+    margin-top: 8%;
+    width: 33%;
+}
+img {
+    width: 300px;
+    height: auto;
+}
