@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function Prototype</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="game-area">
+    <div class="card">
+        <div class="front"><img src="imgs/british_flag.jpg" alt=""></div>
+        <!-- Feature Set 3.2 - Add onclick to HTML -->
+        <div class="back" onclick="cardFlip(this);"><img src="imgs/card_design.png" alt="Card Back"></div>
+    </div>
+    <div class="card">
+        <div class="front"><img src="imgs/path.jpg" alt=""></div>
+        <!-- Feature Set 3.2 - Add onclick to HTML -->
+        <div class="back" onclick="cardFlip(this);"><img src="imgs/card_design.png" alt="Card Back"></div>
+    </div>
+    <div class="card">
+        <div class="front"><img src="imgs/british_flag.jpg" alt=""></div>
+        <!-- Feature Set 3.2 - Add onclick to HTML -->
+        <div class="back" onclick="cardFlip(this);"><img src="imgs/card_design.png" alt="Card Back"></div>
+    </div>
+    <div class="card">
+        <div class="front"><img src="imgs/path.jpg" alt=""></div>
+        <!-- Feature Set 3.2 - Add onclick to HTML -->
+        <div class="back" onclick="cardFlip(this);"><img src="imgs/card_design.png" alt="Card Back"></div>
+    </div>
+</div>
+<!-- Feature Set 1.2 - Use your function -->
+<button onclick="myMessage();">1.2 - Use your function</button>
+<!-- Feature Set 1.4 - Using your add function -->
+<button onclick="add(12, 8);">ADD</button>
+<button onclick="console.log(add2result);">ADD #2</button>
+<!-- Function Inception (Advanced Topic) -->
+<button onclick="console.log(result);">ADD - Advanced</button>
+</body>
+</html>
