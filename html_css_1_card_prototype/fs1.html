@@ -1,47 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>HTML CSS 1 Card Prototype - Feature Set 1</title>
+        <title>Card Flip</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
         .game_area {
             width: 100vw;
             height: 100vh;
+            background-color: grey;
+            z-index: 1;
         }
-        .card {
-            width: 15%;
-            height: 50%;
+        .card_container {
+            width: 16vw;
+            height: 35vh;
             position: relative;
-            display: inline-block;
+            padding: 10px;
+            margin: 0 auto;
         }
-        .card_front, .card_back {
-            position: absolute;
-            width: 100%;
+        .front img {
+            position: relative;
             height: 100%;
-            background-repeat: no-repeat;
-            background-size: 100%;
-            background-position: 50%
+            width: 100%;
         }
-        .card_front {
-            background-image: url(images/afp-cute-puppy.jpg);
+        .back img {
+            position: relative;
+            height: 100%;
+            width: 100%;
         }
-        .card_back {
-            background-image: url(images/cardback-rankedladder.png);
+        .card_container img {
+            position: absolute;
+            left:0;
+            transition: opacity 1s;
         }
-        .card:hover .card_back {
-            visibility: hidden;
+        .card_container .back:hover {
+            opacity: 0;
         }
-
     </style>
 </head>
 <body>
     <div class="game_area">
-        <div class="card">
-            <div class="card card_front"></div>
-            <div class="card card_back"></div>
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="card_container">
+                    <div class="front">
+                        <img src="images/afp-cute-puppy.jpg">
+                    </div>
+                    <div class="back">
+                        <img src="images/cardback-rankedladder.png">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
