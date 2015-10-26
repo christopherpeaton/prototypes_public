@@ -1,219 +1,259 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
+    <title>Card Flip</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Feature Set 3</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <style>
-
-        .play_area{
-            width: 100vw;
-            height:100vh;
+        .game_area {
+            width: 100%;
+            height: 100%;
+            background-color: grey;
+            z-index: 1;
         }
-        /* Card formatting */
-        .card, .back, .front, img{
-            width: 10vw;
-            height: 20vh;
-            margin: 2%;
-        }
-        .front, .back{
-            backface-visibility: hidden;
-            position: absolute;
-        }
-
-        /* Time to turn card */
-        .card{
-            display: inline-block;
-            transition-duration: 3s;
+        .card_container {
+            width: 12vw;
+            height: 40vh;
+            position: relative;
+            padding: 10px;
+            margin: 0 auto;
             transform-style: preserve-3d;
+            transition: all 1.0s linear;
         }
-
-        /* Turn the card over */
-        .card:hover{
+        .card_container{
+            perspective: 1000px;
+        }
+        .front img {
+            position: relative;
+            height: 88%;
+            width: 88%;
+            margin: 10px;
+            padding: 10px;
             transform: rotateY(180deg);
         }
-        .back{
-            z-index: 2;
+        .back img {
+            position: relative;
+            height: 90%;
+            width: 90%;
+            padding: 10px;
+            margin: 10px;
             transform: rotateY(0deg);
+            backface-visibility: hidden;
         }
-        .front{
+        .card_container img {
+            position: absolute;
+            left:0;
+        }
+        .card_container:hover {
             transform: rotateY(180deg);
         }
     </style>
 </head>
 <body>
-    <div class="play_area">
-        <!-- start Row 1 -->
-        <!-- C1-R1 -->
-        <div class="card">
-            <div class="front">
-                <img src="images/afp-cute-puppy.jpg">
+<div class="game_area">
+    <div class="row">
+        <div class="col-sm-2">
+            <div class="card_container">
+                <div class="front">
+                    <img src="images/afp-cute-puppy.jpg">
+                </div>
+                <div class="back">
+                    <img src="images/cardback-rankedladder.png">
+                </div>
             </div>
-            <div class="back">
-                <img src="images/cardback-rankedladder.png">
-            </div>
-        </div><!-- end .card -->
-        <!-- C2-R1 -->
-        <div class="card">
-            <div class="front">
-                <img src="images/afp-cute-puppy.jpg">
-            </div>
-            <div class="back">
-                <img src="images/cardback-rankedladder.png">
-            </div>
-        </div><!-- end .card -->
-        <!-- C3-R1 -->
-        <div class="card">
-            <div class="front">
-                <img src="images/afp-cute-puppy.jpg">
-            </div>
-            <div class="back">
-                <img src="images/cardback-rankedladder.png">
-            </div>
-        </div><!-- end .card -->
-        <!-- C4-R1 -->
-        <div class="card">
-            <div class="front">
-                <img src="images/afp-cute-puppy.jpg">
-            </div>
-            <div class="back">
-                <img src="images/cardback-rankedladder.png">
-            </div>
-        </div><!-- end .card -->
-        <!-- C5-R1 -->
-        <div class="card">
-            <div class="front">
-                <img src="images/afp-cute-puppy.jpg">
-            </div>
-            <div class="back">
-                <img src="images/cardback-rankedladder.png">
-            </div>
-        </div><!-- end .card -->
-        <!-- C6-R1 -->
-        <div class="card">
-            <div class="front">
-                <img src="images/afp-cute-puppy.jpg">
-            </div>
-            <div class="back">
-                <img src="images/cardback-rankedladder.png">
-            </div>
-        </div><!-- end .card -->
-        <!-- end Row 1 -->
-        <br>
-        <!-- start Row 2 -->
-        <!-- C1-R2 -->
-        <div class="card">
-            <div class="front">
-                <img src="images/afp-cute-puppy.jpg">
-            </div>
-            <div class="back">
-                <img src="images/cardback-rankedladder.png">
-            </div>
-        </div><!-- end .card -->
-        <!-- C2-R2 -->
-        <div class="card">
-            <div class="front">
-                <img src="images/afp-cute-puppy.jpg">
-            </div>
-            <div class="back">
-                <img src="images/cardback-rankedladder.png">
-            </div>
-        </div><!-- end .card -->
-        <!-- C3-R2 -->
-        <div class="card">
-            <div class="front">
-                <img src="images/afp-cute-puppy.jpg">
-            </div>
-            <div class="back">
-                <img src="images/cardback-rankedladder.png">
-            </div>
-        </div><!-- end .card -->
-        <!-- C4-R2 -->
-        <div class="card">
-            <div class="front">
-                <img src="images/afp-cute-puppy.jpg">
-            </div>
-            <div class="back">
-                <img src="images/cardback-rankedladder.png">
-            </div>
-        </div><!-- end .card -->
-        <!-- C5-R2 -->
-        <div class="card">
-            <div class="front">
-                <img src="images/afp-cute-puppy.jpg">
-            </div>
-            <div class="back">
-                <img src="images/cardback-rankedladder.png">
-            </div>
-        </div><!-- end .card -->
-        <!-- C6-R2 -->
-        <div class="card">
-            <div class="front">
-                <img src="images/afp-cute-puppy.jpg">
-            </div>
-            <div class="back">
-                <img src="images/cardback-rankedladder.png">
-            </div>
-        </div><!-- end .card -->
-        <!-- end Row 2 -->
-        <br>
-        <!-- start Row 3 -->
-        <!-- C1-R3 -->
-        <div class="card">
-            <div class="front">
-                <img src="images/afp-cute-puppy.jpg">
-            </div>
-            <div class="back">
-                <img src="images/cardback-rankedladder.png">
-            </div>
-        </div><!-- end .card -->
-        <!-- C2-R3 -->
-        <div class="card">
-            <div class="front">
-                <img src="images/afp-cute-puppy.jpg">
-            </div>
-            <div class="back">
-                <img src="images/cardback-rankedladder.png">
-            </div>
-        </div><!-- end .card -->
-        <!-- C3-R3 -->
-        <div class="card">
-            <div class="front">
-                <img src="images/afp-cute-puppy.jpg">
-            </div>
-            <div class="back">
-                <img src="images/cardback-rankedladder.png">
-            </div>
-        </div><!-- end .card -->
-        <!-- C4-R3 -->
-        <div class="card">
-            <div class="front">
-                <img src="images/afp-cute-puppy.jpg">
-            </div>
-            <div class="back">
-                <img src="images/cardback-rankedladder.png">
-            </div>
-        </div><!-- end .card -->
-        <!-- C5-R3 -->
-        <div class="card">
-            <div class="front">
-                <img src="images/afp-cute-puppy.jpg">
-            </div>
-            <div class="back">
-                <img src="images/cardback-rankedladder.png">
-            </div>
-        </div><!-- end .card -->
-        <!-- C6-R3 -->
-        <div class="card">
-            <div class="front">
-                <img src="images/afp-cute-puppy.jpg">
-            </div>
-            <div class="back">
-                <img src="images/cardback-rankedladder.png">
-            </div>
-        </div><!-- end .card -->
-        <!-- end Row 3 -->
-    </div><!-- end .play_area -->
+        </div>
 
+        <div class="col-sm-2">
+            <div class="card_container">
+                <div class="front">
+                    <img src="images/afp-cute-puppy.jpg">
+                </div>
+                <div class="back">
+                    <img src="images/cardback-rankedladder.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-2">
+            <div class="card_container">
+                <div class="front">
+                    <img src="images/afp-cute-puppy.jpg">
+                </div>
+                <div class="back">
+                    <img src="images/cardback-rankedladder.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-2">
+            <div class="card_container">
+                <div class="front">
+                    <img src="images/afp-cute-puppy.jpg">
+                </div>
+                <div class="back">
+                    <img src="images/cardback-rankedladder.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-2">
+            <div class="card_container">
+                <div class="front">
+                    <img src="images/afp-cute-puppy.jpg">
+                </div>
+                <div class="back">
+                    <img src="images/cardback-rankedladder.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-2">
+            <div class="card_container">
+                <div class="front">
+                    <img src="images/afp-cute-puppy.jpg">
+                </div>
+                <div class="back">
+                    <img src="images/cardback-rankedladder.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+    <div class="col-sm-2">
+        <div class="card_container">
+            <div class="front">
+                <img src="images/afp-cute-puppy.jpg">
+            </div>
+            <div class="back">
+                <img src="images/cardback-rankedladder.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-2">
+        <div class="card_container">
+            <div class="front">
+                <img src="images/afp-cute-puppy.jpg">
+            </div>
+            <div class="back">
+                <img src="images/cardback-rankedladder.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-2">
+        <div class="card_container">
+            <div class="front">
+                <img src="images/afp-cute-puppy.jpg">
+            </div>
+            <div class="back">
+                <img src="images/cardback-rankedladder.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-2">
+        <div class="card_container">
+            <div class="front">
+                <img src="images/afp-cute-puppy.jpg">
+            </div>
+            <div class="back">
+                <img src="images/cardback-rankedladder.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-2">
+        <div class="card_container">
+            <div class="front">
+                <img src="images/afp-cute-puppy.jpg">
+            </div>
+            <div class="back">
+                <img src="images/cardback-rankedladder.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-2">
+        <div class="card_container">
+            <div class="front">
+                <img src="images/afp-cute-puppy.jpg">
+            </div>
+            <div class="back">
+                <img src="images/cardback-rankedladder.png">
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="row">
+        <div class="col-sm-2">
+            <div class="card_container">
+                <div class="front">
+                    <img src="images/afp-cute-puppy.jpg">
+                </div>
+                <div class="back">
+                    <img src="images/cardback-rankedladder.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-2">
+            <div class="card_container">
+                <div class="front">
+                    <img src="images/afp-cute-puppy.jpg">
+                </div>
+                <div class="back">
+                    <img src="images/cardback-rankedladder.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-2">
+            <div class="card_container">
+                <div class="front">
+                    <img src="images/afp-cute-puppy.jpg">
+                </div>
+                <div class="back">
+                    <img src="images/cardback-rankedladder.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-2">
+            <div class="card_container">
+                <div class="front">
+                    <img src="images/afp-cute-puppy.jpg">
+                </div>
+                <div class="back">
+                    <img src="images/cardback-rankedladder.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-2">
+            <div class="card_container">
+                <div class="front">
+                    <img src="images/afp-cute-puppy.jpg">
+                </div>
+                <div class="back">
+                    <img src="images/cardback-rankedladder.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-2">
+            <div class="card_container">
+                <div class="front">
+                    <img src="images/afp-cute-puppy.jpg">
+                </div>
+                <div class="back">
+                    <img src="images/cardback-rankedladder.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
