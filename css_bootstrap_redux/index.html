@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+/*carousel styling */
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+            object-fit:contain;
+            overflow: hidden;
+        }
+
+        .item img {
+            height: 300px !important;
+            width: auto;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="page-header">
+    <h1>Michal Penn
+        <small>Coding Extraordinaire-To-Be</small>
+    </h1>
+</div>
+<nav class="nav nav-tabs">
+    <div class="container-fluid">
+        <div>
+            <ul class="nav nav-tabs">
+                <li class="active" role="presentation"><a href="#">About Me</a></li>
+                <li role="presentation"><a href="#">Skills</a></li>
+                <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">MBoutique</a></li>
+                        <li><a href="#">Memory Match</a></li>
+                        <li><a href="#">Calculator</a></li>
+                        <li><a href="#">Tic-Tac-Toe</a></li>
+                        <li><a href="#">Facebook Clone</a></li>
+                    </ul>
+                </li>
+                <li role="presentation"><a href="#">Experience</a></li>
+                <li role="presentation"><a href="#">Contact Me</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <br>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <!--NOTE TO SELF: FIX IMAGE SIZES -->
+        <div class="carousel-inner" role="listbox">
+
+            <div class="item active" data-toggle="modal" data-target="#myModal">
+                <a title="Image 1" href="#">
+                <img src="images/Johannesburg.jpg" alt="Joburg">
+                    </a>
+                <div class="carousel-caption">
+                    <h3>Johannesburg, South Africa</h3>
+                    <p>Both of my parents are from Johannesburg</p>
+                </div>
+            </div>
+
+            <div class="item" data-toggle="modal" data-target="#myModal">
+                <img src="images/Irvine.jpg" alt="Irvine">
+                <div class="carousel-caption">
+                    <h3>Irvine, California</h3>
+                    <p>I was born and raised in Irvine</p>
+                </div>
+            </div>
+
+            <div class="item" data-toggle="modal" data-target="#myModal">
+                <img src="images/Sydney.jpg" alt="Sydney">
+                <div class="carousel-caption">
+                    <h3>Sydney, Australia</h3>
+                    <p>Many members of my family moved to Sydney</p>
+                </div>
+            </div>
+
+            <div class="item" data-toggle="modal" data-target="#myModal">
+                <img src="images/Tel-Aviv.jpg" alt="Tel Aviv">
+                <div class="carousel-caption">
+                    <h3>Tel Aviv, Israel</h3>
+                    <p>Tel Aviv is my favorite city</p>
+                </div>
+            </div>
+
+                <div class="item" data-toggle="modal" data-target="#myModal">
+                    <img src="images/Rome.jpg" alt="Rome">
+                    <div class="carousel-caption">
+                        <h3>Rome, Italy</h3>
+                        <p>I spent a semester in Rome</p>
+                    </div>
+            </div>
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<!--feature set 3 - modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Tel Aviv, Israel</h4>
+            </div>
+            <div class="modal-body">
+                <img src="images/Tel-Aviv.jpg" alt="Tel Aviv">
+                <p>Tel Aviv is my favorite city</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function (){
+        $('#myModal').modal({
+            show: false
+        });
+    });
+</script>
+
+</body>
+</html>
