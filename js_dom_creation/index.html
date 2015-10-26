@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<style>
+
+.playground{
+	margin: 2%;
+	min-height: 50vh;
+}
+.playground_source{
+	background-color: lavender;
+}
+.playground_destination{
+	background-color: lightyellow;
+}
+.awesome_class{
+	text-shadow: 1px 1px red;
+	font-weight: bold;
+}
+.neato{
+	padding: 1%;
+}
+.neato > li{
+	margin: 0px 1%;
+	padding: 0px;
+	list-style-type: none;
+	display: inline-block;
+}
+.awesome_picture{
+	display:inline-block;
+}
+.awesome_picture > figcaption{
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+	font-size:120%;
+}
+</style>
+<script>
+$(document).ready(function()
+{
+	//playground 1 code
+	var play1h1 = $("<h1>").text("I am a heading");
+	var play1p1 = $("<p>").text("This is an awesome paragraph");
+	var play1p2 = $("<p>").css("color", "red").text("This has red text");
+	$("#playground1").append(play1h1, play1p1, play1p2);
+
+	//playground 2 code
+	var play2div1 = $("<div>").addClass("awesome_class").text("here is some awesome div text");
+	var play2div2 = $("<div>").addClass("awesome_class").attr("id", "my_awesome_div2").text("here is MORE awesome div text");
+	var play2div3 = $("<div>").addClass("awesome_class").attr("id", "my_awesome_div3").attr("data-coolness", 'high').html("here is <strong>EVEN MORE</strong> awesome div text");
+	$("#playground2").append(play2div1, play2div2, play2div3);
+
+	//playground 3 code
+	var play3ul = $("<ul>").addClass("neato");
+	var play3li1 = $("<li>").text("Link 1");
+	var play3li2 = $("<li>").text("Link 2");
+	var play3li3 = $("<li>").text("Link 3");
+	play3ul.append(play3li1, play3li2, play3li3);
+	var play3figure = $("<figure>").addClass("awesome_picture");
+	var play3img = $("<img>").attr("src", "http://comerecommended.com/wp-content/uploads/2013/01/how-to-get-awesome-back.jpg");
+	var play3figcap = $("<figcaption>").html("That's right, <span>you are</span>");
+	play3figcap.find("span").addClass("bold_text");
+	play3figure.append(play3img, play3figcap);
+	$("#playground3").append(play3ul, play3figure);
+});
+</script>
+</head>
+<body>
+<!-- ************** Playground 1 ************** -->
+	
+	<!-- ********** Playground 1 Source ********** -->
+	<div class="playground playground_source">
+		<h1>I am a heading</h1>
+		<p>This is an awesome paragraph</p>
+		<p style="color:red">This has red text</p>
+	</div>
+
+	<!-- ********** Playground 1 Destination ********** -->
+	<div class="playground playground_destination" id="playground1">
+		<!--copy code into here using jQuery ONLY-->
+		<!-- ******** NO COPY AND PASTE ******** -->
+	</div>
+
+<!-- ************** Playground 2 ************** -->	
+	
+	<!-- ********** Playground 2 Source ********** -->
+	<div class="playground playground_source">
+		<div class='awesome_class'>
+			Here is some awesome div text
+		</div>
+		<div class='awesome_class' id='my_awesome_div2'>
+			Here is MORE awesome div text
+		</div>
+		<div class='awesome_class' id='my_awesome_div3' data-coolness='high'>
+			Here is <strong>EVEN MORE</strong> awesome div text
+		</div>
+	</div>
+
+	<!-- ********** Playground 2 destination ********** -->
+	<div class="playground playground_destination" id="playground2">
+		<!--copy code into here using jQuery ONLY-->
+		<!-- ******** NO COPY AND PASTE ******** -->
+	</div>
+
+<!-- ************** Playground 3 ************** -->
+	
+	<!-- ********** Playground 3 Source ********** -->
+	<div class="playground playground_source">
+		<ul class="neato">
+			<li>Link 1</li>
+			<li>Link 2</li>
+			<li>Link 3</li>
+		</ul>
+		<figure class="awesome_picture">
+			<img src="http://comerecommended.com/wp-content/uploads/2013/01/how-to-get-awesome-back.jpg">
+			<figcaption>That's right, <span class="bold_text">you are</span></figcaption>
+		</figure>
+	</div>
+
+	<!-- ********** Playground 3 Destination ********** -->
+	<div class="playground playground_destination" id="playground3">
+		<!--copy code into here using jQuery ONLY-->
+		<!-- ******** NO COPY AND PASTE ******** -->
+	</div>
+
+</html>
