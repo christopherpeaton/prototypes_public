@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <script>
+        var student_array = ["Jaxon", "Ryan", "Kevin", "Jeff", "Alex"];
+
+        console.log(student_array[2]);
+
+        console.log(student_array);
+
+        console.log(student_array.length);
+
+        student_array.push("Rachel", "Emily");
+
+        console.log(student_array.length);
+
+        console.log(student_array);
+
+        var student = {};
+            student.firstName = 'Nick';
+            student.lastName = 'Friend';
+            student.age = '33';
+            student.school = 'School of Hard Knocks';
+            student.questionList = [];
+            student.hasQuestion = false;
+
+        student.greeting= function() {
+            return "Hello my name is " + this.firstName;
+        };
+
+        student.aboutMe = function() {
+            return "My full name is " + this.firstName + " " + this.lastName + ", I am " + this.age + " years old, and" +
+                    " I am a student at " + this.school + ".";
+        };
+
+        student.askQuestion = function(question) {
+            this.questionList.push(question);
+            this.hasQuestion = true;
+            return "A question has been added to your list"
+        };
+
+        student.answerQuestion = function() {
+            if(this.hasQuestion == true) {
+                this.hasQuestion = false;
+                return this.questionList[this.questionList.length-1];
+            } else {
+                return "You have no pending questions."
+            }
+        };
+
+        console.log("Greeting function: ", student.greeting());
+        console.log("About Me function: ", student.aboutMe());
+        console.log("Answer Question function: ", student.answerQuestion());
+        console.log("Ask Question function: ", student.askQuestion("Question: When puppies go to the farm...is that a real farm?"));
+        console.log("Ask Question function: ", student.askQuestion("Question: How much wood could a yada yada?"));
+        console.log("Ask Question function: ", student.askQuestion("Question: Is the show Gotham in a downward spiral from which it can never recover?"));
+        console.log("Answer Question function: ", student.answerQuestion());
+        console.log(student.questionList);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
