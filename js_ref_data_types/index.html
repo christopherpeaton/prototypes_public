@@ -1,0 +1,68 @@
+<DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<title>Reference Variables and Objects Prototype</title>
+	<!-- <link rel="stylesheet" href="main.css" /> -->
+	<script>
+    // Feature Set 1.0
+        var student_array = ["Magic", "Michael", "Lebron", "Tim", "Kareem"];     // GOAT's ^
+        console.log(student_array[2]);
+        
+    // Feature Set 1.1
+        console.log("Greatest of All Time Starting Five: " + student_array);
+        console.log(student_array.length);
+        student_array.push("Steve", "Scottie");
+        console.log(student_array.length);
+        console.log("Two more greats added: " + student_array);
+    
+    // Feature Set 2.0 
+        
+        var student = {};
+        student.firstName = "Vick";
+        student.lastName = "Eap";
+        student.age = 99;
+        student.school = "LearningFuze";
+        student.questionList = [];
+        hasQuestion = false;
+        
+        //Feature Set 2.1
+          student.greeting = function () {
+            return "Hello, my name is " + student.firstName;
+          };
+        
+            student.aboutMe = function () {
+                return "My full name is "+student.firstName+" "+student.lastName+", I am "+ student.age +" years old and I am a student at " +student.school+".";
+            };
+        
+            student.askQuestion = function(question) {
+                student.questionList.push(question);
+                student.hasQuestion = true;
+                return "A question has been added to your list";
+            }
+            
+            student.answerQuestion = function () {
+                if (student.hasQuestion) {
+                    student.hasQuestion = false;
+                    return student.questionList[student.questionList.length - 1];
+                }else{
+                    return "You have no pending questions";
+                }
+            }
+            
+            // Feature Set 2.2 - Test Your Student
+            console.log("Greeting method: ", student.greeting());
+            console.log("About Me method: ", student.aboutMe());
+            console.log("Answer Question method: ", student.answerQuestion());
+            console.log("Ask Question Method: ", student.askQuestion("How far away is Mars?"));
+            console.log("Ask Question Method: ", student.askQuestion("What is Exogenesis?"));
+            console.log("Ask Question Method: ", student.askQuestion("Will humans destroy the Earth?"));
+            console.log("Answer Question method: ", student.answerQuestion());
+            // i) Yes I got the last question asked on answer question
+            console.log(student.questionList);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
