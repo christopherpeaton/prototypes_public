@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Jehonadab De Alejandro</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 100%;
+            margin: auto;
+        }
+        @media screen and (min-width: 380){
+            body{
+                background-color: #272727;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-inverse">
+        <a class="navbar-brand" href="#">Redux</a>
+        <div>
+            <ul class="nav navbar-nav">
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Skills</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">MBoutique</a></li>
+                        <li><a href="#">Memory Match</a></li>
+                        <li><a href="#">Calculator</a></li>
+                        <li><a href="#">Tic-Tac-Toe</a></li>
+                        <li><a href="#">Facebook Clone</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+        </div>
+</header>
+
+<div class="container">
+    <div id="PictureSlide" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#PictureSlide" data-slide-to="0" class="active"></li>
+            <li data-target="#PictureSlide" data-slide-to="1"></li>
+            <li data-target="#PictureSlide" data-slide-to="2"></li>
+            <li data-target="#PictureSlide" data-slide-to="3"></li>
+            <li data-target="#PictureSlide" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0f0jeMQkgaBNCa6_-oXhozf4Ot4rnxLHsjd-NpqxxVjw5dcKw">
+            </div>
+
+            <div class="item">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRH8SDwdl6upaNdPkgSgFHON31a5p8p3_17EIMIGxroLmdrhTTb">
+            </div>
+
+            <div class="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx8oFb602akxWPH240h2uRmwa0sZd_N4pVGvNPSaJ3Z1505B3Jzw">
+            </div>
+
+            <div class="item">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMdRLwzDrkiA-MkdxGsEWihmpS3We7hqeo0cW611Wr0m273HxZ">
+            </div>
+
+            <div class="item">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJgPeTuFLBzbC1N0vHZJ2Tq2KBm9LPNrc4OhPH7mB07_voe5cebQ">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Peace of Mind</h4>
+            </div>
+            <div class="modal-body">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0f0jeMQkgaBNCa6_-oXhozf4Ot4rnxLHsjd-NpqxxVjw5dcKw">
+                <p>A moment to at peace with one self</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
