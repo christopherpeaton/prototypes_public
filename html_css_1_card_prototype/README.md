@@ -77,7 +77,11 @@ For our examples, we will use the following urls for images.  You can change the
 	- Should be somewhat responsive to resizing.
 	- All cards should be hover functional still, without animations spilling over to other cards inadvertently 
 
+<<<<<<< HEAD
 <img src="https://github.com/Learning-Fuze/prototypes/blob/master/html_css_1_card_prototype/helper_images/all_cards.png">
+=======
+<img src="https://github.com/Learning-Fuze/prototypes/blob/html_css_1_card_prototype/html_css_1_card_prototype/helper_images/all_cards.png">
+>>>>>>> 3819ece6c8bc8dab6b8daea9109c159b3daaf366
 
 ## After Coding Details
 ##### 1. Save files to Git - Add all modified & created files
