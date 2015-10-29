@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript - Repeat Blocks (Loops)</title>
+    <script>
+        //Feature Set 1 - More array looping fun!
+        var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        for (var i =0; i < numbers.length; i++) {
+            console.log(numbers[i]);
+        }
+        for (var i = 0; i >= numbers[0]-1; i--) {
+            console.log(numbers[i]);
+        }
+        for (var i = 0; i < numbers.length; i++) {
+            if (numbers[i]%2 !== 0) {
+                console.log(numbers[i]);
+            }
+        }
+        var mixedArray = [4, 56, 11, 13, 97, 22, 7, 36, 19, 5, 8, 10];
+        for (var i = 0; i < mixedArray.length; i++) {
+            if (mixedArray[i]%2 !== 0) {
+                console.log(mixedArray[i]);
+            }
+        }
+        //Feature Set 2 - For in loop
+        var classRoom = {desk1: 'Stu', desk2: 'Peggy', desk3: 'LoneStar', desk4: 'George', desk5: 'Sheldon'};
+        for (var prop in classRoom) {
+            console.log(classRoom[prop] + " is at " + prop);
+        }
+        // Feature Set 3 - While loop
+        var studentArray = [{name: "Bob", grade: 87}, {name: "Fred", grade: 82}, {name: "George", grade: 93}, {name: "Robert", grade: 85}];
+        function findStudent(name){
+            var output;
+            var i = 0;
+            var found = false;
+            while (!found && i < studentArray.length) {
+                var student = studentArray[i];
+                if (student.name == name) {
+                    output = "Found " + name + ", their grade is: " + student.grade + ".";
+                    found = true;
+                }
+                if (!found) {
+                    output = "Student " + name + " not found.";
+                }
+                i++;
+            }
+            return output;
+        }
+        console.log("Test 1: ", findStudent("George"));
+        console.log("Test 2: ", findStudent("Fred"));
+        console.log("Test 3: ", findStudent("Hank"));
+    </script>
+</head>
+<body></body>
+</html>
