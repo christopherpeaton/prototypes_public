@@ -1,0 +1,17 @@
+#body {
+    height: 100%;
+    width: 100%;
+}
+#title-bar {
+    height: 15vh;
+}
+#nav {
+    width: 15vw;
+    height: 100vh;
+    /*display: inline-block;*/
+    float: left;
+}
+
+#main_content {
+    /*display: inline-block;*/
+}
