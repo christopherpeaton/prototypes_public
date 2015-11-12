@@ -1,0 +1,40 @@
+/** nav bar **/
+.nav-bar li {
+    list-style-type: none;
+    display: inline;
+    margin-left: 10%;
+    font-size: 30px;
+}
+
+/** index.html **/
+#about-me {
+    text-align: center;
+}
+p {
+    font-size: 12px;
+}
+#about-me h1 {
+    color: hotpink;
+}
+img {
+    float: left;
+}
+
+/** experience.html **/
+#experience h1 {
+    font-family: "arial", sans-serif;
+}
+#experience {
+    background-color: fuchsia;
+}
+#experience li {
+    list-style-type: disc;
+}
+
+/** skills.html **/
+#skills h1 {
+    font-family: "arial", sans-serif;
+}
+#skills-list ul li {
+    color: #1abc9c;
+}
