@@ -1,26 +1,25 @@
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-    color: white;
-}
-.dropdown button {
-    background: darkgrey;
-}
-
-.dropdown .dropdown-menu {
+header ul ul {
+    display:none;
     position: absolute;
-    top: 100%;
-    left: 0;
-    margin: 0;
-    background: black;
-
 }
-.dropdown:hover .dropdown-menu {
+header ul li:hover > ul {
     display: block;
     background: black;
     color: white;
 }
-.dropdown-menu>li>a {
-    color: white;
+header ul {
+    display: block;
+}
+header ul ul li {
+    position: relative;
+}
+li {
+    display:inline-block;
+}
+.collapsible ul li {
+    display: block;
+}
+ul li ul li:hover {
+    background: grey;
 }
