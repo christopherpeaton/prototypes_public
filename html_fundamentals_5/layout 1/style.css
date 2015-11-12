@@ -1,0 +1,24 @@
+/** all **/
+li {
+    list-style-type: none;
+}
+
+/** header **/
+#header {
+    height: 15vh;
+}
+
+#header li {
+    display: inline-block;
+
+}
+
+/** body **/
+#body {
+    height: 70vh;
+}
+
+/** footer **/
+#footer {
+    height: 15vh;
+}
