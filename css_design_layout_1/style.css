@@ -1,0 +1,55 @@
+body {
+    width: 100%;
+}
+
+/** feature set 1-1 **/
+.feature_set_1_1 > div {
+    float: left;
+}
+#one {
+    border: 1px solid darkmagenta;
+    width: 25%;
+    margin-right: 5%;
+}
+#two {
+    border: 1px solid darkgreen;
+    width: 25%;
+}
+#three {
+    border: 1px solid olivedrab;
+    width: 25%;
+    margin-left: 5%;
+}
+
+/** feature set 1-2 **/
+.feature_set_1_2 > div {
+    border: 1px solid black;
+}
+#four {
+    width: 25vw;
+    padding: 10% 0;
+}
+#five {
+    width: 25vw;
+    padding: 10% 10% 0 0;
+}
+#six {
+    width: 25vw;
+    padding: 3% 9% 56% 20%;
+}
+
+/** feature set 1-2 **/
+
+.feature_set_1_3 > div {
+    border: 1px solid blue;
+    width: 100px;
+}
+#seven {
+    height: 25%;
+}
+#eight {
+    height: 25vh;
+}
+#nine {
+    height: 25px;
+}
