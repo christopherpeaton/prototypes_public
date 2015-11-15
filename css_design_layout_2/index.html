@@ -5,12 +5,14 @@
     <title>Title</title>
 
     <style>
+        /** header **/
         header {
             width: 100%;
             height: 20vh;
             background-color: pink;
             position: relative;
         }
+
         img {
             float: left;
             height: 80%;
@@ -18,33 +20,62 @@
             position: absolute;
             top: 10%;
         }
+
         h1 {
             text-align: center;
             font-size: 70px;
             color: palegoldenrod;
             text-shadow: 3px 3px green;
         }
+
         li {
             list-style-type: none;
             display: inline;
             float: right;
             margin-right: 6%;
             text-transform: uppercase;
+
+        /** section **/
+        #fs-2 {
+            width: 100vw;
+            height: 30vh;
+
+        }
+
+        #div1 > p{
+            width: 25vw;
+            border: 1px solid black;
+        }
+
+        #div2 {
+            width: 75vw;
+            border: 1px solid red;
+
+        }
+
         }
     </style>
 </head>
 <body>
-<div>
-    <header>
-        <img src="images/img-thing.jpeg">
-        <h1>Mines Company</h1>
-        <ul>
-            <li><a href="#home">home</a></li>
-            <li><a href="#about_us">about us</a></li>
-            <li><a href="#our_menu">our menu</a></li>
-            <li><a href="#contact">contact us</a></li>
-        </ul>
-    </header>
-</div>
+<header>
+    <img src="images/img-thing.jpeg">
+
+    <h1>Mines Company</h1>
+    <ul>
+        <li><a href="#home">home</a></li>
+        <li><a href="#about_us">about us</a></li>
+        <li><a href="#our_menu">our menu</a></li>
+        <li><a href="#contact">contact us</a></li>
+    </ul>
+</header>
+<section id="fs-2">
+    <div id="div1">
+        <p>This is the first div content.</p>
+    </div>
+    <div id="div2">
+        <p>This happens to be the second div.</p>
+    </div>
+
+</section>
 </body>
 </html>
