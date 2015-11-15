@@ -9,19 +9,42 @@
             width: 100%;
             height: 20vh;
             background-color: pink;
+            position: relative;
         }
         img {
             float: left;
             height: 80%;
             margin-left: 20px;
+            position: absolute;
+            top: 10%;
+        }
+        h1 {
+            text-align: center;
+            font-size: 70px;
+            color: palegoldenrod;
+            text-shadow: 3px 3px green;
+        }
+        li {
+            list-style-type: none;
+            display: inline;
+            float: right;
+            margin-right: 6%;
+            text-transform: uppercase;
         }
     </style>
 </head>
 <body>
-<header>
-    <img src="images/img-thing.jpeg">
-
-
-</header>
+<div>
+    <header>
+        <img src="images/img-thing.jpeg">
+        <h1>Mines Company</h1>
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about_us">about us</a></li>
+            <li><a href="#our_menu">our menu</a></li>
+            <li><a href="#contact">contact us</a></li>
+        </ul>
+    </header>
+</div>
 </body>
 </html>
