@@ -5,6 +5,12 @@
     <title>Title</title>
 
     <style>
+        /** container **/
+        .container {
+            width: 70vw;
+            margin: auto;
+
+        }
         /** header **/
         header {
             width: 100%;
@@ -15,7 +21,7 @@
 
         img {
             float: left;
-            height: 80%;
+            height: 47%;
             margin-left: 20px;
             position: absolute;
             top: 10%;
@@ -35,6 +41,7 @@
             margin-right: 6%;
             text-transform: uppercase;
         }
+
         /** section **/
         #fs-2 {
             width: 100vw;
@@ -42,60 +49,80 @@
 
         }
 
-        #div1 > p{
+        #div1 > p {
             width: 25vw;
             border: 1px solid black;
         }
+
         #div1 {
             display: inline-block;
         }
+
         #div2 {
             width: 72vw;
             border: 1px solid red;
             display: inline-block;
         }
 
-    /** section fs-3 **/
+        /** section fs-3 **/
         .fs-3 {
             width: 100vw;
             height: 30vh;
         }
+
         #div3 {
             height: 100vh;
             width: 25vw;
         }
+
         #div4 {
             width: 75vw;
+        }
+
+        /** footer **/
+        footer {
+            height: 20vh;
+            background-color: olivedrab;
         }
     </style>
 </head>
 <body>
-<header>
-    <img src="images/img-thing.jpeg">
+<div class="container">
 
-    <h1>Mines Company</h1>
-    <ul>
-        <li><a href="#home">home</a></li>
-        <li><a href="#about_us">about us</a></li>
-        <li><a href="#our_menu">our menu</a></li>
-        <li><a href="#contact">contact us</a></li>
-    </ul>
-</header>
-<section id="fs-2">
-    <div id="div1">
-        <p>This is the first div content.</p>
-    </div>
-    <div id="div2">
-        <p>This happens to be the second div.</p>
-    </div>
-</section>
-<section id="fs-3">
-    <div id="div3">
+    <header>
+        <img src="images/img-thing.jpeg">
 
-    </div>
-    <div id="div4">
+        <h1>Mines Company</h1>
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about_us">about us</a></li>
+            <li><a href="#our_menu">our menu</a></li>
+            <li><a href="#contact">contact us</a></li>
+        </ul>
+    </header>
 
-    </div>
-</section>
+    <section id="fs-2">
+        <div id="div1">
+            <p>This is the first div content.</p>
+        </div>
+        <div id="div2">
+            <p>This happens to be the second div.</p>
+        </div>
+    </section>
+
+    <section id="fs-3">
+        <div id="div3">
+
+        </div>
+        <div id="div4">
+
+        </div>
+    </section>
+
+    <footer>
+        <p>I love generic content.</p>
+    </footer>
+
+</div>
 </body>
 </html>
