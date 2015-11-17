@@ -50,16 +50,69 @@ $(document).ready(function() {
 		text: "This is an awesome paragraph"
 	});
 	var ptag2 = $("<p>", {
-		style: color = "red",
+		style: "color:red",
 		text: "This has red text"
 	});
 
 
-$("playground").append(heading).append(ptag).append(ptag2),
+$(playground).append(heading1).append(ptag).append(ptag2),
 		$("#playground1").append(playground)
 	//playground 2 code
+var text = "Here is EVEN MORE awesome div text";
 
+	var playground = $("<div>", {
+		class: "playground playground_source"
+	});
+	var div1 = $("<div>", {
+		class: "awesome_class",
+		text: "Here is some awesome div test"
+	});
+	var div2 = $("<div>", {
+		class: "awesome_class",
+		id: "my_awesome_div2",
+		text: "Here is MORE awesome div text",
+	});
+	var div3 = $("<div>", {
+		class: "awesome_class",
+		id: "my_awesome_div3",
+		text: "data-coolness='high'",
+		text: "Here is<strong>EVEN MORE</strong> awesome div text"
+	});
+
+	$(text).contents().unwrap("EVEN MORE");
+	$(playground).append(div1).append(div2).append(div3),
+			$("#playground2").append(playground);
 	//playground 3 code
+
+	var playground = $("<div>",{
+		class: "playground playground_source"
+	});
+	var ul = $("<ul>", {
+		class: "neato"
+	});
+	var li1 = $("<li>",{
+		text: "link 1",
+	});
+	var li2 = $("<li>", {
+		text: "link 2",
+	});
+	var li3 = $("<li>", {
+		text: "link 3"
+	});
+	var figure = $("<figure>", {
+		class: "awesome_picture"
+	});
+	var img = $("<img>", {
+		src: "http://comerecommended.com/wp-content/uploads/2013/01/how-to-get-awesome-back.jpg"
+	});
+	var figcaption = $("<figcaption>", {
+		text: "That's right, <span class='bold_text'>you are</span></figcaption>"
+	});
+
+	$(figure).append(img).append(figcaption),
+	$(ul).append(li1).append(li2).append(li3),
+			$("#playground3").append(ul).append(figure);
+
 });
 </script>
 </head>
