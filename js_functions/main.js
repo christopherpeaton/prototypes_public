@@ -14,6 +14,8 @@ var add2result = add2(10, 36);
 
 function cardFlip(element) {
     $(element).hide();
+    src = getSrc(element);
+    console.log(src);
 }
 
 function getSrc(back){
