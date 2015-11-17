@@ -38,10 +38,25 @@
 }
 </style>
 <script>
-$(document).ready(function()
-{
+$(document).ready(function() {
 	//playground 1 code
+	var playground = $("<div>", {
+		class: "playground playground_source"
+	});
+	var heading1 = $("<h1>", {
+		text: "I am a heading"
+	});
+	var ptag = $("<p>", {
+		text: "This is an awesome paragraph"
+	});
+	var ptag2 = $("<p>", {
+		style: color = "red",
+		text: "This has red text"
+	});
 
+
+$("playground").append(heading).append(ptag).append(ptag2),
+		$("#playground1").append(playground)
 	//playground 2 code
 
 	//playground 3 code
@@ -61,6 +76,7 @@ $(document).ready(function()
 	<!-- ********** Playground 1 Destination ********** -->
 	<div class="playground playground_destination" id="playground1">
 		<!--copy code into here using jQuery ONLY-->
+
 		<!-- ******** NO COPY AND PASTE ******** -->
 	</div>
 
@@ -105,5 +121,5 @@ $(document).ready(function()
 		<!--copy code into here using jQuery ONLY-->
 		<!-- ******** NO COPY AND PASTE ******** -->
 	</div>
-
+</body>
 </html>
