@@ -11,3 +11,11 @@ function add2(x, y) {
     return total;
 }
 var add2result = add2(10, 36);
+
+function cardFlip(element) {
+    $(element).hide();
+}
+
+function getSrc(back){
+    return $(back).prev().find("img").attr('src');
+}
