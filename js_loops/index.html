@@ -12,12 +12,22 @@
         for(i=0; i<numbers.length; i+=2) {
             console.log(numbers[i]);
         }
+
+        var mixedArray = [4, 56, 11, 13, 97, 22, 7, 36, 19, 5, 8, 10];
+        for(i=0; i<mixedArray.length; i+=2) {
+            console.log(mixedArray[i]);
+        }
+
+        var classRoom = {desk1: 'Stu', desk2: 'Peggy', desk3: 'LoneStar', desk4: 'George', desk5: 'Sheldon'};
+        for(var key in classRoom){
+            var value = classRoom[key];
+            console.log(value + " sits at " + key);
+        }
+
     </script>
 
 </head>
 <body>
-
-
 
 </body>
 
