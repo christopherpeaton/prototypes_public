@@ -3,13 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <script>
-        var studentArray = ["chris", 'nicole', 'sarah', 'sara', 'mihir']
+        var studentArray = ["chris", 'nicole', 'sarah', 'sara', 'mihir'];
         console.log(studentArray[3]);
         console.log(studentArray);
         console.log(studentArray.length);
 
         studentArray.push("Hans", "James", "Wayne");
         console.log(studentArray.length);
+
+        var student = {};
+        student.firstname = "Chris";
+        student.lastname = "Eaton";
+        student.age = 33;
+        student.school = "LearningFuze";
+        student.questionList = [];
+        student.hasQuestion = false;
+        student.greeting = function() {return "Hello, my name is Chris"};
+        student.aboutMe = function() {return "My full name is Chris Eaton, I am 33 years old and I am a student at " + "LearningFuze."};
+        student.askQuestion = function(question){student.questionList.push(question); hasQuestion = true; {return "A question has been added to your list."}};
+        student.answerQuestion = function() { if (student.hasQuestion == true){ student.hasQuestion = false; return questionList[questionList.length - 1];} else {return "You have no pending questions";}};
+        console.log("Greeting function: ", student.greeting());
+        console.log("Greeting function: ", student.aboutMe());
+        console.log("Greeting function: ", student.answerQuestion());
+        console.log("Greeting function: ", student.askQuestion("Who"));
+        console.log("Greeting function: ", student.askQuestion("What"));
+        console.log("Greeting function: ", student.askQuestion("Where"));
+        console.log("Greeting function: ", student.answerQuestion());
+
     </script>
 </head>
 <body>
