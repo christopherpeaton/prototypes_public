@@ -24,6 +24,31 @@
             console.log(value + " sits at " + key);
         }
 
+        var studentArray = [{name: "Bob", grade: 87}, {name: "Fred", grade: 82}, {name: "George", grade: 93},
+            {name: "Robert", grade: 85}];
+
+        function findStudent(name) {
+            var output = "";
+            var i = 0;
+            var found = false;
+
+            while (!found && i < studentArray.length) {
+                var student = studentArray[i];
+                if (student.name == name) {
+                    output = "Found " + name + " Grade: " + student.grade;
+                    found = true;
+                }
+                i++;
+            }
+            if (!found) {
+                output = "Student " + name + " not found.";
+            }
+            return output;
+        }
+        console.log("Test 1:", findStudent("George"));
+        console.log("Test 2:", findStudent("Fred"));
+        console.log("Test 3:", findStudent("Hank"));
+
     </script>
 
 </head>
