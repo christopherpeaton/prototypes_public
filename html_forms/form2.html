@@ -2,15 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
     <style>
         body {
-            margin: 6%;
+            margin: 5% 10%;
             background-color: salmon;
         }
+
         h1 {
             text-align: center;
         }
+        .button-xlarge {
+            float: right;
+            font-size:125%;
+        }
+        input[type=text] {
+            padding: 0;
+            height: 30px;
+            position: relative;
+            left: 0;
+            outline: none;
+            border: 1px solid #cdcdcd;
+            border-color: rgba(0,0,0,.15);
+            background-color: white;
+            font-size: 16px;
+        }
+        .advancedSearchTextbox {
+            width: 40%;
+            margin-right: -4px;
+        }
+
     </style>
 </head>
 <body>
@@ -30,6 +51,15 @@
     activities, school organizations and community service.
     This will be a four semester scholarship, and you must maintain criteria set in the guidelines.
 </p>
+
+<h2>Applicant Data</h2>
+
+<input type="text" class="advancedSearchTextBox" />
+
+
+<div>
+    <button class="button-xlarge pure-button">Extra Large Button</button>
+</div>
 
 </body>
 </html>
