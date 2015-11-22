@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
     <style>
         body {
             margin: 5% 10%;
@@ -12,26 +13,16 @@
         h1 {
             text-align: center;
         }
-        .button-xlarge {
+        #red {
             float: right;
-            font-size:125%;
+            margin-right: 8%;
         }
-        input[type=text] {
-            padding: 0;
-            height: 30px;
-            position: relative;
-            left: 0;
-            outline: none;
-            border: 1px solid #cdcdcd;
-            border-color: rgba(0,0,0,.15);
-            background-color: white;
-            font-size: 16px;
+        textarea {
+            width: 45%;
         }
-        .advancedSearchTextbox {
-            width: 40%;
-            margin-right: -4px;
+        .short {
+            width: 20%
         }
-
     </style>
 </head>
 <body>
@@ -54,11 +45,15 @@
 
 <h2>Applicant Data</h2>
 
-<input type="text" class="advancedSearchTextBox" />
-
+<textarea placeholder="Last Name, First Name, Mi"></textarea>
+<textarea class="short" placeholder="Social Security #"></textarea>
+<textarea placeholder="City, State, Zip, County"></textarea>
+<textarea placeholder="Permanent Home Phone"></textarea>
+<textarea placeholder="Intended Major at University"></textarea>
+<textarea placeholder="At which location will you be attending"></textarea>
 
 <div>
-    <button class="button-xlarge pure-button">Extra Large Button</button>
+    <button type="button" class="btn btn-danger btn-lg" id="red">Large button</button>
 </div>
 
 </body>
