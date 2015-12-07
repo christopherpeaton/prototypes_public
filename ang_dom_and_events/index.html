@@ -8,13 +8,20 @@
 
 </head>
 <body ng-app="">
-<div ng-init="myVar='true'" ng-init="counter=0">
-    <span ng-show="myVar">the button is disabled</span><br>
-    <span ng-hide="myVar">the button is enabled</span><br>
-    <button ng-disabled="myVar" type="button" ng-click="counter = counter + 1">the button</button>
-    <input type="checkbox" ng-checked="true" ng-model="myVar"><br>
+<div ng-init="counter=0; remaining=10">
+    <!--<input type="number" ng-model="myVar" min="0" max="10">-->
+    <button type="button" ng-click="counter = counter + 1;remaining = remaining - 1">
+        the button add-ith
+    </button>
+    <button ng-hide="myVar" type="button" ng-click="counter = counter - 1;remaining = remaining + 1">the button take-ith away</button>
 
-    <p>the counter has been clicked {{counter}} times</p>
+    <p>the counter has been clicked {{counter}}</p><br>
+
+    <p>clicks remaining: {{remaining}}</p>
+
+
+
 </div>
+
 </body>
 </html>
