@@ -9,6 +9,8 @@
 </head>
 <body ng-app="">
 <div ng-init="myVar='true'">
+    <span ng-show="myVar">the button is disabled</span><br>
+    <span ng-hide="myVar">the button is enabled</span><br>
     <button ng-disabled="myVar" type="button">the button</button>
     <input type="checkbox" ng-model="myVar">
 
