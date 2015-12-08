@@ -9,12 +9,14 @@
 </head>
 <body ng-app="">
 <div ng-init="counter=0; remaining=10">
-    <!--<input type="number" ng-model="myVar" min="0" max="10">-->
-    <button ng-show="counter == 10" ng-click="counter = counter + 1;remaining = remaining - 1">
+
+    <input type="number" ng-model="myVar">
+    <button ng-hide="counter == 10" ng-click="counter = counter + 1;remaining = remaining - 1">
         the button add-ith
     </button>
-    <button ng-hide="myVar" type="button" ng-click="counter = counter - 1;remaining = remaining + 1">the button take-ith away</button>
 
+    <button ng-hide= type="button" ng-show="counter > 0" ng-click="counter = counter - 1;remaining = remaining + 1">the button take-ith away</button>
+<p ng-show="counter == 10">No more clicky</p>
     <p>the counter has been clicked {{counter}}</p><br>
 
     <p>clicks remaining: {{remaining}}</p>
