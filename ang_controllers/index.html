@@ -7,46 +7,57 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 </head>
 <body ng-app="myApp">
-    <div ng-controller="formController as fc">
-        First Name: <input type="text" ng-model="fc.form.fname"><br>
-        Last Name: <input type="text" ng-model="fc.form.lname"><br>
-        Email: <input type="text" ng-model="fc.form.email"><br>
-        Comments: <input type="textarea" ng-model="fc.form.comments"><br>
-        <button type="button" ng-click="fc.addToArray()">Add</button>
-        <table>
-            <tbody>
-            <tr>
-                <th>Full Name</th>
-                <th>Email</th>
-                <th>Comments</th>
-            </tr>
+<div ng-controller="formController as fc">
+    First Name: <input type="text" ng-model="fc.form.fname"><br>
+    Last Name: <input type="text" ng-model="fc.form.lname"><br>
+    Email: <input type="text" ng-model="fc.form.email"><br>
+    Comments: <input type="textarea" ng-model="fc.form.comments" ng-disabled="fc.remainingCharactersToZero()"><br>
+    <button type="button" ng-click="fc.addToArray()">Add</button>
+    <table>
+        <tbody>
+        <tr>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Comments</th>
+            <p>Characters Remaining: {{ fc.availableCharacters() }}</p>
+        </tr>
 
-            <tr ng-repeat="name in fc.formArray">
-                <td>{{ name.fname + " " + name.lname }}</td>
-                <td>{{ name.email }} </td>
-                <td>{{ name.comments }}</td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
+        <tr ng-repeat="name in fc.formArray">
+            <td>{{ name.fname + " " + name.lname }}</td>
+            <td>{{ name.email }}</td>
+            <td>{{ name.comments + " " + name.maxLength}}</td>
+
+        </tr>
+        </tbody>
+    </table>
+</div>
 
 <script>
     var app = angular.module('myApp', []);
-    app.controller('formController', function ($scope) {
+    app.controller('formController', function () {
         var self = this;
         self.form = {};
+        self.form.comments = "";
         self.formArray = [];
-
-        $scope.message = "Hello";
-
+        self.maxLength = 25;
 
         self.addToArray = function () {
             console.log("click");
             self.formArray.push(self.form);
             self.form = {};
-
+            self.form.comments = "";
         };
 
+        self.availableCharacters = function () {
+            return self.maxLength - self.form.comments.length;
+        };
+
+        self.remainingCharactersToZero = function () {
+            if (self.availableCharacters() <= 0) {
+                return true;
+            }
+            return false;
+        }
     });
 
 
