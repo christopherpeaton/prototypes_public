@@ -12,38 +12,44 @@
     Last Name: <input type="text" ng-model="fc.form.lname"><br>
     Email: <input type="text" ng-model="fc.form.email"><br>
     Comments: <input type="textarea" ng-model="fc.form.comments" ng-disabled="fc.remainingCharactersToZero()"><br>
+        <p>Characters Remaining: {{ fc.availableCharacters() }}</p>
     <button type="button" ng-click="fc.addToArray()">Add</button>
-    <table>
+    <div ng-controller="tableController as tc">
+    <p>table entries : {{ tc.tableEntries() }}</p>
+    <table >
+
         <tbody>
         <tr>
             <th>Full Name</th>
             <th>Email</th>
             <th>Comments</th>
-            <p>Characters Remaining: {{ fc.availableCharacters() }}</p>
+            <th>operations</th>
         </tr>
 
-        <tr ng-repeat="name in fc.formArray">
+        <tr ng-repeat="name in formArray">
             <td>{{ name.fname + " " + name.lname }}</td>
             <td>{{ name.email }}</td>
             <td>{{ name.comments + " " + name.maxLength}}</td>
-
+            <td><button type="button" ng-click="tc.deleteIndex($index)">Delete</button></td>
         </tr>
         </tbody>
     </table>
+        </div>
 </div>
 
 <script>
     var app = angular.module('myApp', []);
-    app.controller('formController', function () {
+    app.controller('formController', function ($scope) {
+
         var self = this;
         self.form = {};
         self.form.comments = "";
-        self.formArray = [];
+        $scope.formArray = [];
         self.maxLength = 25;
 
         self.addToArray = function () {
             console.log("click");
-            self.formArray.push(self.form);
+            $scope.formArray.push(self.form);
             self.form = {};
             self.form.comments = "";
         };
@@ -60,7 +66,14 @@
         }
     });
 
-
+    app.controller("tableController", function($scope) {
+        this.deleteIndex = function (num) {
+            $scope.formArray.splice(num, 1);
+        };
+        this.tableEntries = function() {
+            return $scope.formArray.length;
+        };
+    });
 </script>
 </body>
 </html>
