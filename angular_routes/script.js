@@ -40,6 +40,6 @@ routeApp.controller("aboutCtrl", function($scope){
 });
 // contact page controller
     // Create a message to display in the view
-routeApp.controller("pagesCtrl", function($scope){
+routeApp.controller("contactCtrl", function($scope){
     $scope.message = "lorem ipsum";
 });
